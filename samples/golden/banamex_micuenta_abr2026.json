@@ -1,0 +1,178 @@
+{
+  "summary": {
+    "banco": "banamex",
+    "titular": "IVAN ABELARDO AGUILERA ALVAREZ",
+    "rfc": "AUAI000504PN6",
+    "cuenta": "70138905215",
+    "periodo_inicio": "2026-03-13",
+    "periodo_fin": "2026-04-12",
+    "saldo_inicial": "3736.35",
+    "saldo_final": "53745.16",
+    "total_abonos": "91097.06",
+    "total_cargos": "41088.25",
+    "archivo_origen": "banamex_micuenta_abr2026.pdf"
+  },
+  "movements": [
+    {
+      "fecha": "2026-03-17",
+      "descripcion": "EXENCION COBRO COMISION PENALIZACION POR NO MANTENER EL SALDO PROMEDIO MINIMO MENSUAL REQUERIDO PERIODO FEB13 AL MAR12 IMPORTE A EX ENTAR $165.00 CAJA 0071 AUT 00075748 HORA 03:11 SUC 0511",
+      "abono": "0",
+      "cargo": "0",
+      "saldo": "3736.35",
+      "banco": "banamex",
+      "cuenta": "70138905215",
+      "archivo_origen": "banamex_micuenta_abr2026.pdf"
+    },
+    {
+      "fecha": "2026-03-17",
+      "descripcion": "TRASPASO REF 70213441807 AUT. 01069 SER BCA ELEC. CAJA 0071 AUT 00301069 HORA 21:46 SUC 0519",
+      "abono": "769.00",
+      "cargo": "0",
+      "saldo": "4505.35",
+      "banco": "banamex",
+      "cuenta": "70138905215",
+      "archivo_origen": "banamex_micuenta_abr2026.pdf"
+    },
+    {
+      "fecha": "2026-03-17",
+      "descripcion": "PAGO RECIBIDO DE BBVA MEXICO POR ORDEN DE ANA GUADALUPE ALVAREZ ZAMORA CTA.ORDENANTE 012222026305741047 REF.2702260 SUC 0 CAJA 0 AUT 0 HORA 0: 0 Donativo RASTREO: MBAN01002603170095394398 CAJA 0078 AUT 03624632 HORA 18:21 SUC 0859",
+      "abono": "10000.00",
+      "cargo": "0",
+      "saldo": "14505.35",
+      "banco": "banamex",
+      "cuenta": "70138905215",
+      "archivo_origen": "banamex_micuenta_abr2026.pdf"
+    },
+    {
+      "fecha": "2026-03-17",
+      "descripcion": "PAGO INTERBANCARIO A GBM AL BENEF. IVAN,AGUILERA/ALVAREZ (DATO NO VERIFICADO POR ESTA INSTITUCION) CTA.BENEFICIARIO 601180400006909422 CLAVE SUC 0 SUC. 561 VILLAS DE IRAPUATO,G BOULEVARD A VILLAS DE IRAPUATO 1443 QUINTA LAS VILLAS IVAN ABELARDO AGUILERA ALVAREZ CAJA 0 AUT 0 HORA 0: 0 RASTREO 085908893264307566 REF. 0160326 Transferencia interbancaria MISMO DIA CAJA 0071 AUT 00889326 HORA 20:33 SUC 0519",
+      "abono": "0",
+      "cargo": "5000.00",
+      "saldo": "9505.35",
+      "banco": "banamex",
+      "cuenta": "70138905215",
+      "archivo_origen": "banamex_micuenta_abr2026.pdf"
+    },
+    {
+      "fecha": "2026-03-19",
+      "descripcion": "PAGO INTERBANCARIO A SANTANDER AL BENEF. IVAN ABELARDO,AGUILERA/ALVAREZ (DATO NO VERIFICADO POR ESTA INSTITUCION) CTA.BENEFICIARIO 014222200130033702 CLAVE SUC 0 CAJA 0 AUT 0 HORA 0: 0 RASTREO 085901611154307863 REF. 0190326 Transferencia interbancaria MISMO DIA CAJA 0071 AUT 00161115 HORA 10:25 SUC 0519",
+      "abono": "0",
+      "cargo": "4500.00",
+      "saldo": "5005.35",
+      "banco": "banamex",
+      "cuenta": "70138905215",
+      "archivo_origen": "banamex_micuenta_abr2026.pdf"
+    },
+    {
+      "fecha": "2026-03-20",
+      "descripcion": "PAGO RECIBIDO DE BBVA MEXICO POR ORDEN DE IVAN ABELARDO AGUILERA ALVAREZ CTA.ORDENANTE 012180015856088001 REF.7504138 SUC 0 CAJA 0 AUT 0 HORA 0: 0 PORTABILIDAD DE NOMINA RASTREO: 2026032040012NNNN0000758094 SUC 0 CAJA 0 AUT 0 HORA 0: 0 CAJA 0078 AUT 00154595 HORA 04:32 SUC 0859",
+      "abono": "5785.40",
+      "cargo": "0",
+      "saldo": "10790.75",
+      "banco": "banamex",
+      "cuenta": "70138905215",
+      "archivo_origen": "banamex_micuenta_abr2026.pdf"
+    },
+    {
+      "fecha": "2026-03-20",
+      "descripcion": "PAGO RECIBIDO DE BBVA MEXICO POR ORDEN DE IVAN ABELARDO AGUILERA ALVAREZ CTA.ORDENANTE 012180015856088001 REF.2702260 SUC 0 CAJA 0 AUT 0 HORA 0: 0 a RASTREO: MBAN01002603200063475435 CAJA 0078 AUT 00378429 HORA 09:21 SUC 0859",
+      "abono": "7016.76",
+      "cargo": "0",
+      "saldo": "17807.51",
+      "banco": "banamex",
+      "cuenta": "70138905215",
+      "archivo_origen": "banamex_micuenta_abr2026.pdf"
+    },
+    {
+      "fecha": "2026-03-20",
+      "descripcion": "PAGO INTERBANCARIO A HSBC AL BENEF. IVAN ABELARDO,AGUILERA/ALVAREZ (DATO NO VERIFICADO POR ESTA INSTITUCION) CTA.BENEFICIARIO 021975211451524753 CLAVE SUC 0 CAJA 0 AUT 0 HORA 0: 0 RASTREO 085901509334307965 REF. 0200326 Transferencia interbancaria MISMO DIA CAJA 0071 AUT 00150933 HORA 09:50 SUC 0519",
+      "abono": "0",
+      "cargo": "5000.00",
+      "saldo": "12807.51",
+      "banco": "banamex",
+      "cuenta": "70138905215",
+      "archivo_origen": "banamex_micuenta_abr2026.pdf"
+    },
+    {
+      "fecha": "2026-03-23",
+      "descripcion": "PAGO INTERBANCARIO A CAJA POP MEXICA AL BENEF. IVAN ABELARDO,AGUILERA/ALVAREZ (DATO NO VERIFICADO POR ESTA INSTITUCION) CTA.BENEFICIARIO 677222044816259283 CLAVE SUC 0 CAJA 0 AUT 0 HORA 0: 0 RASTREO 085908552474308269 REF. 0230326 Transferencia interbancaria MISMO DIA CAJA 0071 AUT 00855247 HORA 20:35 SUC 0519",
+      "abono": "0",
+      "cargo": "11000.00",
+      "saldo": "1807.51",
+      "banco": "banamex",
+      "cuenta": "70138905215",
+      "archivo_origen": "banamex_micuenta_abr2026.pdf"
+    },
+    {
+      "fecha": "2026-03-31",
+      "descripcion": "PAGO RECIBIDO DE BBVA MEXICO POR ORDEN DE ANA GUADALUPE ALVAREZ ZAMORA CTA.ORDENANTE 012222026305741047 REF.1803260 SUC 0 CAJA 0 AUT 0 HORA 0: 0 Donativo RASTREO: MBAN01002603310071437923 CAJA 0078 AUT 00248088 HORA 08:07 SUC 0859",
+      "abono": "50000.00",
+      "cargo": "0",
+      "saldo": "51807.51",
+      "banco": "banamex",
+      "cuenta": "70138905215",
+      "archivo_origen": "banamex_micuenta_abr2026.pdf"
+    },
+    {
+      "fecha": "2026-04-01",
+      "descripcion": "PAGO RECIBIDO DE BBVA MEXICO POR ORDEN DE IVAN ABELARDO AGUILERA ALVAREZ CTA.ORDENANTE 012180015856088001 REF.8308303 SUC 0 CAJA 0 AUT 0 HORA 0: 0 PORTABILIDAD DE NOMINA RASTREO: 2026040140012NNNN0000445904 SUC 0 CAJA 0 AUT 0 HORA 0: 0 CAJA 0078 AUT 01313841 HORA 13:45 SUC 0859",
+      "abono": "4748.90",
+      "cargo": "0",
+      "saldo": "56556.41",
+      "banco": "banamex",
+      "cuenta": "70138905215",
+      "archivo_origen": "banamex_micuenta_abr2026.pdf"
+    },
+    {
+      "fecha": "2026-04-01",
+      "descripcion": "PAGO RECIBIDO DE BBVA MEXICO POR ORDEN DE IVAN ABELARDO AGUILERA ALVAREZ CTA.ORDENANTE 012180015856088001 REF.1803260 SUC 0 SUC. 561 VILLAS DE IRAPUATO,G BOULEVARD A VILLAS DE IRAPUATO 1443 QUINTA LAS VILLAS IVAN ABELARDO AGUILERA ALVAREZ CAJA 0 AUT 0 HORA 0: 0 2 RASTREO: MBAN01002604010081234982 CAJA 0078 AUT 01598674 HORA 15:24 SUC 0859",
+      "abono": "7027.00",
+      "cargo": "0",
+      "saldo": "63583.41",
+      "banco": "banamex",
+      "cuenta": "70138905215",
+      "archivo_origen": "banamex_micuenta_abr2026.pdf"
+    },
+    {
+      "fecha": "2026-04-06",
+      "descripcion": "PAGO DE SERVICIO 288612 A TB 5288519114637524 SUC 0519 CAJA 0071 AUT 00288612 HORA 08:35",
+      "abono": "0",
+      "cargo": "3968.25",
+      "saldo": "59615.16",
+      "banco": "banamex",
+      "cuenta": "70138905215",
+      "archivo_origen": "banamex_micuenta_abr2026.pdf"
+    },
+    {
+      "fecha": "2026-04-07",
+      "descripcion": "PAGO INTERBANCARIO A SANTANDER AL BENEF. IVAN ABELARDO,AGUILERA/ALVAREZ (DATO NO VERIFICADO POR ESTA INSTITUCION) CTA.BENEFICIARIO 014222200130033702 CLAVE SUC 0 CAJA 0 AUT 0 HORA 0: 0 RASTREO 085904604164309769 REF. 0070426 Transferencia interbancaria MISMO DIA CAJA 0071 AUT 00460416 HORA 15:19 SUC 0519",
+      "abono": "0",
+      "cargo": "4600.00",
+      "saldo": "55015.16",
+      "banco": "banamex",
+      "cuenta": "70138905215",
+      "archivo_origen": "banamex_micuenta_abr2026.pdf"
+    },
+    {
+      "fecha": "2026-04-10",
+      "descripcion": "PAGO INTERBANCARIO A HSBC AL BENEF. IVAN ABELARDO,AGUILERA/ALVAREZ (DATO NO VERIFICADO POR ESTA INSTITUCION) CTA.BENEFICIARIO 021975211451524753 CLAVE SUC 0 CAJA 0 AUT 0 HORA 0: 0 RASTREO 085900519194310061 REF. 0100426 Transferencia interbancaria MISMO DIA CAJA 0071 AUT 00051919 HORA 07:06 SUC 0519",
+      "abono": "0",
+      "cargo": "7020.00",
+      "saldo": "47995.16",
+      "banco": "banamex",
+      "cuenta": "70138905215",
+      "archivo_origen": "banamex_micuenta_abr2026.pdf"
+    },
+    {
+      "fecha": "2026-04-10",
+      "descripcion": "TRASPASO REF 70213441807 AUT. 51991 SER BCA ELEC. CAJA 0071 AUT 00051991 HORA 07:06 SUC 0519 5,750.00 53,745.16 Estado de Cuenta",
+      "abono": "5750.00",
+      "cargo": "0",
+      "saldo": "53745.16",
+      "banco": "banamex",
+      "cuenta": "70138905215",
+      "archivo_origen": "banamex_micuenta_abr2026.pdf"
+    }
+  ],
+  "warnings": []
+}

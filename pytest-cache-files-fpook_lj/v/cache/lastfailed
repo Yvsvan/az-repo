@@ -1,0 +1,4 @@
+{
+  "tests/test_bank_detector.py::test_detecta_bbva": true,
+  "tests/test_bank_detector.py::test_marcador_de_bbva_en_referencia_no_confunde_a_banbajio": true
+}
