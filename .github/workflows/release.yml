@@ -1,0 +1,57 @@
+name: Release
+
+on:
+  push:
+    tags:
+      - "v*.*.*"
+
+jobs:
+  build-windows:
+    runs-on: windows-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up Python 3.12
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -e ".[dev,build]"
+
+      - name: Sync version with tag
+        # Replace version in _version.py with the tag value (without leading "v").
+        shell: pwsh
+        run: |
+          $tag = "${{ github.ref_name }}"
+          $version = $tag.TrimStart("v")
+          (Get-Content src/bank_parser/_version.py) `
+            -replace '__version__ = ".*"', "__version__ = `"$version`"" |
+            Set-Content src/bank_parser/_version.py
+          Get-Content src/bank_parser/_version.py
+
+      - name: Run tests
+        run: pytest -v
+
+      - name: Build exe with PyInstaller
+        run: pyinstaller build/pyinstaller.spec --noconfirm
+
+      - name: Package zip
+        shell: pwsh
+        run: |
+          $zip = "BankParser-${{ github.ref_name }}-win64.zip"
+          Compress-Archive -Path dist/BankParser/* -DestinationPath $zip
+          $hash = (Get-FileHash $zip -Algorithm SHA256).Hash
+          "$hash  $zip" | Out-File "$zip.sha256"
+
+      - name: Create GitHub Release
+        uses: softprops/action-gh-release@v2
+        with:
+          files: |
+            BankParser-${{ github.ref_name }}-win64.zip
+            BankParser-${{ github.ref_name }}-win64.zip.sha256
+          generate_release_notes: true
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

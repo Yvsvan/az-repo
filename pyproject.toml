@@ -1,0 +1,111 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "bank-parser"
+description = "Parser de estados de cuenta bancarios mexicanos en PDF (Banamex, BBVA, BanBajio, Banregio, Banorte)."
+readme = "README.md"
+requires-python = ">=3.10"
+license = { file = "LICENSE" }
+authors = [{ name = "Consultoria contable" }]
+keywords = ["pdf", "banking", "mexico", "accounting", "parser"]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Financial and Insurance Industry",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: Microsoft :: Windows",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Office/Business :: Financial :: Accounting",
+]
+dynamic = ["version"]
+
+dependencies = [
+    "pdfplumber>=0.11",
+    "pydantic>=2.6",
+    "openpyxl>=3.1",
+    "customtkinter>=5.2",
+    "tkinterdnd2>=0.4",
+    "requests>=2.31",
+    "packaging>=23.2",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=8.0",
+    "pytest-cov>=5.0",
+    "ruff>=0.5",
+    "black>=24.4",
+    "pre-commit>=3.7",
+]
+build = [
+    "pyinstaller>=6.6",
+]
+
+[project.scripts]
+bank-parser = "bank_parser.__main__:main"
+
+[project.urls]
+Homepage = "https://github.com/ivan-aguilera/az-repo"
+Issues = "https://github.com/ivan-aguilera/az-repo/issues"
+
+[tool.setuptools]
+package-dir = { "" = "src" }
+
+[tool.setuptools.packages.find]
+where = ["src"]
+include = ["bank_parser*"]
+
+[tool.setuptools.dynamic]
+version = { attr = "bank_parser._version.__version__" }
+
+[tool.ruff]
+line-length = 100
+target-version = "py310"
+src = ["src", "tests"]
+
+[tool.ruff.lint]
+select = ["E", "F", "W", "I", "B", "UP", "N", "RUF"]
+ignore = ["E501"]
+
+[tool.ruff.lint.per-file-ignores]
+"tests/*" = ["N802"]
+
+[tool.black]
+line-length = 100
+target-version = ["py310", "py311", "py312"]
+
+[tool.pytest.ini_options]
+minversion = "8.0"
+addopts = [
+    "-ra",
+    "--strict-markers",
+    "--strict-config",
+    "--cov=bank_parser",
+    "--cov-report=term-missing",
+    "--cov-fail-under=0",
+]
+testpaths = ["tests"]
+markers = [
+    "slow: tests que tardan (parsea PDFs grandes)",
+    "golden: regression tests contra goldens",
+]
+
+[tool.coverage.run]
+branch = true
+source = ["src/bank_parser"]
+omit = [
+    "src/bank_parser/__main__.py",
+    "src/bank_parser/gui/*",
+    "src/bank_parser/updater/*",
+]
+
+[tool.coverage.report]
+exclude_lines = [
+    "pragma: no cover",
+    "raise NotImplementedError",
+    "if TYPE_CHECKING:",
+]
