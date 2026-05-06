@@ -26,9 +26,9 @@ from bank_parser.core.exceptions import UnsupportedFileError
 class ExtractedPdf:
     """Un PDF listo para parsear, con su nombre lógico de origen."""
 
-    nombre: str           # nombre visible (p. ej. "edo_feb.pdf" o "zip/edo.pdf")
-    contenido: bytes      # bytes del PDF
-    origen: Path          # archivo de origen (PDF o ZIP)
+    nombre: str  # nombre visible (p. ej. "edo_feb.pdf" o "zip/edo.pdf")
+    contenido: bytes  # bytes del PDF
+    origen: Path  # archivo de origen (PDF o ZIP)
 
 
 def extract_pdfs_from_input(path: Path) -> list[ExtractedPdf]:
@@ -70,9 +70,7 @@ def _extract_pdfs_from_zip(zip_path: Path) -> list[ExtractedPdf]:
                 )
             )
     if not out:
-        raise UnsupportedFileError(
-            f"El ZIP {zip_path.name} no contiene PDFs."
-        )
+        raise UnsupportedFileError(f"El ZIP {zip_path.name} no contiene PDFs.")
     return out
 
 

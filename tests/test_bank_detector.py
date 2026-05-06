@@ -15,10 +15,7 @@ def test_detecta_banamex() -> None:
 
 
 def test_detecta_bbva() -> None:
-    text = (
-        "Estado de Cuenta\nBBVA MEXICO, S.A.\nGRUPO FINANCIERO BBVA MEXICO\n"
-        "Cash Management ..."
-    )
+    text = "Estado de Cuenta\nBBVA MEXICO, S.A.\nGRUPO FINANCIERO BBVA MEXICO\nCash Management ..."
     assert detect_bank(text) == BankId.BBVA
 
 

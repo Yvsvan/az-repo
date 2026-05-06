@@ -59,9 +59,7 @@ def test_golden(statement: Statement, samples_dir: Path, regen_golden: bool) -> 
 
     if regen_golden or not golden_path.exists():
         golden_path.parent.mkdir(parents=True, exist_ok=True)
-        golden_path.write_text(
-            json.dumps(actual_json, indent=2, ensure_ascii=False, default=str)
-        )
+        golden_path.write_text(json.dumps(actual_json, indent=2, ensure_ascii=False, default=str))
         pytest.skip(f"Golden regenerado en {golden_path}.")
 
     expected = json.loads(golden_path.read_text())

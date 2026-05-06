@@ -43,8 +43,7 @@ class FormatChangedError(BankParserError):
 
     def __init__(self, bank: str, missing_marker: str, *, hint: str = "") -> None:
         msg = (
-            f"El formato de {bank} cambió: no se encontró el marcador "
-            f"esperado '{missing_marker}'."
+            f"El formato de {bank} cambió: no se encontró el marcador esperado '{missing_marker}'."
         )
         if hint:
             msg += f" {hint}"

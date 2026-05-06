@@ -51,7 +51,7 @@ class UpdateInfo:
 
     @property
     def display_message(self) -> str:
-        return f"Nueva versión disponible: {self.latest}  " f"(tienes la {self.current})"
+        return f"Nueva versión disponible: {self.latest}  (tienes la {self.current})"
 
 
 # ---------------------------------------------------------------------------

@@ -462,7 +462,7 @@ class BankParserApp(ctk.CTk):
         info = self._pending_update
         answer = messagebox.askyesno(
             "Actualización disponible",
-            f"{info.display_message}\n\n" "¿Abrir la página de descarga en el navegador?",
+            f"{info.display_message}\n\n¿Abrir la página de descarga en el navegador?",
         )
         if answer:
             open_release_page(info)
