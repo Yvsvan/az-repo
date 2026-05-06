@@ -86,7 +86,7 @@ addopts = [
     "--strict-config",
     "--cov=bank_parser",
     "--cov-report=term-missing",
-    "--cov-fail-under=0",
+    "--cov-fail-under=70",
 ]
 testpaths = ["tests"]
 markers = [

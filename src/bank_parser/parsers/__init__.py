@@ -8,18 +8,25 @@ Uso desde el pipeline:
 
     parser_cls = BANK_REGISTRY[bank_id]
     parser = parser_cls()
-    statement = parser.parse(text, archivo_origen=name)
+    statement = parser.parse(text, pdf_bytes=bytes, archivo_origen=name)
 """
 
 from __future__ import annotations
 
 from bank_parser.core.schema import BankId
 from bank_parser.parsers.banamex import BanamexParser
+from bank_parser.parsers.banbajio import BanBajioParser
+from bank_parser.parsers.banorte import BanorteParser
+from bank_parser.parsers.banregio import BanregioParser
 from bank_parser.parsers.base import BankParser
+from bank_parser.parsers.bbva import BBVAParser
 
 BANK_REGISTRY: dict[BankId, type[BankParser]] = {
     BankId.BANAMEX: BanamexParser,
-    # Fase 2: registrar BBVA, BanBajio, Banregio, Banorte aqui.
+    BankId.BBVA: BBVAParser,
+    BankId.BANBAJIO: BanBajioParser,
+    BankId.BANREGIO: BanregioParser,
+    BankId.BANORTE: BanorteParser,
 }
 
 
