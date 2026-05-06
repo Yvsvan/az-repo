@@ -38,7 +38,7 @@ from bank_parser.gui.widgets.progress_log import ProgressLog
 from bank_parser.updater.github_updater import UpdateInfo, check_for_update, open_release_page
 
 # Repositorio de GitHub para consultar updates (cambiar al repo real)
-_GITHUB_REPO = "ivan-aguilera/az-repo"
+_GITHUB_REPO = "Yvsvan/az-repo"
 
 
 def launch_gui() -> int:

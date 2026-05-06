@@ -16,7 +16,7 @@ tablas estandarizadas de movimientos (`.xlsx` y `.json`).
 ## Instalación rápida (usuario final)
 
 1. Descarga el archivo `BankParser-vX.Y.Z-win64.zip` de la sección
-   [Releases](https://github.com/ivan-aguilera/az-repo/releases).
+   [Releases](https://github.com/Yvsvan/az-repo/releases).
 2. Descomprime en cualquier carpeta.
 3. Ejecuta `BankParser.exe`.
 
@@ -133,7 +133,7 @@ export_to_json(statements, "movimientos.json")
 Requiere Python 3.10+.
 
 ```bash
-git clone https://github.com/ivan-aguilera/az-repo.git
+git clone https://github.com/Yvsvan/az-repo.git
 cd az-repo
 python -m venv .venv
 .venv\Scripts\activate          # Windows

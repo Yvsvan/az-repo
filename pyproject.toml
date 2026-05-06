@@ -48,8 +48,8 @@ build = [
 bank-parser = "bank_parser.__main__:main"
 
 [project.urls]
-Homepage = "https://github.com/ivan-aguilera/az-repo"
-Issues = "https://github.com/ivan-aguilera/az-repo/issues"
+Homepage = "https://github.com/Yvsvan/az-repo"
+Issues = "https://github.com/Yvsvan/az-repo/issues"
 
 [tool.setuptools]
 package-dir = { "" = "src" }
