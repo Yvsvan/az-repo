@@ -1,0 +1,318 @@
+{
+  "summary": {
+    "banco": "banorte",
+    "titular": "CELOMEX SA DE CV",
+    "rfc": "CEL810729LY8",
+    "cuenta": "0660792468",
+    "periodo_inicio": "2026-01-01",
+    "periodo_fin": "2026-01-31",
+    "saldo_inicial": "6311.37",
+    "saldo_final": "7257.65",
+    "total_abonos": "1232391.40",
+    "total_cargos": "1231445.12",
+    "archivo_origen": "banorte_celomex_ene2026.zip::0660792468_20260131.PDF"
+  },
+  "movements": [
+    {
+      "fecha": "2026-01-02",
+      "descripcion": "002601002601020000321881 SPEI RECIBIDO, BCO:0012 BBVA MEXICO HR LIQ: 12:04:06 DEL CLIENTE CELOMEX SA DE CV DE LA CLABE 012222001128267985 CON RFC CEL810729LY8 CONCEPTO: TRASPASO REFERENCIA: 0020126 CVE RAST: 002601002601020000321881",
+      "abono": "71250.00",
+      "cargo": "0",
+      "saldo": "77561.37",
+      "banco": "banorte",
+      "cuenta": "0660792468",
+      "archivo_origen": "banorte_celomex_ene2026.zip::0660792468_20260131.PDF"
+    },
+    {
+      "fecha": "2026-01-02",
+      "descripcion": "RETIRO DEP. ELECTRONICO",
+      "abono": "0",
+      "cargo": "71248.80",
+      "saldo": "6312.57",
+      "banco": "banorte",
+      "cuenta": "0660792468",
+      "archivo_origen": "banorte_celomex_ene2026.zip::0660792468_20260131.PDF"
+    },
+    {
+      "fecha": "2026-01-09",
+      "descripcion": "002601002601090000511502 SPEI RECIBIDO, BCO:0012 BBVA MEXICO HR LIQ: 11:05:58 DEL CLIENTE CELOMEX SA DE CV DE LA CLABE 012222001128267985 CON RFC CEL810729LY8 CONCEPTO: TRASPASO REFERENCIA: 0090126 CVE RAST: 002601002601090000511502",
+      "abono": "81873.00",
+      "cargo": "0",
+      "saldo": "88185.57",
+      "banco": "banorte",
+      "cuenta": "0660792468",
+      "archivo_origen": "banorte_celomex_ene2026.zip::0660792468_20260131.PDF"
+    },
+    {
+      "fecha": "2026-01-09",
+      "descripcion": "RETIRO DEP. ELECTRONICO",
+      "abono": "0",
+      "cargo": "81872.60",
+      "saldo": "6312.97",
+      "banco": "banorte",
+      "cuenta": "0660792468",
+      "archivo_origen": "banorte_celomex_ene2026.zip::0660792468_20260131.PDF"
+    },
+    {
+      "fecha": "2026-01-15",
+      "descripcion": "002601002601150000556509 SPEI RECIBIDO, BCO:0012 BBVA MEXICO HR LIQ: 11:48:08 DEL CLIENTE CELOMEX SA DE CV DE LA CLABE 012222001128267985 CON RFC CEL810729LY8 CONCEPTO: TRASPASO REFERENCIA: 0150126 CVE RAST: 002601002601150000556509",
+      "abono": "128000.00",
+      "cargo": "0",
+      "saldo": "134312.97",
+      "banco": "banorte",
+      "cuenta": "0660792468",
+      "archivo_origen": "banorte_celomex_ene2026.zip::0660792468_20260131.PDF"
+    },
+    {
+      "fecha": "2026-01-15",
+      "descripcion": "002601002601150000557741 SPEI RECIBIDO, BCO:0012 BBVA MEXICO HR LIQ: 11:50:26 DEL CLIENTE CELOMEX SA DE CV DE LA CLABE 012222001128267985 CON RFC CEL810729LY8 CONCEPTO: TRASPASO REFERENCIA: 0150126 CVE RAST: 002601002601150000557741",
+      "abono": "21040.80",
+      "cargo": "0",
+      "saldo": "155353.77",
+      "banco": "banorte",
+      "cuenta": "0660792468",
+      "archivo_origen": "banorte_celomex_ene2026.zip::0660792468_20260131.PDF"
+    },
+    {
+      "fecha": "2026-01-15",
+      "descripcion": "RETIRO DEP. ELECTRONICO",
+      "abono": "0",
+      "cargo": "21040.80",
+      "saldo": "134312.97",
+      "banco": "banorte",
+      "cuenta": "0660792468",
+      "archivo_origen": "banorte_celomex_ene2026.zip::0660792468_20260131.PDF"
+    },
+    {
+      "fecha": "2026-01-15",
+      "descripcion": "PAGO DE CAPITAL 090634783",
+      "abono": "0",
+      "cargo": "93833.33",
+      "saldo": "40479.64",
+      "banco": "banorte",
+      "cuenta": "0660792468",
+      "archivo_origen": "banorte_celomex_ene2026.zip::0660792468_20260131.PDF"
+    },
+    {
+      "fecha": "2026-01-15",
+      "descripcion": "INTERESES EXENTO TASA090634783",
+      "abono": "0",
+      "cargo": "34093.47",
+      "saldo": "6386.17",
+      "banco": "banorte",
+      "cuenta": "0660792468",
+      "archivo_origen": "banorte_celomex_ene2026.zip::0660792468_20260131.PDF"
+    },
+    {
+      "fecha": "2026-01-16",
+      "descripcion": "002601002601160000993515 SPEI RECIBIDO, BCO:0012 BBVA MEXICO HR LIQ: 12:49:21 DEL CLIENTE CELOMEX SA DE CV DE LA CLABE 012222001128267985 CON RFC CEL810729LY8 CONCEPTO: TRASPASO REFERENCIA: 0160126 CVE RAST: 002601002601160000993515",
+      "abono": "81674.00",
+      "cargo": "0",
+      "saldo": "88060.17",
+      "banco": "banorte",
+      "cuenta": "0660792468",
+      "archivo_origen": "banorte_celomex_ene2026.zip::0660792468_20260131.PDF"
+    },
+    {
+      "fecha": "2026-01-16",
+      "descripcion": "RETIRO DEP. ELECTRONICO",
+      "abono": "0",
+      "cargo": "81673.20",
+      "saldo": "6386.97",
+      "banco": "banorte",
+      "cuenta": "0660792468",
+      "archivo_origen": "banorte_celomex_ene2026.zip::0660792468_20260131.PDF"
+    },
+    {
+      "fecha": "2026-01-23",
+      "descripcion": "058-23/01/2026/23-177VOSE646 SPEI RECIBIDO, BCO:0058 BANREGIO HR LIQ: 13:33:36 DEL CLIENTE CELOMEX S.A. DE C.V. DE LA CLABE 058210000000465762 CON RFC CEL810729LY8 CONCEPTO: Transferencia de CELOMEX SA DE CV REFERENCIA: 0230126 CVE RAST: 058- 23/01/2026/23-177VOSE646",
+      "abono": "76910.00",
+      "cargo": "0",
+      "saldo": "83296.97",
+      "banco": "banorte",
+      "cuenta": "0660792468",
+      "archivo_origen": "banorte_celomex_ene2026.zip::0660792468_20260131.PDF"
+    },
+    {
+      "fecha": "2026-01-23",
+      "descripcion": "RETIRO DEP. ELECTRONICO",
+      "abono": "0",
+      "cargo": "77846.60",
+      "saldo": "5450.37",
+      "banco": "banorte",
+      "cuenta": "0660792468",
+      "archivo_origen": "banorte_celomex_ene2026.zip::0660792468_20260131.PDF"
+    },
+    {
+      "fecha": "2026-01-27",
+      "descripcion": "DEPOSITO DE CUENTA DE TERCEROS 0000001008 DE LA CUENTA 0169018375 F3263, 3265",
+      "abono": "505818.00",
+      "cargo": "0",
+      "saldo": "511268.37",
+      "banco": "banorte",
+      "cuenta": "0660792468",
+      "archivo_origen": "banorte_celomex_ene2026.zip::0660792468_20260131.PDF"
+    },
+    {
+      "fecha": "2026-01-27",
+      "descripcion": "COMPRA ORDEN DE PAGO SPEI 0270126 =REFERENCIA CTA/CLABE: 058210000000465762, BEM SPEI BCO:058 BENEF:celomex sa de c (DATO NO VERIF POR ESTA INST), TRASPASO CVE RASTREO: 8846APR2202601274914317244 RFC: CEL810729LY8 IVA: 000000000000.00 BANREGIO HORA LIQ: 17:02:15",
+      "abono": "0",
+      "cargo": "505000.00",
+      "saldo": "6268.37",
+      "banco": "banorte",
+      "cuenta": "0660792468",
+      "archivo_origen": "banorte_celomex_ene2026.zip::0660792468_20260131.PDF"
+    },
+    {
+      "fecha": "2026-01-27",
+      "descripcion": "TRANSFERENCIA - ENVIO; (SPEI; BANCA POR INTERNET) REFERENCIA: 0270126",
+      "abono": "0",
+      "cargo": "5.00",
+      "saldo": "6263.37",
+      "banco": "banorte",
+      "cuenta": "0660792468",
+      "archivo_origen": "banorte_celomex_ene2026.zip::0660792468_20260131.PDF"
+    },
+    {
+      "fecha": "2026-01-27",
+      "descripcion": "I.V.A. ORDEN DE PAGO SPEI REFERENCIA: 0270126",
+      "abono": "0",
+      "cargo": "0.80",
+      "saldo": "6262.57",
+      "banco": "banorte",
+      "cuenta": "0660792468",
+      "archivo_origen": "banorte_celomex_ene2026.zip::0660792468_20260131.PDF"
+    },
+    {
+      "fecha": "2026-01-29",
+      "descripcion": "DEPOSITO DE CUENTA DE TERCEROS 0000001008 DE LA CUENTA 0169018375 f3267",
+      "abono": "265825.60",
+      "cargo": "0",
+      "saldo": "272088.17",
+      "banco": "banorte",
+      "cuenta": "0660792468",
+      "archivo_origen": "banorte_celomex_ene2026.zip::0660792468_20260131.PDF"
+    },
+    {
+      "fecha": "2026-01-30",
+      "descripcion": "RETIRO DEP. ELECTRONICO",
+      "abono": "0",
+      "cargo": "99196.20",
+      "saldo": "172891.97",
+      "banco": "banorte",
+      "cuenta": "0660792468",
+      "archivo_origen": "banorte_celomex_ene2026.zip::0660792468_20260131.PDF"
+    },
+    {
+      "fecha": "2026-01-30",
+      "descripcion": "COMPRA ORDEN DE PAGO SPEI 0300126 =REFERENCIA CTA/CLABE: 058210000000465762, BEM SPEI BCO:058 BENEF:celomex sa de c (DATO NO VERIF POR ESTA INST), TRASPASO CVE RASTREO: 8846APR1202601304925035158 RFC: CEL810729LY8 IVA: 000000000000.00 BANREGIO HORA LIQ: 12:23:31",
+      "abono": "0",
+      "cargo": "122000.00",
+      "saldo": "50891.97",
+      "banco": "banorte",
+      "cuenta": "0660792468",
+      "archivo_origen": "banorte_celomex_ene2026.zip::0660792468_20260131.PDF"
+    },
+    {
+      "fecha": "2026-01-30",
+      "descripcion": "TRANSFERENCIA - ENVIO; (SPEI; BANCA POR INTERNET) REFERENCIA: 0300126",
+      "abono": "0",
+      "cargo": "5.00",
+      "saldo": "50886.97",
+      "banco": "banorte",
+      "cuenta": "0660792468",
+      "archivo_origen": "banorte_celomex_ene2026.zip::0660792468_20260131.PDF"
+    },
+    {
+      "fecha": "2026-01-30",
+      "descripcion": "I.V.A. ORDEN DE PAGO SPEI REFERENCIA: 0300126",
+      "abono": "0",
+      "cargo": "0.80",
+      "saldo": "50886.17",
+      "banco": "banorte",
+      "cuenta": "0660792468",
+      "archivo_origen": "banorte_celomex_ene2026.zip::0660792468_20260131.PDF"
+    },
+    {
+      "fecha": "2026-01-30",
+      "descripcion": "COMPRA ORDEN DE PAGO SPEI 0300126 =REFERENCIA CTA/CLABE: 012222001128267985, BEM SPEI BCO:012 BENEF:CELOMEX SA DE C (DATO NO VERIF POR ESTA INST), TRASPASO CVE RASTREO: 8846APR1202601304925498466 RFC: CEL810729LY8 IVA: 000000000000.00 BBVA MEXICO HORA LIQ: 13:26:48",
+      "abono": "0",
+      "cargo": "38830.00",
+      "saldo": "12056.17",
+      "banco": "banorte",
+      "cuenta": "0660792468",
+      "archivo_origen": "banorte_celomex_ene2026.zip::0660792468_20260131.PDF"
+    },
+    {
+      "fecha": "2026-01-30",
+      "descripcion": "TRANSFERENCIA - ENVIO; (SPEI; BANCA POR INTERNET) REFERENCIA: 0300126",
+      "abono": "0",
+      "cargo": "5.00",
+      "saldo": "12051.17",
+      "banco": "banorte",
+      "cuenta": "0660792468",
+      "archivo_origen": "banorte_celomex_ene2026.zip::0660792468_20260131.PDF"
+    },
+    {
+      "fecha": "2026-01-30",
+      "descripcion": "I.V.A. ORDEN DE PAGO SPEI REFERENCIA: 0300126",
+      "abono": "0",
+      "cargo": "0.80",
+      "saldo": "12050.37",
+      "banco": "banorte",
+      "cuenta": "0660792468",
+      "archivo_origen": "banorte_celomex_ene2026.zip::0660792468_20260131.PDF"
+    },
+    {
+      "fecha": "2026-01-30",
+      "descripcion": "RETIRO DEP. ELECTRONICO",
+      "abono": "0",
+      "cargo": "3526.00",
+      "saldo": "8524.37",
+      "banco": "banorte",
+      "cuenta": "0660792468",
+      "archivo_origen": "banorte_celomex_ene2026.zip::0660792468_20260131.PDF"
+    },
+    {
+      "fecha": "2026-01-30",
+      "descripcion": "ADMINISTRACION - RENTA COMISION MEMBRESIA P. MORAL 0126",
+      "abono": "0",
+      "cargo": "400.00",
+      "saldo": "8124.37",
+      "banco": "banorte",
+      "cuenta": "0660792468",
+      "archivo_origen": "banorte_celomex_ene2026.zip::0660792468_20260131.PDF"
+    },
+    {
+      "fecha": "2026-01-30",
+      "descripcion": "IVA COM MEMB P.M. COMISION MEMBRESIA P. MORAL 0126",
+      "abono": "0",
+      "cargo": "64.00",
+      "saldo": "8060.37",
+      "banco": "banorte",
+      "cuenta": "0660792468",
+      "archivo_origen": "banorte_celomex_ene2026.zip::0660792468_20260131.PDF"
+    },
+    {
+      "fecha": "2026-01-30",
+      "descripcion": "COM. DISPERSION NOMINA LINEA 00173 REGISTROS EXCEDIDOS A MEMBRESIA 0126",
+      "abono": "0",
+      "cargo": "692.00",
+      "saldo": "7368.37",
+      "banco": "banorte",
+      "cuenta": "0660792468",
+      "archivo_origen": "banorte_celomex_ene2026.zip::0660792468_20260131.PDF"
+    },
+    {
+      "fecha": "2026-01-30",
+      "descripcion": "IVA 00173 REGISTROS EXCEDIDOS A MEMBRESIA 0126",
+      "abono": "0",
+      "cargo": "110.72",
+      "saldo": "7257.65",
+      "banco": "banorte",
+      "cuenta": "0660792468",
+      "archivo_origen": "banorte_celomex_ene2026.zip::0660792468_20260131.PDF"
+    }
+  ],
+  "warnings": []
+}

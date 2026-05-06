@@ -99,7 +99,13 @@ class BanamexParser(BankParser):
         "Saldo anterior",
     )
 
-    def parse(self, pdf_text: str, *, archivo_origen: str) -> Statement:
+    def parse(
+        self,
+        pdf_text: str,
+        *,
+        pdf_bytes: bytes | None = None,
+        archivo_origen: str,
+    ) -> Statement:
         # --- Capa 1: validación estructural -----------------------------------
         for marker in self.expected_markers:
             if marker not in pdf_text:
@@ -208,7 +214,7 @@ def _slice_movements_section(text: str) -> str:
     start = text.find(_DETALLE_HEADER)
     if start < 0:
         raise FormatChangedError("Banamex", _DETALLE_HEADER)
-    body = text[start + len(_DETALLE_HEADER):]
+    body = text[start + len(_DETALLE_HEADER) :]
 
     # Cortar al inicio de AHORRO FACIL si existe.
     end_markers = [
@@ -264,8 +270,7 @@ def _last_amounts_in_block(block: str) -> tuple[Decimal | None, Decimal]:
     raise ParseError(f"Bloque sin números detectables: {block[:80]!r}")
 
 
-def _build_descripcion(block: str, monto_str_to_strip: str | None,
-                      saldo_str_to_strip: str) -> str:
+def _build_descripcion(block: str, monto_str_to_strip: str | None, saldo_str_to_strip: str) -> str:
     """Junta las líneas de descripción quitando los números finales y la fecha."""
     lines = block.splitlines()
     if not lines:

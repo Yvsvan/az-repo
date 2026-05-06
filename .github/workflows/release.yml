@@ -22,15 +22,25 @@ jobs:
           pip install -e ".[dev,build]"
 
       - name: Sync version with tag
-        # Replace version in _version.py with the tag value (without leading "v").
+        # Reemplaza la versión en _version.py y build/version_info.txt
         shell: pwsh
         run: |
           $tag = "${{ github.ref_name }}"
           $version = $tag.TrimStart("v")
+          # Actualizar _version.py
           (Get-Content src/bank_parser/_version.py) `
             -replace '__version__ = ".*"', "__version__ = `"$version`"" |
             Set-Content src/bank_parser/_version.py
           Get-Content src/bank_parser/_version.py
+          # Actualizar version_info.txt (versión en formato X,Y,Z,0)
+          $parts = $version -split '\.'
+          while ($parts.Count -lt 3) { $parts += '0' }
+          $verTuple = "$($parts[0]),$($parts[1]),$($parts[2]),0"
+          (Get-Content build/version_info.txt) `
+            -replace '\((\d+), (\d+), (\d+), 0\)', "($verTuple)" `
+            -replace "'FileVersion', '.*'", "'FileVersion', '$version'" `
+            -replace "'ProductVersion', '.*'", "'ProductVersion', '$version'" |
+            Set-Content build/version_info.txt
 
       - name: Run tests
         run: pytest -v

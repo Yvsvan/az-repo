@@ -24,10 +24,18 @@ class BankParser(ABC):
     expected_markers: tuple[str, ...] = ()
 
     @abstractmethod
-    def parse(self, pdf_text: str, *, archivo_origen: str) -> Statement:
+    def parse(
+        self,
+        pdf_text: str,
+        *,
+        pdf_bytes: bytes | None = None,
+        archivo_origen: str,
+    ) -> Statement:
         """Convierte texto plano de un PDF en un :class:`Statement`.
 
         :param pdf_text: texto extraído de todas las páginas.
+        :param pdf_bytes: bytes crudos del PDF (necesario para parsers que
+            usan posicionamiento de palabras, p. ej. BBVA).
         :param archivo_origen: nombre del archivo (para trazabilidad).
         """
         raise NotImplementedError

@@ -1,12 +1,11 @@
-"""CLI minima -- util para iterar parsers sin la GUI.
+"""CLI mínima — útil para iterar parsers sin la GUI.
 
-Imprime un resumen del Statement a stdout. Si se pasa -o con extension
-.json exporta JSON; .xlsx se implementa en Fase 3.
+Imprime un resumen del Statement a stdout.
+Con -o acepta .json y .xlsx como salida.
 """
 
 from __future__ import annotations
 
-import json
 import sys
 from pathlib import Path
 
@@ -51,16 +50,20 @@ def run_cli(pdf: Path | None, output: Path | None) -> int:
                 print(f"  {m.fecha} | {tipo:5} | {monto:>12} | saldo {m.saldo:>12} | {desc}")
 
     if output:
-        if output.suffix.lower() == ".json":
-            output.parent.mkdir(parents=True, exist_ok=True)
-            data = [json.loads(st.model_dump_json()) for st in statements]
-            output.write_text(
-                json.dumps(data, indent=2, ensure_ascii=False, default=str)
-            )
+        suffix = output.suffix.lower()
+        if suffix == ".json":
+            from bank_parser.exporters.json_exporter import export_to_json
+
+            export_to_json(statements, output)
             print(f"\n-> JSON exportado a {output}")
+        elif suffix == ".xlsx":
+            from bank_parser.exporters.excel import export_to_xlsx
+
+            export_to_xlsx(statements, output)
+            print(f"\n-> Excel exportado a {output}")
         else:
             print(
-                f"Formato {output.suffix} aun no soportado por la CLI (Fase 3).",
+                f"Formato '{suffix}' no soportado. Usa .json o .xlsx.",
                 file=sys.stderr,
             )
             return 2

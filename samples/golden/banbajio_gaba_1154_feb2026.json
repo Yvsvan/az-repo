@@ -1,0 +1,328 @@
+{
+  "summary": {
+    "banco": "banbajio",
+    "titular": "ESTADO DE CUENTA",
+    "rfc": "GABA880703B17",
+    "cuenta": "0199993900201",
+    "periodo_inicio": "2026-02-01",
+    "periodo_fin": "2026-02-28",
+    "saldo_inicial": "16998.80",
+    "saldo_final": "28957.20",
+    "total_abonos": "147416.35",
+    "total_cargos": "135457.95",
+    "archivo_origen": "banbajio_gaba_1154_feb2026.pdf"
+  },
+  "movements": [
+    {
+      "fecha": "2026-02-02",
+      "descripcion": "E N VÍO SPEI:PAGO TARJETA(BI- )",
+      "abono": "0",
+      "cargo": "15000.00",
+      "saldo": "1998.80",
+      "banco": "banbajio",
+      "cuenta": "0199993900201",
+      "archivo_origen": "banbajio_gaba_1154_feb2026.pdf"
+    },
+    {
+      "fecha": "2026-02-03",
+      "descripcion": "2383221DEPÓSITO SPEI:46338793",
+      "abono": "3691.01",
+      "cargo": "0",
+      "saldo": "5689.81",
+      "banco": "banbajio",
+      "cuenta": "0199993900201",
+      "archivo_origen": "banbajio_gaba_1154_feb2026.pdf"
+    },
+    {
+      "fecha": "2026-02-05",
+      "descripcion": "T R ASPASO DE RECURSOS DE LA CUENTA CONECTA BANBAJIO 1",
+      "abono": "0",
+      "cargo": "243.00",
+      "saldo": "5446.81",
+      "banco": "banbajio",
+      "cuenta": "0199993900201",
+      "archivo_origen": "banbajio_gaba_1154_feb2026.pdf"
+    },
+    {
+      "fecha": "2026-02-06",
+      "descripcion": "2388257DEPÓSITO SPEI:9900453",
+      "abono": "19427.40",
+      "cargo": "0",
+      "saldo": "24874.21",
+      "banco": "banbajio",
+      "cuenta": "0199993900201",
+      "archivo_origen": "banbajio_gaba_1154_feb2026.pdf"
+    },
+    {
+      "fecha": "2026-02-10",
+      "descripcion": "2823069TRASPASO DE RECURSOS A LA CUENTA CONECTA BANBAJIO# 312577100201(BI-28230",
+      "abono": "0",
+      "cargo": "24000.00",
+      "saldo": "874.21",
+      "banco": "banbajio",
+      "cuenta": "0199993900201",
+      "archivo_origen": "banbajio_gaba_1154_feb2026.pdf"
+    },
+    {
+      "fecha": "2026-02-10",
+      "descripcion": "2393986DEPÓSITO SPEI:HONORARIOS MEDICOS",
+      "abono": "3500.00",
+      "cargo": "0",
+      "saldo": "4374.21",
+      "banco": "banbajio",
+      "cuenta": "0199993900201",
+      "archivo_origen": "banbajio_gaba_1154_feb2026.pdf"
+    },
+    {
+      "fecha": "2026-02-12",
+      "descripcion": "2396683DEPÓSITO SPEI:CONSULTA",
+      "abono": "850.00",
+      "cargo": "0",
+      "saldo": "5224.21",
+      "banco": "banbajio",
+      "cuenta": "0199993900201",
+      "archivo_origen": "banbajio_gaba_1154_feb2026.pdf"
+    },
+    {
+      "fecha": "2026-02-13",
+      "descripcion": "2398474DEPÓSITO SPEI:CIRUGIA MARIA DEL CARMEN MIRELLA CRUZ",
+      "abono": "10000.00",
+      "cargo": "0",
+      "saldo": "15224.21",
+      "banco": "banbajio",
+      "cuenta": "0199993900201",
+      "archivo_origen": "banbajio_gaba_1154_feb2026.pdf"
+    },
+    {
+      "fecha": "2026-02-13",
+      "descripcion": "5472298TRASPASO DE RECURSOS(BI-5472298722978)",
+      "abono": "0",
+      "cargo": "2836.95",
+      "saldo": "12387.26",
+      "banco": "banbajio",
+      "cuenta": "0199993900201",
+      "archivo_origen": "banbajio_gaba_1154_feb2026.pdf"
+    },
+    {
+      "fecha": "2026-02-13",
+      "descripcion": "P A GO DE SERVICIO : TARJETACREDITO-BBTOTALSYSTEM(BI-1514450021343 GP",
+      "abono": "0",
+      "cargo": "10000.00",
+      "saldo": "2387.26",
+      "banco": "banbajio",
+      "cuenta": "0199993900201",
+      "archivo_origen": "banbajio_gaba_1154_feb2026.pdf"
+    },
+    {
+      "fecha": "2026-02-16",
+      "descripcion": "2404366DEPÓSITO SPEI:MARISOL CUELLAR CASTILLO",
+      "abono": "5000.00",
+      "cargo": "0",
+      "saldo": "7387.26",
+      "banco": "banbajio",
+      "cuenta": "0199993900201",
+      "archivo_origen": "banbajio_gaba_1154_feb2026.pdf"
+    },
+    {
+      "fecha": "2026-02-17",
+      "descripcion": "2405844DEPÓSITO SPEI:TRANFERENCIA CESAREA",
+      "abono": "30000.00",
+      "cargo": "0",
+      "saldo": "37387.26",
+      "banco": "banbajio",
+      "cuenta": "0199993900201",
+      "archivo_origen": "banbajio_gaba_1154_feb2026.pdf"
+    },
+    {
+      "fecha": "2026-02-18",
+      "descripcion": "2406299DEPÓSITO SPEI:HONORARIOS CIRUGIA",
+      "abono": "40000.00",
+      "cargo": "0",
+      "saldo": "77387.26",
+      "banco": "banbajio",
+      "cuenta": "0199993900201",
+      "archivo_origen": "banbajio_gaba_1154_feb2026.pdf"
+    },
+    {
+      "fecha": "2026-02-19",
+      "descripcion": "E N VÍO SPEI:300102207162602230148891289(BI- )",
+      "abono": "0",
+      "cargo": "522.00",
+      "saldo": "76865.26",
+      "banco": "banbajio",
+      "cuenta": "0199993900201",
+      "archivo_origen": "banbajio_gaba_1154_feb2026.pdf"
+    },
+    {
+      "fecha": "2026-02-19",
+      "descripcion": "E N VÍO SPEI:300102207522602235748891210(BI- )",
+      "abono": "0",
+      "cargo": "5750.00",
+      "saldo": "71115.26",
+      "banco": "banbajio",
+      "cuenta": "0199993900201",
+      "archivo_origen": "banbajio_gaba_1154_feb2026.pdf"
+    },
+    {
+      "fecha": "2026-02-19",
+      "descripcion": "3870960PAGO DE IMPUESTOS FOLIO: 194410(BI-EFERENCIADO)",
+      "abono": "0",
+      "cargo": "3657.00",
+      "saldo": "67458.26",
+      "banco": "banbajio",
+      "cuenta": "0199993900201",
+      "archivo_origen": "banbajio_gaba_1154_feb2026.pdf"
+    },
+    {
+      "fecha": "2026-02-19",
+      "descripcion": "2881500PAGO DE IMPUESTOS FOLIO: 244340(BI-EFERENCIADO)",
+      "abono": "0",
+      "cargo": "5750.00",
+      "saldo": "61708.26",
+      "banco": "banbajio",
+      "cuenta": "0199993900201",
+      "archivo_origen": "banbajio_gaba_1154_feb2026.pdf"
+    },
+    {
+      "fecha": "2026-02-19",
+      "descripcion": "E N VÍO SPEI:FF00250879(BI- )",
+      "abono": "0",
+      "cargo": "29230.00",
+      "saldo": "32478.26",
+      "banco": "banbajio",
+      "cuenta": "0199993900201",
+      "archivo_origen": "banbajio_gaba_1154_feb2026.pdf"
+    },
+    {
+      "fecha": "2026-02-19",
+      "descripcion": "2408773DEPÓSITO SPEI:TRANSFERENCIA PAGO DE CONSULTA",
+      "abono": "850.00",
+      "cargo": "0",
+      "saldo": "33328.26",
+      "banco": "banbajio",
+      "cuenta": "0199993900201",
+      "archivo_origen": "banbajio_gaba_1154_feb2026.pdf"
+    },
+    {
+      "fecha": "2026-02-19",
+      "descripcion": "E N VÍO SPEI:HONORARIOS DOS CIRUGIAS(BI- )",
+      "abono": "0",
+      "cargo": "20000.00",
+      "saldo": "13328.26",
+      "banco": "banbajio",
+      "cuenta": "0199993900201",
+      "archivo_origen": "banbajio_gaba_1154_feb2026.pdf"
+    },
+    {
+      "fecha": "2026-02-19",
+      "descripcion": "2408869DEPÓSITO SPEI:CONSULTA",
+      "abono": "850.00",
+      "cargo": "0",
+      "saldo": "14178.26",
+      "banco": "banbajio",
+      "cuenta": "0199993900201",
+      "archivo_origen": "banbajio_gaba_1154_feb2026.pdf"
+    },
+    {
+      "fecha": "2026-02-20",
+      "descripcion": "5880000TRASPASO DE RECURSOS DE LA CUENTA CONECTA BANBAJIO# 425866510201(BI-5880",
+      "abono": "4000.00",
+      "cargo": "0",
+      "saldo": "18178.26",
+      "banco": "banbajio",
+      "cuenta": "0199993900201",
+      "archivo_origen": "banbajio_gaba_1154_feb2026.pdf"
+    },
+    {
+      "fecha": "2026-02-20",
+      "descripcion": "E N VÍO SPEI:PAGO TARJETA(BI- )",
+      "abono": "0",
+      "cargo": "269.00",
+      "saldo": "17909.26",
+      "banco": "banbajio",
+      "cuenta": "0199993900201",
+      "archivo_origen": "banbajio_gaba_1154_feb2026.pdf"
+    },
+    {
+      "fecha": "2026-02-20",
+      "descripcion": "2410715DEPÓSITO SPEI:CECILIA CASTREJON",
+      "abono": "1000.00",
+      "cargo": "0",
+      "saldo": "18909.26",
+      "banco": "banbajio",
+      "cuenta": "0199993900201",
+      "archivo_origen": "banbajio_gaba_1154_feb2026.pdf"
+    },
+    {
+      "fecha": "2026-02-23",
+      "descripcion": "2413585DEPÓSITO SPEI:METLIFE MEXICO SA DE CV",
+      "abono": "1587.67",
+      "cargo": "0",
+      "saldo": "20496.93",
+      "banco": "banbajio",
+      "cuenta": "0199993900201",
+      "archivo_origen": "banbajio_gaba_1154_feb2026.pdf"
+    },
+    {
+      "fecha": "2026-02-23",
+      "descripcion": "E N VÍO SPEI:HONORARIOS 2 LAPAROSCOPIAS(BI- )",
+      "abono": "0",
+      "cargo": "10000.00",
+      "saldo": "10496.93",
+      "banco": "banbajio",
+      "cuenta": "0199993900201",
+      "archivo_origen": "banbajio_gaba_1154_feb2026.pdf"
+    },
+    {
+      "fecha": "2026-02-23",
+      "descripcion": "6110680TRASPASO DE RECURSOS A LA CUENTA CONECTA BANBAJIO# 144746210201(BI-61106",
+      "abono": "0",
+      "cargo": "8200.00",
+      "saldo": "2296.93",
+      "banco": "banbajio",
+      "cuenta": "0199993900201",
+      "archivo_origen": "banbajio_gaba_1154_feb2026.pdf"
+    },
+    {
+      "fecha": "2026-02-25",
+      "descripcion": "2416028DEPÓSITO SPEI:9900366",
+      "abono": "16960.27",
+      "cargo": "0",
+      "saldo": "19257.20",
+      "banco": "banbajio",
+      "cuenta": "0199993900201",
+      "archivo_origen": "banbajio_gaba_1154_feb2026.pdf"
+    },
+    {
+      "fecha": "2026-02-27",
+      "descripcion": "D E POSITO EN EFECTIVO",
+      "abono": "850.00",
+      "cargo": "0",
+      "saldo": "20107.20",
+      "banco": "banbajio",
+      "cuenta": "0199993900201",
+      "archivo_origen": "banbajio_gaba_1154_feb2026.pdf"
+    },
+    {
+      "fecha": "2026-02-27",
+      "descripcion": "D E POSITO EN EFECTIVO",
+      "abono": "850.00",
+      "cargo": "0",
+      "saldo": "20957.20",
+      "banco": "banbajio",
+      "cuenta": "0199993900201",
+      "archivo_origen": "banbajio_gaba_1154_feb2026.pdf"
+    },
+    {
+      "fecha": "2026-02-27",
+      "descripcion": "D E POSITO EN EFECTIVO",
+      "abono": "8000.00",
+      "cargo": "0",
+      "saldo": "28957.20",
+      "banco": "banbajio",
+      "cuenta": "0199993900201",
+      "archivo_origen": "banbajio_gaba_1154_feb2026.pdf"
+    }
+  ],
+  "warnings": []
+}

@@ -38,7 +38,7 @@ def process_file(path: Path) -> list[Statement]:
         text = read_pdf_text(pdf.contenido)
         bank_id = detect_bank(text)
         parser = get_parser(bank_id)
-        statement = parser.parse(text, archivo_origen=pdf.nombre)
+        statement = parser.parse(text, pdf_bytes=pdf.contenido, archivo_origen=pdf.nombre)
         # Adjuntamos warnings de cuadre.
         warnings = validar_cuadre(statement)
         if warnings:

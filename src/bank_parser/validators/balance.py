@@ -1,4 +1,4 @@
-"""Validador de cuadre numérico: ``saldo_inicial + abonos − cargos = saldo_final``.
+"""Validador de cuadre numérico: ``saldo_inicial + abonos - cargos = saldo_final``.
 
 No lanza excepción por defecto: registra warnings en el ``Statement``
 para que la GUI los muestre y el usuario decida exportar igual o no.
@@ -39,12 +39,12 @@ def validar_cuadre(statement: Statement) -> list[str]:
             f"({s.total_cargos}). Diferencia: {suma_cargos - s.total_cargos}."
         )
 
-    # 2) Identidad del saldo: inicial + abonos − cargos = final.
+    # 2) Identidad del saldo: inicial + abonos - cargos = final.
     saldo_calculado = s.saldo_inicial + suma_abonos - suma_cargos
     if abs(saldo_calculado - s.saldo_final) > _TOLERANCIA:
         warnings.append(
             f"Cuadre del saldo falló: inicial ({s.saldo_inicial}) + abonos "
-            f"({suma_abonos}) − cargos ({suma_cargos}) = {saldo_calculado}, "
+            f"({suma_abonos}) - cargos ({suma_cargos}) = {saldo_calculado}, "
             f"pero el PDF reporta saldo final {s.saldo_final}. "
             f"Diferencia: {saldo_calculado - s.saldo_final}."
         )

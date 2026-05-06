@@ -25,6 +25,8 @@ wheels/
 *.egg
 
 # PyInstaller artifacts
+build/pyinstaller/
+dist/
 *.manifest
 *.spec.bak
 
@@ -55,8 +57,10 @@ ENV/
 Thumbs.db
 
 # Project-specific
-out/                # carpeta default de export
-*.xlsx              # outputs locales
+# carpeta default de export
+out/
+# outputs locales
+*.xlsx
 *.json.tmp
 secrets.toml
 

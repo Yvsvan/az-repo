@@ -1,8 +1,6 @@
-"""Smoke test: el paquete se importa correctamente.
+"""Smoke tests: imports y API pública del paquete."""
 
-Sirve para que la suite no esté vacía durante la Fase 0 y para detectar
-errores triviales (typos en imports, módulos rotos) en CI.
-"""
+from pathlib import Path
 
 import bank_parser
 
@@ -18,3 +16,18 @@ def test_version_is_semver() -> None:
         # Permite suffixes alpha/beta/rc en el patch.
         head = p.split("-")[0]
         assert head.isdigit(), f"componente no numérico: {p}"
+
+
+def test_public_api_exports() -> None:
+    """Todos los símbolos públicos declarados en __all__ son importables."""
+    for name in bank_parser.__all__:
+        assert hasattr(bank_parser, name), f"'{name}' declarado en __all__ pero no existe"
+
+
+def test_parse_pdf_convenience(samples_dir: Path) -> None:
+    """parse_pdf es un atajo funcional sobre process_file."""
+    pdf = samples_dir / "banamex" / "banamex_micuenta_abr2026.pdf"
+    statements = bank_parser.parse_pdf(pdf)
+    assert len(statements) == 1
+    assert statements[0].summary.banco == bank_parser.BankId.BANAMEX
+    assert len(statements[0].movements) > 0

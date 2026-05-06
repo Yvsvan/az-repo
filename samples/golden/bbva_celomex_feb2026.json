@@ -1,0 +1,878 @@
+{
+  "summary": {
+    "banco": "bbva",
+    "titular": "CELOMEX SA DE CV",
+    "rfc": "CEL810729LY8",
+    "cuenta": "0112826798",
+    "periodo_inicio": "2026-02-01",
+    "periodo_fin": "2026-02-28",
+    "saldo_inicial": "230982.22",
+    "saldo_final": "303093.48",
+    "total_abonos": "2075518.24",
+    "total_cargos": "2003406.98",
+    "archivo_origen": "bbva_celomex_feb2026.pdf"
+  },
+  "movements": [
+    {
+      "fecha": "2026-02-01",
+      "descripcion": "TRANSF SPEI BAJIO NC0310126 TRASPASO Ref. 0000862836 030",
+      "abono": "0",
+      "cargo": "13850.00",
+      "saldo": "217132.22",
+      "banco": "bbva",
+      "cuenta": "0112826798",
+      "archivo_origen": "bbva_celomex_feb2026.pdf"
+    },
+    {
+      "fecha": "2026-02-01",
+      "descripcion": "CHEQUE PAGADO NO. RFC CUENTA DE DEPOSITO:ARE010219 -BK5 Ref. 1861 Estimado Cliente, Su Estado de Cuenta ha sido modificado y ahora tiene más detalle de información. También le informamos que su Contrato ha sido modificado, el cual puede consultarlo en cualquier sucursal o www.bbva.mx Con BBVA adelante. La GAT Real es el rendimiento que obtendría después de descontar la inflación estimada BBVA MEXICO, S.A., INSTITUCION DE BANCA MULTIPLE, GRUPO FINANCIERO BBVA MEXICO Av. Paseo de la Reforma 510, Col. Juárez, Alcaldía Cuauhtémoc, C.P. 06600, Ciudad de México. México R.F.C. BBA830831LJ2",
+      "abono": "0",
+      "cargo": "50000.00",
+      "saldo": "230402.25",
+      "banco": "bbva",
+      "cuenta": "0112826798",
+      "archivo_origen": "bbva_celomex_feb2026.pdf"
+    },
+    {
+      "fecha": "2026-02-03",
+      "descripcion": "EMISION LIBRAMIE CHQ DEL 01ENE26 AL 31ENE26",
+      "abono": "0",
+      "cargo": "500.00",
+      "saldo": "229902.25",
+      "banco": "bbva",
+      "cuenta": "0112826798",
+      "archivo_origen": "bbva_celomex_feb2026.pdf"
+    },
+    {
+      "fecha": "2026-02-03",
+      "descripcion": "IVA EMISION LIBRAMIE CHQ 16%",
+      "abono": "0",
+      "cargo": "80.00",
+      "saldo": "229822.25",
+      "banco": "bbva",
+      "cuenta": "0112826798",
+      "archivo_origen": "bbva_celomex_feb2026.pdf"
+    },
+    {
+      "fecha": "2026-02-03",
+      "descripcion": "COMPENSACION POR RETRASO Ref. COMP SPEI",
+      "abono": "0.01",
+      "cargo": "0",
+      "saldo": "229822.26",
+      "banco": "bbva",
+      "cuenta": "0112826798",
+      "archivo_origen": "bbva_celomex_feb2026.pdf"
+    },
+    {
+      "fecha": "2026-02-03",
+      "descripcion": "COMPENSACION POR RETRASO Ref. COMP SPEI",
+      "abono": "0.01",
+      "cargo": "0",
+      "saldo": "229822.27",
+      "banco": "bbva",
+      "cuenta": "0112826798",
+      "archivo_origen": "bbva_celomex_feb2026.pdf"
+    },
+    {
+      "fecha": "2026-02-03",
+      "descripcion": "COMPENSACION POR RETRASO Ref. COMP SPEI",
+      "abono": "0.01",
+      "cargo": "0",
+      "saldo": "229822.28",
+      "banco": "bbva",
+      "cuenta": "0112826798",
+      "archivo_origen": "bbva_celomex_feb2026.pdf"
+    },
+    {
+      "fecha": "2026-02-03",
+      "descripcion": "SPEI RECIBIDOSANTANDER 8850708FAC 3262 Ref. 0185950112 014 00014540920021268871 20260203400140BET0000488507080 ACEROS VIJAF SA DE CV",
+      "abono": "125111.80",
+      "cargo": "0",
+      "saldo": "354934.08",
+      "banco": "bbva",
+      "cuenta": "0112826798",
+      "archivo_origen": "bbva_celomex_feb2026.pdf"
+    },
+    {
+      "fecha": "2026-02-03",
+      "descripcion": "TRANSF SPEI BBASE NC0030226 TRASPASO Ref. 0000947893 145",
+      "abono": "0",
+      "cargo": "57400.00",
+      "saldo": "297534.08",
+      "banco": "bbva",
+      "cuenta": "0112826798",
+      "archivo_origen": "bbva_celomex_feb2026.pdf"
+    },
+    {
+      "fecha": "2026-02-03",
+      "descripcion": "TRANSF SPEI BAJIO NC0030226 TRASPASO Ref. 0000948058 030",
+      "abono": "0",
+      "cargo": "93000.00",
+      "saldo": "204534.08",
+      "banco": "bbva",
+      "cuenta": "0112826798",
+      "archivo_origen": "bbva_celomex_feb2026.pdf"
+    },
+    {
+      "fecha": "2026-02-03",
+      "descripcion": "CHEQUE PAGADO NO. PAGO EN EFECTIVO Ref. 1863",
+      "abono": "0",
+      "cargo": "5000.00",
+      "saldo": "199534.08",
+      "banco": "bbva",
+      "cuenta": "0112826798",
+      "archivo_origen": "bbva_celomex_feb2026.pdf"
+    },
+    {
+      "fecha": "2026-02-03",
+      "descripcion": "CHEQUE PAGADO NO. PAGO EN EFECTIVO Ref. 1864",
+      "abono": "0",
+      "cargo": "5000.00",
+      "saldo": "194534.08",
+      "banco": "bbva",
+      "cuenta": "0112826798",
+      "archivo_origen": "bbva_celomex_feb2026.pdf"
+    },
+    {
+      "fecha": "2026-02-03",
+      "descripcion": "CHEQUE PAGADO NO. PAGO EN EFECTIVO Ref. 1865",
+      "abono": "0",
+      "cargo": "5000.00",
+      "saldo": "189534.08",
+      "banco": "bbva",
+      "cuenta": "0112826798",
+      "archivo_origen": "bbva_celomex_feb2026.pdf"
+    },
+    {
+      "fecha": "2026-02-03",
+      "descripcion": "TRANSF SPEI BAJIO NC0030226 TRASPASO Ref. 0000067334 030",
+      "abono": "0",
+      "cargo": "122000.00",
+      "saldo": "67534.08",
+      "banco": "bbva",
+      "cuenta": "0112826798",
+      "archivo_origen": "bbva_celomex_feb2026.pdf"
+    },
+    {
+      "fecha": "2026-02-03",
+      "descripcion": "TRANSF SPEI BAJIO NC0030226 TRASPASO Ref. 0000067796 030",
+      "abono": "0",
+      "cargo": "3750.00",
+      "saldo": "514.05",
+      "banco": "bbva",
+      "cuenta": "0112826798",
+      "archivo_origen": "bbva_celomex_feb2026.pdf"
+    },
+    {
+      "fecha": "2026-02-04",
+      "descripcion": "PAGO CUENTA DE TERCERO BNET 0146727352 Ref. 0023493020",
+      "abono": "83241.60",
+      "cargo": "0",
+      "saldo": "83755.65",
+      "banco": "bbva",
+      "cuenta": "0112826798",
+      "archivo_origen": "bbva_celomex_feb2026.pdf"
+    },
+    {
+      "fecha": "2026-02-04",
+      "descripcion": "TRANSF SPEI BANREGIO NC0040226 TRASPASO Ref. 0000185135 058",
+      "abono": "0",
+      "cargo": "82000.00",
+      "saldo": "1755.65",
+      "banco": "bbva",
+      "cuenta": "0112826798",
+      "archivo_origen": "bbva_celomex_feb2026.pdf"
+    },
+    {
+      "fecha": "2026-02-04",
+      "descripcion": "SPEI RECIBIDOBANORTE 0040226C FACTURA 3286 Ref. 0194501444 072 00072528012603568298 8846APR1202602044945360724 MARTA LETICIA VARGAS SALINAS",
+      "abono": "231705.36",
+      "cargo": "0",
+      "saldo": "233461.01",
+      "banco": "bbva",
+      "cuenta": "0112826798",
+      "archivo_origen": "bbva_celomex_feb2026.pdf"
+    },
+    {
+      "fecha": "2026-02-04",
+      "descripcion": "COM TRANSACCIONES BNTC SICOCO ENE 2026 Ref. 732656",
+      "abono": "0",
+      "cargo": "571.65",
+      "saldo": "232889.36",
+      "banco": "bbva",
+      "cuenta": "0112826798",
+      "archivo_origen": "bbva_celomex_feb2026.pdf"
+    },
+    {
+      "fecha": "2026-02-04",
+      "descripcion": "IVA COM TRANSACCIONE BNTC SICOCO ENE 2026 Ref. 732656",
+      "abono": "0",
+      "cargo": "91.46",
+      "saldo": "232797.90",
+      "banco": "bbva",
+      "cuenta": "0112826798",
+      "archivo_origen": "bbva_celomex_feb2026.pdf"
+    },
+    {
+      "fecha": "2026-02-04",
+      "descripcion": "COM SERV BBVA NET CAS SICOCO ENE 2026 Ref. 732656",
+      "abono": "0",
+      "cargo": "830.00",
+      "saldo": "231967.90",
+      "banco": "bbva",
+      "cuenta": "0112826798",
+      "archivo_origen": "bbva_celomex_feb2026.pdf"
+    },
+    {
+      "fecha": "2026-02-04",
+      "descripcion": "IVA COM SERVICIOS BNTC SICOCO ENE 2026 Ref. 732656",
+      "abono": "0",
+      "cargo": "132.80",
+      "saldo": "231835.10",
+      "banco": "bbva",
+      "cuenta": "0112826798",
+      "archivo_origen": "bbva_celomex_feb2026.pdf"
+    },
+    {
+      "fecha": "2026-02-05",
+      "descripcion": "TRANSF SPEI BANORTE NC0050226 TRASPASO Ref. 0000361560 072 BBVA MEXICO, S.A., INSTITUCION DE BANCA MULTIPLE, GRUPO FINANCIERO BBVA MEXICO Av. Paseo de la Reforma 510, Col. Juárez, Alcaldía Cuauhtémoc, C.P. 06600, Ciudad de México. México R.F.C. BBA830831LJ2",
+      "abono": "0",
+      "cargo": "107190.00",
+      "saldo": "124645.10",
+      "banco": "bbva",
+      "cuenta": "0112826798",
+      "archivo_origen": "bbva_celomex_feb2026.pdf"
+    },
+    {
+      "fecha": "2026-02-05",
+      "descripcion": "CHEQUE PAGADO NO. PAGO EN EFECTIVO Ref. 1868",
+      "abono": "0",
+      "cargo": "5000.00",
+      "saldo": "119645.10",
+      "banco": "bbva",
+      "cuenta": "0112826798",
+      "archivo_origen": "bbva_celomex_feb2026.pdf"
+    },
+    {
+      "fecha": "2026-02-05",
+      "descripcion": "CHEQUE PAGADO NO. PAGO EN EFECTIVO Ref. 1867",
+      "abono": "0",
+      "cargo": "5000.00",
+      "saldo": "114645.10",
+      "banco": "bbva",
+      "cuenta": "0112826798",
+      "archivo_origen": "bbva_celomex_feb2026.pdf"
+    },
+    {
+      "fecha": "2026-02-05",
+      "descripcion": "CHEQUE PAGADO NO. PAGO EN EFECTIVO Ref. 1870",
+      "abono": "0",
+      "cargo": "1929.60",
+      "saldo": "112715.50",
+      "banco": "bbva",
+      "cuenta": "0112826798",
+      "archivo_origen": "bbva_celomex_feb2026.pdf"
+    },
+    {
+      "fecha": "2026-02-06",
+      "descripcion": "CHEQUE PAGADO NO. PAGO EN EFECTIVO Ref. 1839",
+      "abono": "0",
+      "cargo": "5000.00",
+      "saldo": "107715.50",
+      "banco": "bbva",
+      "cuenta": "0112826798",
+      "archivo_origen": "bbva_celomex_feb2026.pdf"
+    },
+    {
+      "fecha": "2026-02-06",
+      "descripcion": "CHEQUE PAGADO NO. PAGO EN EFECTIVO Ref. 1838",
+      "abono": "0",
+      "cargo": "5000.00",
+      "saldo": "102715.50",
+      "banco": "bbva",
+      "cuenta": "0112826798",
+      "archivo_origen": "bbva_celomex_feb2026.pdf"
+    },
+    {
+      "fecha": "2026-02-06",
+      "descripcion": "TRANSF SPEI BANORTE NC0060226 TRASPASO Ref. 0000661515 072",
+      "abono": "0",
+      "cargo": "82790.00",
+      "saldo": "19925.50",
+      "banco": "bbva",
+      "cuenta": "0112826798",
+      "archivo_origen": "bbva_celomex_feb2026.pdf"
+    },
+    {
+      "fecha": "2026-02-06",
+      "descripcion": "TRANSF SPEI AZTECA NC0060226 PAGO DE NOMINA PERIODO 6 Ref. 0000672390 127",
+      "abono": "0",
+      "cargo": "2331.80",
+      "saldo": "17593.70",
+      "banco": "bbva",
+      "cuenta": "0112826798",
+      "archivo_origen": "bbva_celomex_feb2026.pdf"
+    },
+    {
+      "fecha": "2026-02-06",
+      "descripcion": "TRANSFER BBVA 00732656 L PAGO DE NOMINA PERIODO 6 Ref. NC 1507597985",
+      "abono": "0",
+      "cargo": "2296.00",
+      "saldo": "15297.70",
+      "banco": "bbva",
+      "cuenta": "0112826798",
+      "archivo_origen": "bbva_celomex_feb2026.pdf"
+    },
+    {
+      "fecha": "2026-02-06",
+      "descripcion": "SPEI RECIBIDOBANREGIO 0060226Transferencia de CELOMEX SA DE Ref. 0104301983 058 00058210000000465762 058-06/02/2026/06-177VWJO795 CELOMEX S.A. DE C.V.",
+      "abono": "30000.00",
+      "cargo": "0",
+      "saldo": "45297.70",
+      "banco": "bbva",
+      "cuenta": "0112826798",
+      "archivo_origen": "bbva_celomex_feb2026.pdf"
+    },
+    {
+      "fecha": "2026-02-06",
+      "descripcion": "TRANSF SPEI BANAMEX NC0060226 PAGO Ref. 0000703243 002",
+      "abono": "0",
+      "cargo": "7700.11",
+      "saldo": "37597.59",
+      "banco": "bbva",
+      "cuenta": "0112826798",
+      "archivo_origen": "bbva_celomex_feb2026.pdf"
+    },
+    {
+      "fecha": "2026-02-06",
+      "descripcion": "DEPOSITO EN EFECTIVO Ref. 11137",
+      "abono": "50000.00",
+      "cargo": "0",
+      "saldo": "87597.59",
+      "banco": "bbva",
+      "cuenta": "0112826798",
+      "archivo_origen": "bbva_celomex_feb2026.pdf"
+    },
+    {
+      "fecha": "2026-02-06",
+      "descripcion": "DEPOSITO EN EFECTIVO Ref. 11138",
+      "abono": "27300.00",
+      "cargo": "0",
+      "saldo": "114897.59",
+      "banco": "bbva",
+      "cuenta": "0112826798",
+      "archivo_origen": "bbva_celomex_feb2026.pdf"
+    },
+    {
+      "fecha": "2026-02-06",
+      "descripcion": "TRANSF SPEI BBASE NC0060226 TRASPASO Ref. 0000721168 145",
+      "abono": "0",
+      "cargo": "103886.40",
+      "saldo": "11011.19",
+      "banco": "bbva",
+      "cuenta": "0112826798",
+      "archivo_origen": "bbva_celomex_feb2026.pdf"
+    },
+    {
+      "fecha": "2026-02-06",
+      "descripcion": "DEPOSITO DE TERCERO FACTURA 3273 BMRCASH Ref. REFBNTC00622060",
+      "abono": "282697.80",
+      "cargo": "0",
+      "saldo": "293708.99",
+      "banco": "bbva",
+      "cuenta": "0112826798",
+      "archivo_origen": "bbva_celomex_feb2026.pdf"
+    },
+    {
+      "fecha": "2026-02-06",
+      "descripcion": "TRANSF SPEI BBASE NC0060226 TRASPASO Ref. 0000772983 145",
+      "abono": "0",
+      "cargo": "103890.00",
+      "saldo": "189818.99",
+      "banco": "bbva",
+      "cuenta": "0112826798",
+      "archivo_origen": "bbva_celomex_feb2026.pdf"
+    },
+    {
+      "fecha": "2026-02-06",
+      "descripcion": "TRANSF SPEI SANTANDER NC0060226 009301000000023006449046272 Ref. 0000781575 014",
+      "abono": "0",
+      "cargo": "35146.32",
+      "saldo": "154672.67",
+      "banco": "bbva",
+      "cuenta": "0112826798",
+      "archivo_origen": "bbva_celomex_feb2026.pdf"
+    },
+    {
+      "fecha": "2026-02-06",
+      "descripcion": "TRANSFER BBVA 00732656 L CAT051122H76 ABONO A FOLIO FMA 15796 Ref. NC 0153377202",
+      "abono": "0",
+      "cargo": "100000.00",
+      "saldo": "54672.67",
+      "banco": "bbva",
+      "cuenta": "0112826798",
+      "archivo_origen": "bbva_celomex_feb2026.pdf"
+    },
+    {
+      "fecha": "2026-02-06",
+      "descripcion": "TRANSF SPEI BAJIO NC0060226 TRASPASO Ref. 0000795535 030",
+      "abono": "0",
+      "cargo": "45600.00",
+      "saldo": "9072.67",
+      "banco": "bbva",
+      "cuenta": "0112826798",
+      "archivo_origen": "bbva_celomex_feb2026.pdf"
+    },
+    {
+      "fecha": "2026-02-09",
+      "descripcion": "TRANSF SPEI BBASE NC0090226 TRASPASO Ref. 0000941921 145",
+      "abono": "0",
+      "cargo": "1000.00",
+      "saldo": "8072.67",
+      "banco": "bbva",
+      "cuenta": "0112826798",
+      "archivo_origen": "bbva_celomex_feb2026.pdf"
+    },
+    {
+      "fecha": "2026-02-09",
+      "descripcion": "TRANSF SPEI BANREGIO NC0090226 TRASPASO Ref. 0000049408 058",
+      "abono": "0",
+      "cargo": "6000.00",
+      "saldo": "2072.67",
+      "banco": "bbva",
+      "cuenta": "0112826798",
+      "archivo_origen": "bbva_celomex_feb2026.pdf"
+    },
+    {
+      "fecha": "2026-02-10",
+      "descripcion": "SPEI RECIBIDOSANTANDER 8467640FAC 3259 Ref. 0125247448 014 00014540655059528874 20260210400140BET0000484676400 ACEROS VIJAF SA DE CV BBVA MEXICO, S.A., INSTITUCION DE BANCA MULTIPLE, GRUPO FINANCIERO BBVA MEXICO Av. Paseo de la Reforma 510, Col. Juárez, Alcaldía Cuauhtémoc, C.P. 06600, Ciudad de México. México R.F.C. BBA830831LJ2",
+      "abono": "80045.80",
+      "cargo": "0",
+      "saldo": "82118.47",
+      "banco": "bbva",
+      "cuenta": "0112826798",
+      "archivo_origen": "bbva_celomex_feb2026.pdf"
+    },
+    {
+      "fecha": "2026-02-10",
+      "descripcion": "SPEI RECIBIDOBAJIO 1814031FAC 3261 Ref. 0125332783 030 00030540900026821246 BB1814031020808 MARIA MARGARITA MAYA RUIZ",
+      "abono": "78711.80",
+      "cargo": "0",
+      "saldo": "160830.27",
+      "banco": "bbva",
+      "cuenta": "0112826798",
+      "archivo_origen": "bbva_celomex_feb2026.pdf"
+    },
+    {
+      "fecha": "2026-02-10",
+      "descripcion": "TRANSFER BBVA 00732656 L CAT051122H76 ABONO A FOLIO FMA 15796 Ref. NC 0153377202",
+      "abono": "0",
+      "cargo": "130000.00",
+      "saldo": "30830.27",
+      "banco": "bbva",
+      "cuenta": "0112826798",
+      "archivo_origen": "bbva_celomex_feb2026.pdf"
+    },
+    {
+      "fecha": "2026-02-10",
+      "descripcion": "SPEI RECIBIDOBANORTE 0100226FAC 3260 Ref. 0125636991 072 00072543000181239531 7875APR2202602104963827874 DISTRIBUIDORA DE ACEROS LA JOYA SA DE CV",
+      "abono": "46568.20",
+      "cargo": "0",
+      "saldo": "77398.47",
+      "banco": "bbva",
+      "cuenta": "0112826798",
+      "archivo_origen": "bbva_celomex_feb2026.pdf"
+    },
+    {
+      "fecha": "2026-02-10",
+      "descripcion": "SPEI RECIBIDOBANREGIO 0100226Transferencia de CELOMEX SA DE Ref. 0125650285 058 00058210000000465762 058-10/02/2026/10-177VYET544 CELOMEX S.A. DE C.V.",
+      "abono": "11000.00",
+      "cargo": "0",
+      "saldo": "88398.47",
+      "banco": "bbva",
+      "cuenta": "0112826798",
+      "archivo_origen": "bbva_celomex_feb2026.pdf"
+    },
+    {
+      "fecha": "2026-02-10",
+      "descripcion": "TRANSF SPEI BAJIO NC0100226 TRASPASO Ref. 0000225111 030",
+      "abono": "0",
+      "cargo": "13300.00",
+      "saldo": "75098.47",
+      "banco": "bbva",
+      "cuenta": "0112826798",
+      "archivo_origen": "bbva_celomex_feb2026.pdf"
+    },
+    {
+      "fecha": "2026-02-10",
+      "descripcion": "VOLKSWAGEN LEASING S05189 0065236971 Ref. VLE060918 B86",
+      "abono": "0",
+      "cargo": "13428.81",
+      "saldo": "61669.66",
+      "banco": "bbva",
+      "cuenta": "0112826798",
+      "archivo_origen": "bbva_celomex_feb2026.pdf"
+    },
+    {
+      "fecha": "2026-02-11",
+      "descripcion": "TRANSF SPEI BANREGIO NC0110226 TRASPASO Ref. 0000430838 058",
+      "abono": "0",
+      "cargo": "60000.00",
+      "saldo": "1669.66",
+      "banco": "bbva",
+      "cuenta": "0112826798",
+      "archivo_origen": "bbva_celomex_feb2026.pdf"
+    },
+    {
+      "fecha": "2026-02-13",
+      "descripcion": "SPEI RECIBIDOBANREGIO 0130226Transferencia de CELOMEX SA DE Ref. 0145499483 058 00058210000000465762 058-13/02/2026/13-177VZZO638 CELOMEX S.A. DE C.V.",
+      "abono": "101000.00",
+      "cargo": "0",
+      "saldo": "102669.66",
+      "banco": "bbva",
+      "cuenta": "0112826798",
+      "archivo_origen": "bbva_celomex_feb2026.pdf"
+    },
+    {
+      "fecha": "2026-02-13",
+      "descripcion": "DEPOSITO DE TERCERO FACTURA 3274 BMRCASH Ref. REFBNTC00622060",
+      "abono": "290353.80",
+      "cargo": "0",
+      "saldo": "393023.46",
+      "banco": "bbva",
+      "cuenta": "0112826798",
+      "archivo_origen": "bbva_celomex_feb2026.pdf"
+    },
+    {
+      "fecha": "2026-02-13",
+      "descripcion": "COMPENSACION POR RETRASO Ref. COMP SPEI",
+      "abono": "0.05",
+      "cargo": "0",
+      "saldo": "393023.51",
+      "banco": "bbva",
+      "cuenta": "0112826798",
+      "archivo_origen": "bbva_celomex_feb2026.pdf"
+    },
+    {
+      "fecha": "2026-02-16",
+      "descripcion": "TRANSF SPEI BBASE NC0160226 TRASPASO Ref. 0000495346 145",
+      "abono": "0",
+      "cargo": "268000.00",
+      "saldo": "125023.51",
+      "banco": "bbva",
+      "cuenta": "0112826798",
+      "archivo_origen": "bbva_celomex_feb2026.pdf"
+    },
+    {
+      "fecha": "2026-02-16",
+      "descripcion": "DEPOSITO EN EFECTIVO Ref. 11159",
+      "abono": "50000.00",
+      "cargo": "0",
+      "saldo": "175023.51",
+      "banco": "bbva",
+      "cuenta": "0112826798",
+      "archivo_origen": "bbva_celomex_feb2026.pdf"
+    },
+    {
+      "fecha": "2026-02-16",
+      "descripcion": "TRANSF SPEI BANREGIO NC0160226 TRASPASO Ref. 0000584007 058",
+      "abono": "0",
+      "cargo": "70000.00",
+      "saldo": "105023.51",
+      "banco": "bbva",
+      "cuenta": "0112826798",
+      "archivo_origen": "bbva_celomex_feb2026.pdf"
+    },
+    {
+      "fecha": "2026-02-16",
+      "descripcion": "CA SOLUCIONES FINANC13790 ARRENDAMIENTO Ref. CAU840204DW5",
+      "abono": "0",
+      "cargo": "49999.00",
+      "saldo": "55024.51",
+      "banco": "bbva",
+      "cuenta": "0112826798",
+      "archivo_origen": "bbva_celomex_feb2026.pdf"
+    },
+    {
+      "fecha": "2026-02-16",
+      "descripcion": "CA SOLUCIONES FINANC13790 ARRENDAMIENTO Ref. CAU840204DW5",
+      "abono": "0",
+      "cargo": "49998.00",
+      "saldo": "5026.51",
+      "banco": "bbva",
+      "cuenta": "0112826798",
+      "archivo_origen": "bbva_celomex_feb2026.pdf"
+    },
+    {
+      "fecha": "2026-02-16",
+      "descripcion": "CA SOLUCIONES FINANC13790 ARRENDAMIENTO Ref. CAU840204DW5",
+      "abono": "0",
+      "cargo": "1637.33",
+      "saldo": "3389.18",
+      "banco": "bbva",
+      "cuenta": "0112826798",
+      "archivo_origen": "bbva_celomex_feb2026.pdf"
+    },
+    {
+      "fecha": "2026-02-17",
+      "descripcion": "TRANSF SPEI BANREGIO NC0170226 TRASPASO Ref. 0000713779 058",
+      "abono": "0",
+      "cargo": "3300.00",
+      "saldo": "89.18",
+      "banco": "bbva",
+      "cuenta": "0112826798",
+      "archivo_origen": "bbva_celomex_feb2026.pdf"
+    },
+    {
+      "fecha": "2026-02-18",
+      "descripcion": "SPEI RECIBIDOBANREGIO 0180226Transferencia de CELOMEX SA DE Ref. 0174339870 058 00058210000000465762 BBVA MEXICO, S.A., INSTITUCION DE BANCA MULTIPLE, GRUPO FINANCIERO BBVA MEXICO Av. Paseo de la Reforma 510, Col. Juárez, Alcaldía Cuauhtémoc, C.P. 06600, Ciudad de México. México R.F.C. BBA830831LJ2",
+      "abono": "3435.00",
+      "cargo": "0",
+      "saldo": "3524.18",
+      "banco": "bbva",
+      "cuenta": "0112826798",
+      "archivo_origen": "bbva_celomex_feb2026.pdf"
+    },
+    {
+      "fecha": "2026-02-18",
+      "descripcion": "TELCEL REF:00000000606346514283 CIE:0182251 Ref. GUIA:5880777",
+      "abono": "0",
+      "cargo": "3434.93",
+      "saldo": "89.25",
+      "banco": "bbva",
+      "cuenta": "0112826798",
+      "archivo_origen": "bbva_celomex_feb2026.pdf"
+    },
+    {
+      "fecha": "2026-02-18",
+      "descripcion": "PAGO CUENTA DE TERCERO BNET 0122390051 FAC 3276 Ref. 0012087014",
+      "abono": "227766.00",
+      "cargo": "0",
+      "saldo": "227855.25",
+      "banco": "bbva",
+      "cuenta": "0112826798",
+      "archivo_origen": "bbva_celomex_feb2026.pdf"
+    },
+    {
+      "fecha": "2026-02-19",
+      "descripcion": "TRANSF SPEI SANTANDER NC0190226 PAGO FOLIO 5232 Ref. 0000981982 014",
+      "abono": "0",
+      "cargo": "3942.77",
+      "saldo": "223912.48",
+      "banco": "bbva",
+      "cuenta": "0112826798",
+      "archivo_origen": "bbva_celomex_feb2026.pdf"
+    },
+    {
+      "fecha": "2026-02-19",
+      "descripcion": "TRANSF SPEI BANREGIO NC0190226 TRASPASO Ref. 0000982778 058",
+      "abono": "0",
+      "cargo": "222000.00",
+      "saldo": "1912.48",
+      "banco": "bbva",
+      "cuenta": "0112826798",
+      "archivo_origen": "bbva_celomex_feb2026.pdf"
+    },
+    {
+      "fecha": "2026-02-19",
+      "descripcion": "SPEI RECIBIDOBANREGIO 0694304Transferencia de CELOMEX SA DE Ref. 0179442331 058 00058210000000465762 058-19/02/2026/19-177WCTC971 CELOMEX S.A. DE C.V.",
+      "abono": "15000.00",
+      "cargo": "0",
+      "saldo": "16912.48",
+      "banco": "bbva",
+      "cuenta": "0112826798",
+      "archivo_origen": "bbva_celomex_feb2026.pdf"
+    },
+    {
+      "fecha": "2026-02-20",
+      "descripcion": "CHEQUE PAGADO NO. PAGO EN EFECTIVO Ref. 1848",
+      "abono": "0",
+      "cargo": "5000.00",
+      "saldo": "11912.48",
+      "banco": "bbva",
+      "cuenta": "0112826798",
+      "archivo_origen": "bbva_celomex_feb2026.pdf"
+    },
+    {
+      "fecha": "2026-02-20",
+      "descripcion": "CHEQUE PAGADO NO. PAGO EN EFECTIVO Ref. 1845",
+      "abono": "0",
+      "cargo": "5000.00",
+      "saldo": "6912.48",
+      "banco": "bbva",
+      "cuenta": "0112826798",
+      "archivo_origen": "bbva_celomex_feb2026.pdf"
+    },
+    {
+      "fecha": "2026-02-20",
+      "descripcion": "CHEQUE PAGADO NO. PAGO EN EFECTIVO Ref. 1847",
+      "abono": "0",
+      "cargo": "5000.00",
+      "saldo": "1912.48",
+      "banco": "bbva",
+      "cuenta": "0112826798",
+      "archivo_origen": "bbva_celomex_feb2026.pdf"
+    },
+    {
+      "fecha": "2026-02-20",
+      "descripcion": "TRANSF SPEI BANREGIO NC0200226 TRASPASO Ref. 0000384329 058",
+      "abono": "0",
+      "cargo": "1800.00",
+      "saldo": "112.48",
+      "banco": "bbva",
+      "cuenta": "0112826798",
+      "archivo_origen": "bbva_celomex_feb2026.pdf"
+    },
+    {
+      "fecha": "2026-02-26",
+      "descripcion": "SPEI RECIBIDOBANREGIO 0260226Transferencia de CELOMEX SA DE Ref. 0116189299 058 00058210000000465762 058-26/02/2026/26-177WFWN179 CELOMEX S.A. DE C.V.",
+      "abono": "11600.00",
+      "cargo": "0",
+      "saldo": "11712.48",
+      "banco": "bbva",
+      "cuenta": "0112826798",
+      "archivo_origen": "bbva_celomex_feb2026.pdf"
+    },
+    {
+      "fecha": "2026-02-26",
+      "descripcion": "SPEI RECIBIDOBANREGIO 0260225Transferencia de CELOMEX SA DE Ref. 0116644140 058 00058210000000465762 058-26/02/2026/26-177WFXR297 CELOMEX S.A. DE C.V.",
+      "abono": "25000.00",
+      "cargo": "0",
+      "saldo": "36712.48",
+      "banco": "bbva",
+      "cuenta": "0112826798",
+      "archivo_origen": "bbva_celomex_feb2026.pdf"
+    },
+    {
+      "fecha": "2026-02-26",
+      "descripcion": "CHEQUE PAGADO NO. Ref. 1853",
+      "abono": "0",
+      "cargo": "11600.00",
+      "saldo": "25112.48",
+      "banco": "bbva",
+      "cuenta": "0112826798",
+      "archivo_origen": "bbva_celomex_feb2026.pdf"
+    },
+    {
+      "fecha": "2026-02-26",
+      "descripcion": "CHEQUE PAGADO NO. PAGO EN EFECTIVO Ref. 1871",
+      "abono": "0",
+      "cargo": "5000.00",
+      "saldo": "20112.48",
+      "banco": "bbva",
+      "cuenta": "0112826798",
+      "archivo_origen": "bbva_celomex_feb2026.pdf"
+    },
+    {
+      "fecha": "2026-02-26",
+      "descripcion": "CHEQUE PAGADO NO. PAGO EN EFECTIVO Ref. 1873",
+      "abono": "0",
+      "cargo": "2705.00",
+      "saldo": "17407.48",
+      "banco": "bbva",
+      "cuenta": "0112826798",
+      "archivo_origen": "bbva_celomex_feb2026.pdf"
+    },
+    {
+      "fecha": "2026-02-26",
+      "descripcion": "CHEQUE PAGADO NO. PAGO EN EFECTIVO Ref. 1872",
+      "abono": "0",
+      "cargo": "5000.00",
+      "saldo": "12407.48",
+      "banco": "bbva",
+      "cuenta": "0112826798",
+      "archivo_origen": "bbva_celomex_feb2026.pdf"
+    },
+    {
+      "fecha": "2026-02-26",
+      "descripcion": "CHEQUE PAGADO NO. PAGO EN EFECTIVO Ref. 1875",
+      "abono": "0",
+      "cargo": "3000.00",
+      "saldo": "9407.48",
+      "banco": "bbva",
+      "cuenta": "0112826798",
+      "archivo_origen": "bbva_celomex_feb2026.pdf"
+    },
+    {
+      "fecha": "2026-02-26",
+      "descripcion": "CHEQUE PAGADO NO. PAGO EN EFECTIVO Ref. 1877",
+      "abono": "0",
+      "cargo": "1295.00",
+      "saldo": "8112.48",
+      "banco": "bbva",
+      "cuenta": "0112826798",
+      "archivo_origen": "bbva_celomex_feb2026.pdf"
+    },
+    {
+      "fecha": "2026-02-26",
+      "descripcion": "CHEQUE PAGADO NO. PAGO EN EFECTIVO Ref. 1876",
+      "abono": "0",
+      "cargo": "5000.00",
+      "saldo": "3112.48",
+      "banco": "bbva",
+      "cuenta": "0112826798",
+      "archivo_origen": "bbva_celomex_feb2026.pdf"
+    },
+    {
+      "fecha": "2026-02-26",
+      "descripcion": "CHEQUE PAGADO NO. PAGO EN EFECTIVO Ref. 1874 BBVA MEXICO, S.A., INSTITUCION DE BANCA MULTIPLE, GRUPO FINANCIERO BBVA MEXICO Av. Paseo de la Reforma 510, Col. Juárez, Alcaldía Cuauhtémoc, C.P. 06600, Ciudad de México. México R.F.C. BBA830831LJ2",
+      "abono": "0",
+      "cargo": "3000.00",
+      "saldo": "112.48",
+      "banco": "bbva",
+      "cuenta": "0112826798",
+      "archivo_origen": "bbva_celomex_feb2026.pdf"
+    },
+    {
+      "fecha": "2026-02-27",
+      "descripcion": "SPEI RECIBIDOBANAMEX 0000001DEPOSITO ACEROS R-METAL Ref. 0125649055 002 00002222700825222291 085905795034305868 ACEROS R-METAL SA DE CV",
+      "abono": "77749.00",
+      "cargo": "0",
+      "saldo": "77861.48",
+      "banco": "bbva",
+      "cuenta": "0112826798",
+      "archivo_origen": "bbva_celomex_feb2026.pdf"
+    },
+    {
+      "fecha": "2026-02-27",
+      "descripcion": "SPEI RECIBIDOBANREGIO 0270226Transferencia de CELOMEX SA DE Ref. 0125953780 058 00058210000000465762 058-27/02/2026/27-177WGWG263 CELOMEX S.A. DE C.V.",
+      "abono": "12400.00",
+      "cargo": "0",
+      "saldo": "90261.48",
+      "banco": "bbva",
+      "cuenta": "0112826798",
+      "archivo_origen": "bbva_celomex_feb2026.pdf"
+    },
+    {
+      "fecha": "2026-02-27",
+      "descripcion": "DEPOSITO DE TERCERO FACTURA 3282 BMRCASH Ref. REFBNTC00622060",
+      "abono": "193952.00",
+      "cargo": "0",
+      "saldo": "284213.48",
+      "banco": "bbva",
+      "cuenta": "0112826798",
+      "archivo_origen": "bbva_celomex_feb2026.pdf"
+    },
+    {
+      "fecha": "2026-02-27",
+      "descripcion": "TRANSF SPEI BAJIO NC0270226 TRASPASO Ref. 0000048124 030",
+      "abono": "0",
+      "cargo": "2000.00",
+      "saldo": "282213.48",
+      "banco": "bbva",
+      "cuenta": "0112826798",
+      "archivo_origen": "bbva_celomex_feb2026.pdf"
+    },
+    {
+      "fecha": "2026-02-27",
+      "descripcion": "SPEI RECIBIDOSANTANDER 7356044F 3244 ACERO REY SA DE CV Ref. 0128493237 014 Total de Movimientos TOTAL IMPORTE CARGOS TOTAL MOVIMIENTOS CARGOS 59 TOTAL IMPORTE ABONOS TOTAL MOVIMIENTOS ABONOS 27 BBVA MEXICO, S.A., INSTITUCION DE BANCA MULTIPLE, GRUPO FINANCIERO BBVA MEXICO Av. Paseo de la Reforma 510, Col. Juárez, Alcaldía Cuauhtémoc, C.P. 06600, Ciudad de México. México R.F.C. BBA830831LJ2",
+      "abono": "20880.00",
+      "cargo": "0",
+      "saldo": "303093.48",
+      "banco": "bbva",
+      "cuenta": "0112826798",
+      "archivo_origen": "bbva_celomex_feb2026.pdf"
+    }
+  ],
+  "warnings": []
+}

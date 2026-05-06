@@ -1,0 +1,1688 @@
+{
+  "summary": {
+    "banco": "banregio",
+    "titular": "ESTADO DE CUENTA UNICO",
+    "rfc": "CEL810729LY8",
+    "cuenta": "177-99743-001-5",
+    "periodo_inicio": "2026-01-01",
+    "periodo_fin": "2026-01-31",
+    "saldo_inicial": "78107.70",
+    "saldo_final": "21503.21",
+    "total_abonos": "5014140.30",
+    "total_cargos": "5070744.79",
+    "archivo_origen": "banregio_celomex_ene2026.pdf"
+  },
+  "movements": [
+    {
+      "fecha": "2026-01-05",
+      "descripcion": "SPEI-VDEA670 SPEI, BAJIO, 030233900006074155, CELOMEX SA DE",
+      "abono": "0",
+      "cargo": "9950.00",
+      "saldo": "68157.70",
+      "banco": "banregio",
+      "cuenta": "177-99743-001-5",
+      "archivo_origen": "banregio_celomex_ene2026.pdf"
+    },
+    {
+      "fecha": "2026-01-05",
+      "descripcion": "COM. SPEI-Comision Transferencia - envio ; (SPEI; banca por internet)",
+      "abono": "0",
+      "cargo": "6.00",
+      "saldo": "68151.70",
+      "banco": "banregio",
+      "cuenta": "177-99743-001-5",
+      "archivo_origen": "banregio_celomex_ene2026.pdf"
+    },
+    {
+      "fecha": "2026-01-05",
+      "descripcion": "IVA SPEI-IVA de Comision Transferencia - envio ; (SPEI; banca por",
+      "abono": "0",
+      "cargo": "0.96",
+      "saldo": "68150.74",
+      "banco": "banregio",
+      "cuenta": "177-99743-001-5",
+      "archivo_origen": "banregio_celomex_ene2026.pdf"
+    },
+    {
+      "fecha": "2026-01-05",
+      "descripcion": "SPEI-VDEB073 SPEI, BAJIO, 030233900006074155, CELOMEX SA DE",
+      "abono": "0",
+      "cargo": "9950.00",
+      "saldo": "58200.74",
+      "banco": "banregio",
+      "cuenta": "177-99743-001-5",
+      "archivo_origen": "banregio_celomex_ene2026.pdf"
+    },
+    {
+      "fecha": "2026-01-05",
+      "descripcion": "COM. SPEI-Comision Transferencia - envio ; (SPEI; banca por internet)",
+      "abono": "0",
+      "cargo": "6.00",
+      "saldo": "58194.74",
+      "banco": "banregio",
+      "cuenta": "177-99743-001-5",
+      "archivo_origen": "banregio_celomex_ene2026.pdf"
+    },
+    {
+      "fecha": "2026-01-05",
+      "descripcion": "IVA SPEI-IVA de Comision Transferencia - envio ; (SPEI; banca por",
+      "abono": "0",
+      "cargo": "0.96",
+      "saldo": "58193.78",
+      "banco": "banregio",
+      "cuenta": "177-99743-001-5",
+      "archivo_origen": "banregio_celomex_ene2026.pdf"
+    },
+    {
+      "fecha": "2026-01-05",
+      "descripcion": "085902552154300569-VDYG004 SPEI, BANAMEX,",
+      "abono": "21000.00",
+      "cargo": "0",
+      "saldo": "79193.78",
+      "banco": "banregio",
+      "cuenta": "177-99743-001-5",
+      "archivo_origen": "banregio_celomex_ene2026.pdf"
+    },
+    {
+      "fecha": "2026-01-05",
+      "descripcion": "SPEI-VDYM089 SPEI, BBVA MEXICO, 012222001128267985, CELOMEX",
+      "abono": "0",
+      "cargo": "11000.00",
+      "saldo": "68193.78",
+      "banco": "banregio",
+      "cuenta": "177-99743-001-5",
+      "archivo_origen": "banregio_celomex_ene2026.pdf"
+    },
+    {
+      "fecha": "2026-01-05",
+      "descripcion": "COM. SPEI-Comision Transferencia - envio ; (SPEI; banca por internet)",
+      "abono": "0",
+      "cargo": "6.00",
+      "saldo": "68187.78",
+      "banco": "banregio",
+      "cuenta": "177-99743-001-5",
+      "archivo_origen": "banregio_celomex_ene2026.pdf"
+    },
+    {
+      "fecha": "2026-01-05",
+      "descripcion": "IVA SPEI-IVA de Comision Transferencia - envio ; (SPEI; banca por",
+      "abono": "0",
+      "cargo": "0.96",
+      "saldo": "68186.82",
+      "banco": "banregio",
+      "cuenta": "177-99743-001-5",
+      "archivo_origen": "banregio_celomex_ene2026.pdf"
+    },
+    {
+      "fecha": "2026-01-05",
+      "descripcion": "PRESTAMO-(NB) Recepcion de cuenta: 177989960013, PRESTAMO",
+      "abono": "2000000.00",
+      "cargo": "0",
+      "saldo": "2068186.82",
+      "banco": "banregio",
+      "cuenta": "177-99743-001-5",
+      "archivo_origen": "banregio_celomex_ene2026.pdf"
+    },
+    {
+      "fecha": "2026-01-05",
+      "descripcion": "PRESTAMO-(NB) Recepcion de cuenta: 177989960013, prestamo",
+      "abono": "60000.00",
+      "cargo": "0",
+      "saldo": "2128186.82",
+      "banco": "banregio",
+      "cuenta": "177-99743-001-5",
+      "archivo_origen": "banregio_celomex_ene2026.pdf"
+    },
+    {
+      "fecha": "2026-01-05",
+      "descripcion": "SPEI-VEDF420 SPEI, CITI MEXICO, 124180087000065589, LINDE,",
+      "abono": "0",
+      "cargo": "487.78",
+      "saldo": "2127699.04",
+      "banco": "banregio",
+      "cuenta": "177-99743-001-5",
+      "archivo_origen": "banregio_celomex_ene2026.pdf"
+    },
+    {
+      "fecha": "2026-01-05",
+      "descripcion": "COM. SPEI-Comision Transferencia - envio ; (SPEI; banca por internet)",
+      "abono": "0",
+      "cargo": "6.00",
+      "saldo": "2127693.04",
+      "banco": "banregio",
+      "cuenta": "177-99743-001-5",
+      "archivo_origen": "banregio_celomex_ene2026.pdf"
+    },
+    {
+      "fecha": "2026-01-05",
+      "descripcion": "IVA SPEI-IVA de Comision Transferencia - envio ; (SPEI; banca por",
+      "abono": "0",
+      "cargo": "0.96",
+      "saldo": "2127692.08",
+      "banco": "banregio",
+      "cuenta": "177-99743-001-5",
+      "archivo_origen": "banregio_celomex_ene2026.pdf"
+    },
+    {
+      "fecha": "2026-01-05",
+      "descripcion": "177997430406004-Pago interes de credito 1/1",
+      "abono": "0",
+      "cargo": "57044.87",
+      "saldo": "2070647.21",
+      "banco": "banregio",
+      "cuenta": "177-99743-001-5",
+      "archivo_origen": "banregio_celomex_ene2026.pdf"
+    },
+    {
+      "fecha": "2026-01-05",
+      "descripcion": "177997430406004-Pago capital de credito 1/1",
+      "abono": "0",
+      "cargo": "2000000.00",
+      "saldo": "70647.21",
+      "banco": "banregio",
+      "cuenta": "177-99743-001-5",
+      "archivo_origen": "banregio_celomex_ene2026.pdf"
+    },
+    {
+      "fecha": "2026-01-05",
+      "descripcion": "SPEI-VEEB504 SPEI, BAJIO, 030233900006074155, CELOMEX SA DE",
+      "abono": "0",
+      "cargo": "10600.00",
+      "saldo": "60047.21",
+      "banco": "banregio",
+      "cuenta": "177-99743-001-5",
+      "archivo_origen": "banregio_celomex_ene2026.pdf"
+    },
+    {
+      "fecha": "2026-01-05",
+      "descripcion": "COM. SPEI-Comision Transferencia - envio ; (SPEI; banca por internet)",
+      "abono": "0",
+      "cargo": "6.00",
+      "saldo": "60041.21",
+      "banco": "banregio",
+      "cuenta": "177-99743-001-5",
+      "archivo_origen": "banregio_celomex_ene2026.pdf"
+    },
+    {
+      "fecha": "2026-01-05",
+      "descripcion": "IVA SPEI-IVA de Comision Transferencia - envio ; (SPEI; banca por",
+      "abono": "0",
+      "cargo": "0.96",
+      "saldo": "60040.25",
+      "banco": "banregio",
+      "cuenta": "177-99743-001-5",
+      "archivo_origen": "banregio_celomex_ene2026.pdf"
+    },
+    {
+      "fecha": "2026-01-05",
+      "descripcion": "177997430333001-Pago Interes De Credito",
+      "abono": "0",
+      "cargo": "60040.25",
+      "saldo": "0.00",
+      "banco": "banregio",
+      "cuenta": "177-99743-001-5",
+      "archivo_origen": "banregio_celomex_ene2026.pdf"
+    },
+    {
+      "fecha": "2026-01-06",
+      "descripcion": "002601002601060000893328-VEOP199 SPEI, BBVA MEXICO,",
+      "abono": "218000.00",
+      "cargo": "0",
+      "saldo": "218000.00",
+      "banco": "banregio",
+      "cuenta": "177-99743-001-5",
+      "archivo_origen": "banregio_celomex_ene2026.pdf"
+    },
+    {
+      "fecha": "2026-01-06",
+      "descripcion": "177997430333001-Comision Pena Convencional",
+      "abono": "0",
+      "cargo": "426.98",
+      "saldo": "217573.02",
+      "banco": "banregio",
+      "cuenta": "177-99743-001-5",
+      "archivo_origen": "banregio_celomex_ene2026.pdf"
+    },
+    {
+      "fecha": "2026-01-06",
+      "descripcion": "177997430333001-Iva de Comision Pena Convencio",
+      "abono": "0",
+      "cargo": "68.32",
+      "saldo": "217504.70",
+      "banco": "banregio",
+      "cuenta": "177-99743-001-5",
+      "archivo_origen": "banregio_celomex_ene2026.pdf"
+    },
+    {
+      "fecha": "2026-01-06",
+      "descripcion": "177997430333001-Pago Interes De Credito",
+      "abono": "0",
+      "cargo": "35086.06",
+      "saldo": "182418.64",
+      "banco": "banregio",
+      "cuenta": "177-99743-001-5",
+      "archivo_origen": "banregio_celomex_ene2026.pdf"
+    },
+    {
+      "fecha": "2026-01-06",
+      "descripcion": "SPEI-VEPI865 SPEI, BANORTE, 072580012693515370, CELOMEX SA",
+      "abono": "0",
+      "cargo": "108000.00",
+      "saldo": "74418.64",
+      "banco": "banregio",
+      "cuenta": "177-99743-001-5",
+      "archivo_origen": "banregio_celomex_ene2026.pdf"
+    },
+    {
+      "fecha": "2026-01-06",
+      "descripcion": "COM. SPEI-Comision Transferencia - envio ; (SPEI; banca por internet)",
+      "abono": "0",
+      "cargo": "6.00",
+      "saldo": "74412.64",
+      "banco": "banregio",
+      "cuenta": "177-99743-001-5",
+      "archivo_origen": "banregio_celomex_ene2026.pdf"
+    },
+    {
+      "fecha": "2026-01-06",
+      "descripcion": "IVA SPEI-IVA de Comision Transferencia - envio ; (SPEI; banca por",
+      "abono": "0",
+      "cargo": "0.96",
+      "saldo": "74411.68",
+      "banco": "banregio",
+      "cuenta": "177-99743-001-5",
+      "archivo_origen": "banregio_celomex_ene2026.pdf"
+    },
+    {
+      "fecha": "2026-01-06",
+      "descripcion": "SPEI-VERV906 SPEI, BANORTE, 072222012546898703, JUNTA DE",
+      "abono": "0",
+      "cargo": "7796.00",
+      "saldo": "66615.68",
+      "banco": "banregio",
+      "cuenta": "177-99743-001-5",
+      "archivo_origen": "banregio_celomex_ene2026.pdf"
+    },
+    {
+      "fecha": "2026-01-06",
+      "descripcion": "COM. SPEI-Comision Transferencia - envio ; (SPEI; banca por internet)",
+      "abono": "0",
+      "cargo": "6.00",
+      "saldo": "66609.68",
+      "banco": "banregio",
+      "cuenta": "177-99743-001-5",
+      "archivo_origen": "banregio_celomex_ene2026.pdf"
+    },
+    {
+      "fecha": "2026-01-06",
+      "descripcion": "IVA SPEI-IVA de Comision Transferencia - envio ; (SPEI; banca por",
+      "abono": "0",
+      "cargo": "0.96",
+      "saldo": "66608.72",
+      "banco": "banregio",
+      "cuenta": "177-99743-001-5",
+      "archivo_origen": "banregio_celomex_ene2026.pdf"
+    },
+    {
+      "fecha": "2026-01-06",
+      "descripcion": "SPEI-VERX988 SPEI, BANAMEX, 002222420000240792, ANA",
+      "abono": "0",
+      "cargo": "11334.69",
+      "saldo": "55274.03",
+      "banco": "banregio",
+      "cuenta": "177-99743-001-5",
+      "archivo_origen": "banregio_celomex_ene2026.pdf"
+    },
+    {
+      "fecha": "2026-01-06",
+      "descripcion": "COM. SPEI-Comision Transferencia - envio ; (SPEI; banca por internet)",
+      "abono": "0",
+      "cargo": "6.00",
+      "saldo": "55268.03",
+      "banco": "banregio",
+      "cuenta": "177-99743-001-5",
+      "archivo_origen": "banregio_celomex_ene2026.pdf"
+    },
+    {
+      "fecha": "2026-01-06",
+      "descripcion": "IVA SPEI-IVA de Comision Transferencia - envio ; (SPEI; banca por",
+      "abono": "0",
+      "cargo": "0.96",
+      "saldo": "55267.07",
+      "banco": "banregio",
+      "cuenta": "177-99743-001-5",
+      "archivo_origen": "banregio_celomex_ene2026.pdf"
+    },
+    {
+      "fecha": "2026-01-06",
+      "descripcion": "SPEI-VETK063 SPEI, BAJIO, 030233900006074155, CELOMEX SA DE",
+      "abono": "0",
+      "cargo": "22000.00",
+      "saldo": "33267.07",
+      "banco": "banregio",
+      "cuenta": "177-99743-001-5",
+      "archivo_origen": "banregio_celomex_ene2026.pdf"
+    },
+    {
+      "fecha": "2026-01-06",
+      "descripcion": "COM. SPEI-Comision Transferencia - envio ; (SPEI; banca por internet)",
+      "abono": "0",
+      "cargo": "6.00",
+      "saldo": "33261.07",
+      "banco": "banregio",
+      "cuenta": "177-99743-001-5",
+      "archivo_origen": "banregio_celomex_ene2026.pdf"
+    },
+    {
+      "fecha": "2026-01-06",
+      "descripcion": "IVA SPEI-IVA de Comision Transferencia - envio ; (SPEI; banca por",
+      "abono": "0",
+      "cargo": "0.96",
+      "saldo": "33260.11",
+      "banco": "banregio",
+      "cuenta": "177-99743-001-5",
+      "archivo_origen": "banregio_celomex_ene2026.pdf"
+    },
+    {
+      "fecha": "2026-01-06",
+      "descripcion": "177997430333001-Pago Interes De Credito",
+      "abono": "0",
+      "cargo": "495.30",
+      "saldo": "32764.81",
+      "banco": "banregio",
+      "cuenta": "177-99743-001-5",
+      "archivo_origen": "banregio_celomex_ene2026.pdf"
+    },
+    {
+      "fecha": "2026-01-07",
+      "descripcion": "0000519-SAAP8606215D0-Cobro de cheque:0000000000519",
+      "abono": "0",
+      "cargo": "11600.00",
+      "saldo": "21164.81",
+      "banco": "banregio",
+      "cuenta": "177-99743-001-5",
+      "archivo_origen": "banregio_celomex_ene2026.pdf"
+    },
+    {
+      "fecha": "2026-01-07",
+      "descripcion": "PRESTAMO ENTRE EMPRESAS-(NB) Recepcion de cuenta:",
+      "abono": "50000.00",
+      "cargo": "0",
+      "saldo": "71164.81",
+      "banco": "banregio",
+      "cuenta": "177-99743-001-5",
+      "archivo_origen": "banregio_celomex_ene2026.pdf"
+    },
+    {
+      "fecha": "2026-01-07",
+      "descripcion": "SPEI-VFGD866 SPEI, BAJIO, 030233900006074155, CELOMEX SA DE",
+      "abono": "0",
+      "cargo": "22600.00",
+      "saldo": "48564.81",
+      "banco": "banregio",
+      "cuenta": "177-99743-001-5",
+      "archivo_origen": "banregio_celomex_ene2026.pdf"
+    },
+    {
+      "fecha": "2026-01-07",
+      "descripcion": "COM. SPEI-Comision Transferencia - envio ; (SPEI; banca por internet)",
+      "abono": "0",
+      "cargo": "6.00",
+      "saldo": "48558.81",
+      "banco": "banregio",
+      "cuenta": "177-99743-001-5",
+      "archivo_origen": "banregio_celomex_ene2026.pdf"
+    },
+    {
+      "fecha": "2026-01-07",
+      "descripcion": "IVA SPEI-IVA de Comision Transferencia - envio ; (SPEI; banca por",
+      "abono": "0",
+      "cargo": "0.96",
+      "saldo": "48557.85",
+      "banco": "banregio",
+      "cuenta": "177-99743-001-5",
+      "archivo_origen": "banregio_celomex_ene2026.pdf"
+    },
+    {
+      "fecha": "2026-01-07",
+      "descripcion": "PRESTAMO ENTRE EMPRESAS-(NB) Recepcion de cuenta:",
+      "abono": "96860.00",
+      "cargo": "0",
+      "saldo": "145417.85",
+      "banco": "banregio",
+      "cuenta": "177-99743-001-5",
+      "archivo_origen": "banregio_celomex_ene2026.pdf"
+    },
+    {
+      "fecha": "2026-01-07",
+      "descripcion": "0000545-Cobro de cheque:0000000000545",
+      "abono": "0",
+      "cargo": "3500.00",
+      "saldo": "141917.85",
+      "banco": "banregio",
+      "cuenta": "177-99743-001-5",
+      "archivo_origen": "banregio_celomex_ene2026.pdf"
+    },
+    {
+      "fecha": "2026-01-07",
+      "descripcion": "0000544-Cobro de cheque:0000000000544",
+      "abono": "0",
+      "cargo": "4000.00",
+      "saldo": "137917.85",
+      "banco": "banregio",
+      "cuenta": "177-99743-001-5",
+      "archivo_origen": "banregio_celomex_ene2026.pdf"
+    },
+    {
+      "fecha": "2026-01-07",
+      "descripcion": "SPEI-VFHW132 SPEI, BANAMEX, 002426082400063250, CA",
+      "abono": "0",
+      "cargo": "96860.00",
+      "saldo": "41057.85",
+      "banco": "banregio",
+      "cuenta": "177-99743-001-5",
+      "archivo_origen": "banregio_celomex_ene2026.pdf"
+    },
+    {
+      "fecha": "2026-01-07",
+      "descripcion": "COM. SPEI-Comision Transferencia - envio ; (SPEI; banca por internet)",
+      "abono": "0",
+      "cargo": "6.00",
+      "saldo": "41051.85",
+      "banco": "banregio",
+      "cuenta": "177-99743-001-5",
+      "archivo_origen": "banregio_celomex_ene2026.pdf"
+    },
+    {
+      "fecha": "2026-01-07",
+      "descripcion": "IVA SPEI-IVA de Comision Transferencia - envio ; (SPEI; banca por",
+      "abono": "0",
+      "cargo": "0.96",
+      "saldo": "41050.89",
+      "banco": "banregio",
+      "cuenta": "177-99743-001-5",
+      "archivo_origen": "banregio_celomex_ene2026.pdf"
+    },
+    {
+      "fecha": "2026-01-07",
+      "descripcion": "085905465694300760-VFJE442 SPEI, BANAMEX, 002222078500097376,",
+      "abono": "295000.00",
+      "cargo": "0",
+      "saldo": "336050.89",
+      "banco": "banregio",
+      "cuenta": "177-99743-001-5",
+      "archivo_origen": "banregio_celomex_ene2026.pdf"
+    },
+    {
+      "fecha": "2026-01-07",
+      "descripcion": "SPEI-VFJG634 SPEI, BBVA MEXICO, 012580001533772024,",
+      "abono": "0",
+      "cargo": "150000.00",
+      "saldo": "186050.89",
+      "banco": "banregio",
+      "cuenta": "177-99743-001-5",
+      "archivo_origen": "banregio_celomex_ene2026.pdf"
+    },
+    {
+      "fecha": "2026-01-07",
+      "descripcion": "COM. SPEI-Comision Transferencia - envio ; (SPEI; banca por internet)",
+      "abono": "0",
+      "cargo": "6.00",
+      "saldo": "186044.89",
+      "banco": "banregio",
+      "cuenta": "177-99743-001-5",
+      "archivo_origen": "banregio_celomex_ene2026.pdf"
+    },
+    {
+      "fecha": "2026-01-07",
+      "descripcion": "IVA SPEI-IVA de Comision Transferencia - envio ; (SPEI; banca por",
+      "abono": "0",
+      "cargo": "0.96",
+      "saldo": "186043.93",
+      "banco": "banregio",
+      "cuenta": "177-99743-001-5",
+      "archivo_origen": "banregio_celomex_ene2026.pdf"
+    },
+    {
+      "fecha": "2026-01-07",
+      "descripcion": "BNET01002601070030733503-VFKP257 SPEI, BBVA MEXICO,",
+      "abono": "302913.70",
+      "cargo": "0",
+      "saldo": "488957.63",
+      "banco": "banregio",
+      "cuenta": "177-99743-001-5",
+      "archivo_origen": "banregio_celomex_ene2026.pdf"
+    },
+    {
+      "fecha": "2026-01-08",
+      "descripcion": "SPEI-VFSD534 SPEI, BBVA MEXICO, 012580001533772024,",
+      "abono": "0",
+      "cargo": "178129.20",
+      "saldo": "310828.43",
+      "banco": "banregio",
+      "cuenta": "177-99743-001-5",
+      "archivo_origen": "banregio_celomex_ene2026.pdf"
+    },
+    {
+      "fecha": "2026-01-08",
+      "descripcion": "COM. SPEI-Comision Transferencia - envio ; (SPEI; banca por internet)",
+      "abono": "0",
+      "cargo": "6.00",
+      "saldo": "310822.43",
+      "banco": "banregio",
+      "cuenta": "177-99743-001-5",
+      "archivo_origen": "banregio_celomex_ene2026.pdf"
+    },
+    {
+      "fecha": "2026-01-08",
+      "descripcion": "IVA SPEI-IVA de Comision Transferencia - envio ; (SPEI; banca por",
+      "abono": "0",
+      "cargo": "0.96",
+      "saldo": "310821.47",
+      "banco": "banregio",
+      "cuenta": "177-99743-001-5",
+      "archivo_origen": "banregio_celomex_ene2026.pdf"
+    },
+    {
+      "fecha": "2026-01-08",
+      "descripcion": "010468203001312601080000153129-(BE) Pago servicio: COMISION",
+      "abono": "0",
+      "cargo": "15312.00",
+      "saldo": "295509.47",
+      "banco": "banregio",
+      "cuenta": "177-99743-001-5",
+      "archivo_origen": "banregio_celomex_ene2026.pdf"
+    },
+    {
+      "fecha": "2026-01-08",
+      "descripcion": "SPEI-VFSG491 SPEI, SANTANDER, 014290655066256955, SEGUROS",
+      "abono": "0",
+      "cargo": "35146.32",
+      "saldo": "260363.15",
+      "banco": "banregio",
+      "cuenta": "177-99743-001-5",
+      "archivo_origen": "banregio_celomex_ene2026.pdf"
+    },
+    {
+      "fecha": "2026-01-08",
+      "descripcion": "COM. SPEI-Comision Transferencia - envio ; (SPEI; banca por internet)",
+      "abono": "0",
+      "cargo": "6.00",
+      "saldo": "260357.15",
+      "banco": "banregio",
+      "cuenta": "177-99743-001-5",
+      "archivo_origen": "banregio_celomex_ene2026.pdf"
+    },
+    {
+      "fecha": "2026-01-08",
+      "descripcion": "IVA SPEI-IVA de Comision Transferencia - envio ; (SPEI; banca por",
+      "abono": "0",
+      "cargo": "0.96",
+      "saldo": "260356.19",
+      "banco": "banregio",
+      "cuenta": "177-99743-001-5",
+      "archivo_origen": "banregio_celomex_ene2026.pdf"
+    },
+    {
+      "fecha": "2026-01-08",
+      "descripcion": "SPEI-VFVB008 SPEI, CITI MEXICO, 124180087000065589, LINDE,",
+      "abono": "0",
+      "cargo": "870.00",
+      "saldo": "259486.19",
+      "banco": "banregio",
+      "cuenta": "177-99743-001-5",
+      "archivo_origen": "banregio_celomex_ene2026.pdf"
+    },
+    {
+      "fecha": "2026-01-08",
+      "descripcion": "COM. SPEI-Comision Transferencia - envio ; (SPEI; banca por internet)",
+      "abono": "0",
+      "cargo": "6.00",
+      "saldo": "259480.19",
+      "banco": "banregio",
+      "cuenta": "177-99743-001-5",
+      "archivo_origen": "banregio_celomex_ene2026.pdf"
+    },
+    {
+      "fecha": "2026-01-08",
+      "descripcion": "IVA SPEI-IVA de Comision Transferencia - envio ; (SPEI; banca por",
+      "abono": "0",
+      "cargo": "0.96",
+      "saldo": "259479.23",
+      "banco": "banregio",
+      "cuenta": "177-99743-001-5",
+      "archivo_origen": "banregio_celomex_ene2026.pdf"
+    },
+    {
+      "fecha": "2026-01-08",
+      "descripcion": "SPEI-VFWT040 SPEI, BAJIO, 030233900006074155, CELOMEX SA DE",
+      "abono": "0",
+      "cargo": "45500.00",
+      "saldo": "213979.23",
+      "banco": "banregio",
+      "cuenta": "177-99743-001-5",
+      "archivo_origen": "banregio_celomex_ene2026.pdf"
+    },
+    {
+      "fecha": "2026-01-08",
+      "descripcion": "COM. SPEI-Comision Transferencia - envio ; (SPEI; banca por internet)",
+      "abono": "0",
+      "cargo": "6.00",
+      "saldo": "213973.23",
+      "banco": "banregio",
+      "cuenta": "177-99743-001-5",
+      "archivo_origen": "banregio_celomex_ene2026.pdf"
+    },
+    {
+      "fecha": "2026-01-08",
+      "descripcion": "IVA SPEI-IVA de Comision Transferencia - envio ; (SPEI; banca por",
+      "abono": "0",
+      "cargo": "0.96",
+      "saldo": "213972.27",
+      "banco": "banregio",
+      "cuenta": "177-99743-001-5",
+      "archivo_origen": "banregio_celomex_ene2026.pdf"
+    },
+    {
+      "fecha": "2026-01-09",
+      "descripcion": "0000546-Cobro de cheque:0000000000546",
+      "abono": "0",
+      "cargo": "1200.00",
+      "saldo": "212772.27",
+      "banco": "banregio",
+      "cuenta": "177-99743-001-5",
+      "archivo_origen": "banregio_celomex_ene2026.pdf"
+    },
+    {
+      "fecha": "2026-01-09",
+      "descripcion": "SPEI-VGPH907 SPEI, MUFG, 108180000050058167, METAL ONE",
+      "abono": "0",
+      "cargo": "186064.00",
+      "saldo": "26708.27",
+      "banco": "banregio",
+      "cuenta": "177-99743-001-5",
+      "archivo_origen": "banregio_celomex_ene2026.pdf"
+    },
+    {
+      "fecha": "2026-01-09",
+      "descripcion": "COM. SPEI-Comision Transferencia - envio ; (SPEI; banca por internet)",
+      "abono": "0",
+      "cargo": "6.00",
+      "saldo": "26702.27",
+      "banco": "banregio",
+      "cuenta": "177-99743-001-5",
+      "archivo_origen": "banregio_celomex_ene2026.pdf"
+    },
+    {
+      "fecha": "2026-01-09",
+      "descripcion": "IVA SPEI-IVA de Comision Transferencia - envio ; (SPEI; banca por",
+      "abono": "0",
+      "cargo": "0.96",
+      "saldo": "26701.31",
+      "banco": "banregio",
+      "cuenta": "177-99743-001-5",
+      "archivo_origen": "banregio_celomex_ene2026.pdf"
+    },
+    {
+      "fecha": "2026-01-09",
+      "descripcion": "0000048914-Pago Tarjeta Credito No.4364010673236098",
+      "abono": "0",
+      "cargo": "5240.00",
+      "saldo": "21461.31",
+      "banco": "banregio",
+      "cuenta": "177-99743-001-5",
+      "archivo_origen": "banregio_celomex_ene2026.pdf"
+    },
+    {
+      "fecha": "2026-01-12",
+      "descripcion": "085902833014301261-VHYF745 SPEI, BANAMEX, 002222078500097376,",
+      "abono": "223200.00",
+      "cargo": "0",
+      "saldo": "244661.31",
+      "banco": "banregio",
+      "cuenta": "177-99743-001-5",
+      "archivo_origen": "banregio_celomex_ene2026.pdf"
+    },
+    {
+      "fecha": "2026-01-12",
+      "descripcion": "TRANSFERENCIA DE CENTRO DE SERVICIO-(NB) Recepcion de",
+      "abono": "12859.00",
+      "cargo": "0",
+      "saldo": "257520.31",
+      "banco": "banregio",
+      "cuenta": "177-99743-001-5",
+      "archivo_origen": "banregio_celomex_ene2026.pdf"
+    },
+    {
+      "fecha": "2026-01-12",
+      "descripcion": "002601002601120000857697-VIAC074 SPEI, BBVA MEXICO,",
+      "abono": "165000.00",
+      "cargo": "0",
+      "saldo": "422520.31",
+      "banco": "banregio",
+      "cuenta": "177-99743-001-5",
+      "archivo_origen": "banregio_celomex_ene2026.pdf"
+    },
+    {
+      "fecha": "2026-01-12",
+      "descripcion": "SPEI-VIAO453 SPEI, BBVA MEXICO, 012180004466917308, QUALITAS",
+      "abono": "0",
+      "cargo": "12859.00",
+      "saldo": "409661.31",
+      "banco": "banregio",
+      "cuenta": "177-99743-001-5",
+      "archivo_origen": "banregio_celomex_ene2026.pdf"
+    },
+    {
+      "fecha": "2026-01-12",
+      "descripcion": "COM. SPEI-Comision Transferencia - envio ; (SPEI; banca por internet)",
+      "abono": "0",
+      "cargo": "6.00",
+      "saldo": "409655.31",
+      "banco": "banregio",
+      "cuenta": "177-99743-001-5",
+      "archivo_origen": "banregio_celomex_ene2026.pdf"
+    },
+    {
+      "fecha": "2026-01-12",
+      "descripcion": "IVA SPEI-IVA de Comision Transferencia - envio ; (SPEI; banca por",
+      "abono": "0",
+      "cargo": "0.96",
+      "saldo": "409654.35",
+      "banco": "banregio",
+      "cuenta": "177-99743-001-5",
+      "archivo_origen": "banregio_celomex_ene2026.pdf"
+    },
+    {
+      "fecha": "2026-01-12",
+      "descripcion": "SPEI-VICA739 SPEI, BBVA MEXICO, 012680001206919849, MOELLER",
+      "abono": "0",
+      "cargo": "947.34",
+      "saldo": "408707.01",
+      "banco": "banregio",
+      "cuenta": "177-99743-001-5",
+      "archivo_origen": "banregio_celomex_ene2026.pdf"
+    },
+    {
+      "fecha": "2026-01-12",
+      "descripcion": "COM. SPEI-Comision Transferencia - envio ; (SPEI; banca por internet)",
+      "abono": "0",
+      "cargo": "6.00",
+      "saldo": "408701.01",
+      "banco": "banregio",
+      "cuenta": "177-99743-001-5",
+      "archivo_origen": "banregio_celomex_ene2026.pdf"
+    },
+    {
+      "fecha": "2026-01-12",
+      "descripcion": "IVA SPEI-IVA de Comision Transferencia - envio ; (SPEI; banca por",
+      "abono": "0",
+      "cargo": "0.96",
+      "saldo": "408700.05",
+      "banco": "banregio",
+      "cuenta": "177-99743-001-5",
+      "archivo_origen": "banregio_celomex_ene2026.pdf"
+    },
+    {
+      "fecha": "2026-01-12",
+      "descripcion": "177997430368001-Pago interes de credito 24/84",
+      "abono": "0",
+      "cargo": "171456.95",
+      "saldo": "237243.10",
+      "banco": "banregio",
+      "cuenta": "177-99743-001-5",
+      "archivo_origen": "banregio_celomex_ene2026.pdf"
+    },
+    {
+      "fecha": "2026-01-12",
+      "descripcion": "177997430368001-Pago capital de credito 24/84",
+      "abono": "0",
+      "cargo": "221296.25",
+      "saldo": "15946.85",
+      "banco": "banregio",
+      "cuenta": "177-99743-001-5",
+      "archivo_origen": "banregio_celomex_ene2026.pdf"
+    },
+    {
+      "fecha": "2026-01-13",
+      "descripcion": "BB3436342020773-VIRC991 SPEI, BAJIO, 030233900006074155,",
+      "abono": "5500.00",
+      "cargo": "0",
+      "saldo": "21446.85",
+      "banco": "banregio",
+      "cuenta": "177-99743-001-5",
+      "archivo_origen": "banregio_celomex_ene2026.pdf"
+    },
+    {
+      "fecha": "2026-01-13",
+      "descripcion": "010551001019712601130000106043-(BE) Pago servicio: COMISION",
+      "abono": "0",
+      "cargo": "10604.00",
+      "saldo": "10842.85",
+      "banco": "banregio",
+      "cuenta": "177-99743-001-5",
+      "archivo_origen": "banregio_celomex_ene2026.pdf"
+    },
+    {
+      "fecha": "2026-01-14",
+      "descripcion": "002601002601140000188895-VIYP648 SPEI, BBVA MEXICO,",
+      "abono": "300000.00",
+      "cargo": "0",
+      "saldo": "310842.85",
+      "banco": "banregio",
+      "cuenta": "177-99743-001-5",
+      "archivo_origen": "banregio_celomex_ene2026.pdf"
+    },
+    {
+      "fecha": "2026-01-14",
+      "descripcion": "SPEI-VJDA162 SPEI, BBVA MEXICO, 012222001043846449, JANINA",
+      "abono": "0",
+      "cargo": "7000.00",
+      "saldo": "303842.85",
+      "banco": "banregio",
+      "cuenta": "177-99743-001-5",
+      "archivo_origen": "banregio_celomex_ene2026.pdf"
+    },
+    {
+      "fecha": "2026-01-14",
+      "descripcion": "COM. SPEI-Comision Transferencia - envio ; (SPEI; banca por internet)",
+      "abono": "0",
+      "cargo": "6.00",
+      "saldo": "303836.85",
+      "banco": "banregio",
+      "cuenta": "177-99743-001-5",
+      "archivo_origen": "banregio_celomex_ene2026.pdf"
+    },
+    {
+      "fecha": "2026-01-14",
+      "descripcion": "IVA SPEI-IVA de Comision Transferencia - envio ; (SPEI; banca por",
+      "abono": "0",
+      "cargo": "0.96",
+      "saldo": "303835.89",
+      "banco": "banregio",
+      "cuenta": "177-99743-001-5",
+      "archivo_origen": "banregio_celomex_ene2026.pdf"
+    },
+    {
+      "fecha": "2026-01-14",
+      "descripcion": "SPEI-VJDI012 SPEI, BBVA MEXICO, 012580001533772024,",
+      "abono": "0",
+      "cargo": "117289.00",
+      "saldo": "186546.89",
+      "banco": "banregio",
+      "cuenta": "177-99743-001-5",
+      "archivo_origen": "banregio_celomex_ene2026.pdf"
+    },
+    {
+      "fecha": "2026-01-14",
+      "descripcion": "COM. SPEI-Comision Transferencia - envio ; (SPEI; banca por internet)",
+      "abono": "0",
+      "cargo": "6.00",
+      "saldo": "186540.89",
+      "banco": "banregio",
+      "cuenta": "177-99743-001-5",
+      "archivo_origen": "banregio_celomex_ene2026.pdf"
+    },
+    {
+      "fecha": "2026-01-14",
+      "descripcion": "IVA SPEI-IVA de Comision Transferencia - envio ; (SPEI; banca por",
+      "abono": "0",
+      "cargo": "0.96",
+      "saldo": "186539.93",
+      "banco": "banregio",
+      "cuenta": "177-99743-001-5",
+      "archivo_origen": "banregio_celomex_ene2026.pdf"
+    },
+    {
+      "fecha": "2026-01-14",
+      "descripcion": "SPEI-VJDJ948 SPEI, BBVA MEXICO, 012222001128267985, CELOMEX",
+      "abono": "0",
+      "cargo": "50000.00",
+      "saldo": "136539.93",
+      "banco": "banregio",
+      "cuenta": "177-99743-001-5",
+      "archivo_origen": "banregio_celomex_ene2026.pdf"
+    },
+    {
+      "fecha": "2026-01-14",
+      "descripcion": "COM. SPEI-Comision Transferencia - envio ; (SPEI; banca por internet)",
+      "abono": "0",
+      "cargo": "6.00",
+      "saldo": "136533.93",
+      "banco": "banregio",
+      "cuenta": "177-99743-001-5",
+      "archivo_origen": "banregio_celomex_ene2026.pdf"
+    },
+    {
+      "fecha": "2026-01-14",
+      "descripcion": "IVA SPEI-IVA de Comision Transferencia - envio ; (SPEI; banca por",
+      "abono": "0",
+      "cargo": "0.96",
+      "saldo": "136532.97",
+      "banco": "banregio",
+      "cuenta": "177-99743-001-5",
+      "archivo_origen": "banregio_celomex_ene2026.pdf"
+    },
+    {
+      "fecha": "2026-01-14",
+      "descripcion": "SPEI-VJHY101 SPEI, BAJIO, 030233900006074155, CELOMEX SA DE",
+      "abono": "0",
+      "cargo": "22250.00",
+      "saldo": "114282.97",
+      "banco": "banregio",
+      "cuenta": "177-99743-001-5",
+      "archivo_origen": "banregio_celomex_ene2026.pdf"
+    },
+    {
+      "fecha": "2026-01-14",
+      "descripcion": "COM. SPEI-Comision Transferencia - envio ; (SPEI; banca por internet)",
+      "abono": "0",
+      "cargo": "6.00",
+      "saldo": "114276.97",
+      "banco": "banregio",
+      "cuenta": "177-99743-001-5",
+      "archivo_origen": "banregio_celomex_ene2026.pdf"
+    },
+    {
+      "fecha": "2026-01-14",
+      "descripcion": "IVA SPEI-IVA de Comision Transferencia - envio ; (SPEI; banca por",
+      "abono": "0",
+      "cargo": "0.96",
+      "saldo": "114276.01",
+      "banco": "banregio",
+      "cuenta": "177-99743-001-5",
+      "archivo_origen": "banregio_celomex_ene2026.pdf"
+    },
+    {
+      "fecha": "2026-01-15",
+      "descripcion": "0000547-Cobro de cheque:0000000000547",
+      "abono": "0",
+      "cargo": "5000.00",
+      "saldo": "109276.01",
+      "banco": "banregio",
+      "cuenta": "177-99743-001-5",
+      "archivo_origen": "banregio_celomex_ene2026.pdf"
+    },
+    {
+      "fecha": "2026-01-15",
+      "descripcion": "SPEI-VKBN124 SPEI, BAJIO, 030233900006074155, CELOMEX SA DE",
+      "abono": "0",
+      "cargo": "9500.00",
+      "saldo": "99776.01",
+      "banco": "banregio",
+      "cuenta": "177-99743-001-5",
+      "archivo_origen": "banregio_celomex_ene2026.pdf"
+    },
+    {
+      "fecha": "2026-01-15",
+      "descripcion": "COM. SPEI-Comision Transferencia - envio ; (SPEI; banca por internet)",
+      "abono": "0",
+      "cargo": "6.00",
+      "saldo": "99770.01",
+      "banco": "banregio",
+      "cuenta": "177-99743-001-5",
+      "archivo_origen": "banregio_celomex_ene2026.pdf"
+    },
+    {
+      "fecha": "2026-01-15",
+      "descripcion": "IVA SPEI-IVA de Comision Transferencia - envio ; (SPEI; banca por",
+      "abono": "0",
+      "cargo": "0.96",
+      "saldo": "99769.05",
+      "banco": "banregio",
+      "cuenta": "177-99743-001-5",
+      "archivo_origen": "banregio_celomex_ene2026.pdf"
+    },
+    {
+      "fecha": "2026-01-16",
+      "descripcion": "0000538-Cobro de cheque:0000000000538",
+      "abono": "0",
+      "cargo": "5000.00",
+      "saldo": "94769.05",
+      "banco": "banregio",
+      "cuenta": "177-99743-001-5",
+      "archivo_origen": "banregio_celomex_ene2026.pdf"
+    },
+    {
+      "fecha": "2026-01-16",
+      "descripcion": "0000539-Cobro de cheque:0000000000539",
+      "abono": "0",
+      "cargo": "5000.00",
+      "saldo": "89769.05",
+      "banco": "banregio",
+      "cuenta": "177-99743-001-5",
+      "archivo_origen": "banregio_celomex_ene2026.pdf"
+    },
+    {
+      "fecha": "2026-01-16",
+      "descripcion": "0000548-Cobro de cheque:0000000000548",
+      "abono": "0",
+      "cargo": "5000.00",
+      "saldo": "84769.05",
+      "banco": "banregio",
+      "cuenta": "177-99743-001-5",
+      "archivo_origen": "banregio_celomex_ene2026.pdf"
+    },
+    {
+      "fecha": "2026-01-19",
+      "descripcion": "002601002601190000305912-VMKK748 SPEI, BBVA MEXICO,",
+      "abono": "94950.00",
+      "cargo": "0",
+      "saldo": "179719.05",
+      "banco": "banregio",
+      "cuenta": "177-99743-001-5",
+      "archivo_origen": "banregio_celomex_ene2026.pdf"
+    },
+    {
+      "fecha": "2026-01-19",
+      "descripcion": "B25YQUIP4C9C21LLU6342005E7850000000-(BE) Pago servicio: PAGO",
+      "abono": "0",
+      "cargo": "90606.29",
+      "saldo": "89112.76",
+      "banco": "banregio",
+      "cuenta": "177-99743-001-5",
+      "archivo_origen": "banregio_celomex_ene2026.pdf"
+    },
+    {
+      "fecha": "2026-01-19",
+      "descripcion": "B25YQUIP4C9C29PJ763420000000004NWHQ-(BE) Pago servicio: PAGO",
+      "abono": "0",
+      "cargo": "78336.62",
+      "saldo": "10776.14",
+      "banco": "banregio",
+      "cuenta": "177-99743-001-5",
+      "archivo_origen": "banregio_celomex_ene2026.pdf"
+    },
+    {
+      "fecha": "2026-01-21",
+      "descripcion": "002601002601210000694089-VNQY386 SPEI, BBVA MEXICO,",
+      "abono": "197000.00",
+      "cargo": "0",
+      "saldo": "207776.14",
+      "banco": "banregio",
+      "cuenta": "177-99743-001-5",
+      "archivo_origen": "banregio_celomex_ene2026.pdf"
+    },
+    {
+      "fecha": "2026-01-21",
+      "descripcion": "04260DIP410048616443-(BE) Pago servicio: PAGO REFERENCIADO SA",
+      "abono": "0",
+      "cargo": "194185.00",
+      "saldo": "13591.14",
+      "banco": "banregio",
+      "cuenta": "177-99743-001-5",
+      "archivo_origen": "banregio_celomex_ene2026.pdf"
+    },
+    {
+      "fecha": "2026-01-21",
+      "descripcion": "04260DHP290048616443-(BE) Pago servicio: PAGO REFERENCIADO",
+      "abono": "0",
+      "cargo": "2619.00",
+      "saldo": "10972.14",
+      "banco": "banregio",
+      "cuenta": "177-99743-001-5",
+      "archivo_origen": "banregio_celomex_ene2026.pdf"
+    },
+    {
+      "fecha": "2026-01-21",
+      "descripcion": "04260DIY130048617494-(BE) Pago servicio: PAGO REFERENCIADO SA",
+      "abono": "0",
+      "cargo": "153.00",
+      "saldo": "10819.14",
+      "banco": "banregio",
+      "cuenta": "177-99743-001-5",
+      "archivo_origen": "banregio_celomex_ene2026.pdf"
+    },
+    {
+      "fecha": "2026-01-22",
+      "descripcion": "085901013734302267-VNWW731 SPEI, BANAMEX,",
+      "abono": "324000.00",
+      "cargo": "0",
+      "saldo": "334819.14",
+      "banco": "banregio",
+      "cuenta": "177-99743-001-5",
+      "archivo_origen": "banregio_celomex_ene2026.pdf"
+    },
+    {
+      "fecha": "2026-01-22",
+      "descripcion": "SPEI-VOAG719 SPEI, BBVA MEXICO, 012580001533772024,",
+      "abono": "0",
+      "cargo": "100000.00",
+      "saldo": "234819.14",
+      "banco": "banregio",
+      "cuenta": "177-99743-001-5",
+      "archivo_origen": "banregio_celomex_ene2026.pdf"
+    },
+    {
+      "fecha": "2026-01-22",
+      "descripcion": "COM. SPEI-Comision Transferencia - envio ; (SPEI; banca por internet)",
+      "abono": "0",
+      "cargo": "6.00",
+      "saldo": "234813.14",
+      "banco": "banregio",
+      "cuenta": "177-99743-001-5",
+      "archivo_origen": "banregio_celomex_ene2026.pdf"
+    },
+    {
+      "fecha": "2026-01-22",
+      "descripcion": "IVA SPEI-IVA de Comision Transferencia - envio ; (SPEI; banca por",
+      "abono": "0",
+      "cargo": "0.96",
+      "saldo": "234812.18",
+      "banco": "banregio",
+      "cuenta": "177-99743-001-5",
+      "archivo_origen": "banregio_celomex_ene2026.pdf"
+    },
+    {
+      "fecha": "2026-01-22",
+      "descripcion": "SPEI-VOAY465 SPEI, BBASE, 145225002572901045, CELOMEX,",
+      "abono": "0",
+      "cargo": "80000.00",
+      "saldo": "154812.18",
+      "banco": "banregio",
+      "cuenta": "177-99743-001-5",
+      "archivo_origen": "banregio_celomex_ene2026.pdf"
+    },
+    {
+      "fecha": "2026-01-22",
+      "descripcion": "COM. SPEI-Comision Transferencia - envio ; (SPEI; banca por internet)",
+      "abono": "0",
+      "cargo": "6.00",
+      "saldo": "154806.18",
+      "banco": "banregio",
+      "cuenta": "177-99743-001-5",
+      "archivo_origen": "banregio_celomex_ene2026.pdf"
+    },
+    {
+      "fecha": "2026-01-22",
+      "descripcion": "IVA SPEI-IVA de Comision Transferencia - envio ; (SPEI; banca por",
+      "abono": "0",
+      "cargo": "0.96",
+      "saldo": "154805.22",
+      "banco": "banregio",
+      "cuenta": "177-99743-001-5",
+      "archivo_origen": "banregio_celomex_ene2026.pdf"
+    },
+    {
+      "fecha": "2026-01-22",
+      "descripcion": "SPEI-VOCD182 SPEI, BAJIO, 030233900006074155, CELOMEX SA DE",
+      "abono": "0",
+      "cargo": "35650.00",
+      "saldo": "119155.22",
+      "banco": "banregio",
+      "cuenta": "177-99743-001-5",
+      "archivo_origen": "banregio_celomex_ene2026.pdf"
+    },
+    {
+      "fecha": "2026-01-22",
+      "descripcion": "COM. SPEI-Comision Transferencia - envio ; (SPEI; banca por internet)",
+      "abono": "0",
+      "cargo": "6.00",
+      "saldo": "119149.22",
+      "banco": "banregio",
+      "cuenta": "177-99743-001-5",
+      "archivo_origen": "banregio_celomex_ene2026.pdf"
+    },
+    {
+      "fecha": "2026-01-22",
+      "descripcion": "IVA SPEI-IVA de Comision Transferencia - envio ; (SPEI; banca por",
+      "abono": "0",
+      "cargo": "0.96",
+      "saldo": "119148.26",
+      "banco": "banregio",
+      "cuenta": "177-99743-001-5",
+      "archivo_origen": "banregio_celomex_ene2026.pdf"
+    },
+    {
+      "fecha": "2026-01-23",
+      "descripcion": "300097718462602105648765215-Pago de Servicio IMPUESTOS DEL",
+      "abono": "0",
+      "cargo": "306.00",
+      "saldo": "118842.26",
+      "banco": "banregio",
+      "cuenta": "177-99743-001-5",
+      "archivo_origen": "banregio_celomex_ene2026.pdf"
+    },
+    {
+      "fecha": "2026-01-23",
+      "descripcion": "310097536922602100148764295-Pago de Servicio IMPUESTOS DEL",
+      "abono": "0",
+      "cargo": "17783.00",
+      "saldo": "101059.26",
+      "banco": "banregio",
+      "cuenta": "177-99743-001-5",
+      "archivo_origen": "banregio_celomex_ene2026.pdf"
+    },
+    {
+      "fecha": "2026-01-23",
+      "descripcion": "SPEI-VOSE646 SPEI, BANORTE, 072233006607924689, CELOMEX SA",
+      "abono": "0",
+      "cargo": "76910.00",
+      "saldo": "24149.26",
+      "banco": "banregio",
+      "cuenta": "177-99743-001-5",
+      "archivo_origen": "banregio_celomex_ene2026.pdf"
+    },
+    {
+      "fecha": "2026-01-23",
+      "descripcion": "COM. SPEI-Comision Transferencia - envio ; (SPEI; banca por internet)",
+      "abono": "0",
+      "cargo": "6.00",
+      "saldo": "24143.26",
+      "banco": "banregio",
+      "cuenta": "177-99743-001-5",
+      "archivo_origen": "banregio_celomex_ene2026.pdf"
+    },
+    {
+      "fecha": "2026-01-23",
+      "descripcion": "IVA SPEI-IVA de Comision Transferencia - envio ; (SPEI; banca por",
+      "abono": "0",
+      "cargo": "0.96",
+      "saldo": "24142.30",
+      "banco": "banregio",
+      "cuenta": "177-99743-001-5",
+      "archivo_origen": "banregio_celomex_ene2026.pdf"
+    },
+    {
+      "fecha": "2026-01-23",
+      "descripcion": "SPEI-VOSR155 SPEI, BANAMEX, 002222056100612403, ALEJANDRO",
+      "abono": "0",
+      "cargo": "7700.11",
+      "saldo": "16442.19",
+      "banco": "banregio",
+      "cuenta": "177-99743-001-5",
+      "archivo_origen": "banregio_celomex_ene2026.pdf"
+    },
+    {
+      "fecha": "2026-01-23",
+      "descripcion": "COM. SPEI-Comision Transferencia - envio ; (SPEI; banca por internet)",
+      "abono": "0",
+      "cargo": "6.00",
+      "saldo": "16436.19",
+      "banco": "banregio",
+      "cuenta": "177-99743-001-5",
+      "archivo_origen": "banregio_celomex_ene2026.pdf"
+    },
+    {
+      "fecha": "2026-01-23",
+      "descripcion": "IVA SPEI-IVA de Comision Transferencia - envio ; (SPEI; banca por",
+      "abono": "0",
+      "cargo": "0.96",
+      "saldo": "16435.23",
+      "banco": "banregio",
+      "cuenta": "177-99743-001-5",
+      "archivo_origen": "banregio_celomex_ene2026.pdf"
+    },
+    {
+      "fecha": "2026-01-23",
+      "descripcion": "SPEI-VOST860 SPEI, AZTECA, 127222001841353401, VERONICA",
+      "abono": "0",
+      "cargo": "2331.80",
+      "saldo": "14103.43",
+      "banco": "banregio",
+      "cuenta": "177-99743-001-5",
+      "archivo_origen": "banregio_celomex_ene2026.pdf"
+    },
+    {
+      "fecha": "2026-01-23",
+      "descripcion": "COM. SPEI-Comision Transferencia - envio ; (SPEI; banca por internet)",
+      "abono": "0",
+      "cargo": "6.00",
+      "saldo": "14097.43",
+      "banco": "banregio",
+      "cuenta": "177-99743-001-5",
+      "archivo_origen": "banregio_celomex_ene2026.pdf"
+    },
+    {
+      "fecha": "2026-01-23",
+      "descripcion": "IVA SPEI-IVA de Comision Transferencia - envio ; (SPEI; banca por",
+      "abono": "0",
+      "cargo": "0.96",
+      "saldo": "14096.47",
+      "banco": "banregio",
+      "cuenta": "177-99743-001-5",
+      "archivo_origen": "banregio_celomex_ene2026.pdf"
+    },
+    {
+      "fecha": "2026-01-23",
+      "descripcion": "SPEI-VOSU822 SPEI, BBVA MEXICO, 012222015075979859, RICARDO",
+      "abono": "0",
+      "cargo": "1890.20",
+      "saldo": "12206.27",
+      "banco": "banregio",
+      "cuenta": "177-99743-001-5",
+      "archivo_origen": "banregio_celomex_ene2026.pdf"
+    },
+    {
+      "fecha": "2026-01-23",
+      "descripcion": "COM. SPEI-Comision Transferencia - envio ; (SPEI; banca por internet)",
+      "abono": "0",
+      "cargo": "6.00",
+      "saldo": "12200.27",
+      "banco": "banregio",
+      "cuenta": "177-99743-001-5",
+      "archivo_origen": "banregio_celomex_ene2026.pdf"
+    },
+    {
+      "fecha": "2026-01-23",
+      "descripcion": "IVA SPEI-IVA de Comision Transferencia - envio ; (SPEI; banca por",
+      "abono": "0",
+      "cargo": "0.96",
+      "saldo": "12199.31",
+      "banco": "banregio",
+      "cuenta": "177-99743-001-5",
+      "archivo_origen": "banregio_celomex_ene2026.pdf"
+    },
+    {
+      "fecha": "2026-01-27",
+      "descripcion": "SPEI-VQRA146 SPEI, CITI MEXICO, 124180087000065589, LINDE,",
+      "abono": "0",
+      "cargo": "870.09",
+      "saldo": "11329.22",
+      "banco": "banregio",
+      "cuenta": "177-99743-001-5",
+      "archivo_origen": "banregio_celomex_ene2026.pdf"
+    },
+    {
+      "fecha": "2026-01-27",
+      "descripcion": "COM. SPEI-Comision Transferencia - envio ; (SPEI; banca por internet)",
+      "abono": "0",
+      "cargo": "6.00",
+      "saldo": "11323.22",
+      "banco": "banregio",
+      "cuenta": "177-99743-001-5",
+      "archivo_origen": "banregio_celomex_ene2026.pdf"
+    },
+    {
+      "fecha": "2026-01-27",
+      "descripcion": "IVA SPEI-IVA de Comision Transferencia - envio ; (SPEI; banca por",
+      "abono": "0",
+      "cargo": "0.96",
+      "saldo": "11322.26",
+      "banco": "banregio",
+      "cuenta": "177-99743-001-5",
+      "archivo_origen": "banregio_celomex_ene2026.pdf"
+    },
+    {
+      "fecha": "2026-01-27",
+      "descripcion": "0000540-Cobro de cheque:0000000000540",
+      "abono": "0",
+      "cargo": "5000.00",
+      "saldo": "6322.26",
+      "banco": "banregio",
+      "cuenta": "177-99743-001-5",
+      "archivo_origen": "banregio_celomex_ene2026.pdf"
+    },
+    {
+      "fecha": "2026-01-27",
+      "descripcion": "0000541-Cobro de cheque:0000000000541",
+      "abono": "0",
+      "cargo": "5000.00",
+      "saldo": "1322.26",
+      "banco": "banregio",
+      "cuenta": "177-99743-001-5",
+      "archivo_origen": "banregio_celomex_ene2026.pdf"
+    },
+    {
+      "fecha": "2026-01-27",
+      "descripcion": "002601002601270000499605-VQTD774 SPEI, BBVA MEXICO,",
+      "abono": "10000.00",
+      "cargo": "0",
+      "saldo": "11322.26",
+      "banco": "banregio",
+      "cuenta": "177-99743-001-5",
+      "archivo_origen": "banregio_celomex_ene2026.pdf"
+    },
+    {
+      "fecha": "2026-01-27",
+      "descripcion": "8846APR2202601274914317244-VQYI771 SPEI, BANORTE,",
+      "abono": "505000.00",
+      "cargo": "0",
+      "saldo": "516322.26",
+      "banco": "banregio",
+      "cuenta": "177-99743-001-5",
+      "archivo_origen": "banregio_celomex_ene2026.pdf"
+    },
+    {
+      "fecha": "2026-01-27",
+      "descripcion": "SPEI-VQYO434 SPEI, BBVA MEXICO, 012580001533772024,",
+      "abono": "0",
+      "cargo": "140796.40",
+      "saldo": "375525.86",
+      "banco": "banregio",
+      "cuenta": "177-99743-001-5",
+      "archivo_origen": "banregio_celomex_ene2026.pdf"
+    },
+    {
+      "fecha": "2026-01-27",
+      "descripcion": "COM. SPEI-Comision Transferencia - envio ; (SPEI; banca por internet)",
+      "abono": "0",
+      "cargo": "6.00",
+      "saldo": "375519.86",
+      "banco": "banregio",
+      "cuenta": "177-99743-001-5",
+      "archivo_origen": "banregio_celomex_ene2026.pdf"
+    },
+    {
+      "fecha": "2026-01-27",
+      "descripcion": "IVA SPEI-IVA de Comision Transferencia - envio ; (SPEI; banca por",
+      "abono": "0",
+      "cargo": "0.96",
+      "saldo": "375518.90",
+      "banco": "banregio",
+      "cuenta": "177-99743-001-5",
+      "archivo_origen": "banregio_celomex_ene2026.pdf"
+    },
+    {
+      "fecha": "2026-01-28",
+      "descripcion": "SPEI-VREG665 SPEI, BBASE, 145225002572901045, CELOMEX,",
+      "abono": "0",
+      "cargo": "345714.00",
+      "saldo": "29804.90",
+      "banco": "banregio",
+      "cuenta": "177-99743-001-5",
+      "archivo_origen": "banregio_celomex_ene2026.pdf"
+    },
+    {
+      "fecha": "2026-01-28",
+      "descripcion": "COM. SPEI-Comision Transferencia - envio ; (SPEI; banca por internet)",
+      "abono": "0",
+      "cargo": "6.00",
+      "saldo": "29798.90",
+      "banco": "banregio",
+      "cuenta": "177-99743-001-5",
+      "archivo_origen": "banregio_celomex_ene2026.pdf"
+    },
+    {
+      "fecha": "2026-01-28",
+      "descripcion": "IVA SPEI-IVA de Comision Transferencia - envio ; (SPEI; banca por",
+      "abono": "0",
+      "cargo": "0.96",
+      "saldo": "29797.94",
+      "banco": "banregio",
+      "cuenta": "177-99743-001-5",
+      "archivo_origen": "banregio_celomex_ene2026.pdf"
+    },
+    {
+      "fecha": "2026-01-29",
+      "descripcion": "SPEI-VRWO381 SPEI, BANORTE, 072222012546898703, JUNTA DE",
+      "abono": "0",
+      "cargo": "7247.00",
+      "saldo": "22550.94",
+      "banco": "banregio",
+      "cuenta": "177-99743-001-5",
+      "archivo_origen": "banregio_celomex_ene2026.pdf"
+    },
+    {
+      "fecha": "2026-01-29",
+      "descripcion": "COM. SPEI-Comision Transferencia - envio ; (SPEI; banca por internet)",
+      "abono": "0",
+      "cargo": "6.00",
+      "saldo": "22544.94",
+      "banco": "banregio",
+      "cuenta": "177-99743-001-5",
+      "archivo_origen": "banregio_celomex_ene2026.pdf"
+    },
+    {
+      "fecha": "2026-01-29",
+      "descripcion": "IVA SPEI-IVA de Comision Transferencia - envio ; (SPEI; banca por",
+      "abono": "0",
+      "cargo": "0.96",
+      "saldo": "22543.98",
+      "banco": "banregio",
+      "cuenta": "177-99743-001-5",
+      "archivo_origen": "banregio_celomex_ene2026.pdf"
+    },
+    {
+      "fecha": "2026-01-29",
+      "descripcion": "SPEI-VRWO610 SPEI, BANORTE, 072222012546898703, JUNTA DE",
+      "abono": "0",
+      "cargo": "228.00",
+      "saldo": "22315.98",
+      "banco": "banregio",
+      "cuenta": "177-99743-001-5",
+      "archivo_origen": "banregio_celomex_ene2026.pdf"
+    },
+    {
+      "fecha": "2026-01-29",
+      "descripcion": "COM. SPEI-Comision Transferencia - envio ; (SPEI; banca por internet)",
+      "abono": "0",
+      "cargo": "6.00",
+      "saldo": "22309.98",
+      "banco": "banregio",
+      "cuenta": "177-99743-001-5",
+      "archivo_origen": "banregio_celomex_ene2026.pdf"
+    },
+    {
+      "fecha": "2026-01-29",
+      "descripcion": "IVA SPEI-IVA de Comision Transferencia - envio ; (SPEI; banca por",
+      "abono": "0",
+      "cargo": "0.96",
+      "saldo": "22309.02",
+      "banco": "banregio",
+      "cuenta": "177-99743-001-5",
+      "archivo_origen": "banregio_celomex_ene2026.pdf"
+    },
+    {
+      "fecha": "2026-01-29",
+      "descripcion": "SPEI-VRWQ724 SPEI, JP MORGAN, 110180062406283871, AT&T",
+      "abono": "0",
+      "cargo": "201.73",
+      "saldo": "22107.29",
+      "banco": "banregio",
+      "cuenta": "177-99743-001-5",
+      "archivo_origen": "banregio_celomex_ene2026.pdf"
+    },
+    {
+      "fecha": "2026-01-29",
+      "descripcion": "COM. SPEI-Comision Transferencia - envio ; (SPEI; banca por internet)",
+      "abono": "0",
+      "cargo": "6.00",
+      "saldo": "22101.29",
+      "banco": "banregio",
+      "cuenta": "177-99743-001-5",
+      "archivo_origen": "banregio_celomex_ene2026.pdf"
+    },
+    {
+      "fecha": "2026-01-29",
+      "descripcion": "IVA SPEI-IVA de Comision Transferencia - envio ; (SPEI; banca por",
+      "abono": "0",
+      "cargo": "0.96",
+      "saldo": "22100.33",
+      "banco": "banregio",
+      "cuenta": "177-99743-001-5",
+      "archivo_origen": "banregio_celomex_ene2026.pdf"
+    },
+    {
+      "fecha": "2026-01-30",
+      "descripcion": "085901351224303062-VSKY861 SPEI, BANAMEX, 002229700383913702,",
+      "abono": "2784.00",
+      "cargo": "0",
+      "saldo": "24884.33",
+      "banco": "banregio",
+      "cuenta": "177-99743-001-5",
+      "archivo_origen": "banregio_celomex_ene2026.pdf"
+    },
+    {
+      "fecha": "2026-01-30",
+      "descripcion": "8846APR1202601304925035158-VSRJ390 SPEI, BANORTE,",
+      "abono": "122000.00",
+      "cargo": "0",
+      "saldo": "146884.33",
+      "banco": "banregio",
+      "cuenta": "177-99743-001-5",
+      "archivo_origen": "banregio_celomex_ene2026.pdf"
+    },
+    {
+      "fecha": "2026-01-30",
+      "descripcion": "SPEI-VSTG722 SPEI, BBVA MEXICO, 012222001128267985, CELOMEX",
+      "abono": "0",
+      "cargo": "80000.00",
+      "saldo": "66884.33",
+      "banco": "banregio",
+      "cuenta": "177-99743-001-5",
+      "archivo_origen": "banregio_celomex_ene2026.pdf"
+    },
+    {
+      "fecha": "2026-01-30",
+      "descripcion": "COM. SPEI-Comision Transferencia - envio ; (SPEI; banca por internet)",
+      "abono": "0",
+      "cargo": "6.00",
+      "saldo": "66878.33",
+      "banco": "banregio",
+      "cuenta": "177-99743-001-5",
+      "archivo_origen": "banregio_celomex_ene2026.pdf"
+    },
+    {
+      "fecha": "2026-01-30",
+      "descripcion": "IVA SPEI-IVA de Comision Transferencia - envio ; (SPEI; banca por",
+      "abono": "0",
+      "cargo": "0.96",
+      "saldo": "66877.37",
+      "banco": "banregio",
+      "cuenta": "177-99743-001-5",
+      "archivo_origen": "banregio_celomex_ene2026.pdf"
+    },
+    {
+      "fecha": "2026-01-30",
+      "descripcion": "SPEI-VTAN670 SPEI, BBASE, 145225002572901045, CELOMEX,",
+      "abono": "0",
+      "cargo": "53000.00",
+      "saldo": "13877.37",
+      "banco": "banregio",
+      "cuenta": "177-99743-001-5",
+      "archivo_origen": "banregio_celomex_ene2026.pdf"
+    },
+    {
+      "fecha": "2026-01-30",
+      "descripcion": "COM. SPEI-Comision Transferencia - envio ; (SPEI; banca por internet)",
+      "abono": "0",
+      "cargo": "6.00",
+      "saldo": "13871.37",
+      "banco": "banregio",
+      "cuenta": "177-99743-001-5",
+      "archivo_origen": "banregio_celomex_ene2026.pdf"
+    },
+    {
+      "fecha": "2026-01-30",
+      "descripcion": "IVA SPEI-IVA de Comision Transferencia - envio ; (SPEI; banca por",
+      "abono": "0",
+      "cargo": "0.96",
+      "saldo": "13870.41",
+      "banco": "banregio",
+      "cuenta": "177-99743-001-5",
+      "archivo_origen": "banregio_celomex_ene2026.pdf"
+    },
+    {
+      "fecha": "2026-01-30",
+      "descripcion": "085909032504303069-VTDM649 SPEI, BANAMEX,",
+      "abono": "8073.60",
+      "cargo": "0",
+      "saldo": "21944.01",
+      "banco": "banregio",
+      "cuenta": "177-99743-001-5",
+      "archivo_origen": "banregio_celomex_ene2026.pdf"
+    }
+  ],
+  "warnings": []
+}
