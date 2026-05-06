@@ -68,8 +68,5 @@ secrets.toml
 *.log
 *.tmp
 
-# Keep sample PDFs and golden files
-!samples/**
-!samples/*/*.pdf
-!samples/*/*.zip
-!samples/golden/*.json
+# Samples son información confidencial — nunca al repo
+samples/
