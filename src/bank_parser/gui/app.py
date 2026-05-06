@@ -404,26 +404,22 @@ class BankParserApp(ctk.CTk):
 
     def _toggle_preview(self) -> None:
         if self._preview_visible:
+            # Ocultar preview y restaurar el log
             if self._preview_frame:
                 self._preview_frame.grid_forget()
                 self._preview_frame.destroy()
                 self._preview_frame = None
+            self._log.grid(row=3, column=0, sticky="nsew", padx=12, pady=4)
             self._preview_visible = False
             self._preview_btn.configure(text="▶  Mostrar vista previa de movimientos")
-            # Compactar la ventana
-            self.geometry("860x780")
         else:
+            # Ocultar log y mostrar preview en el mismo row 3
+            self._log.grid_forget()
             self._preview_frame = PreviewTable(self)
             self._preview_frame.grid(row=3, column=0, sticky="nsew", padx=12, pady=4)
-            # El log baja a fila 3+1 → necesitamos reconfigurar el grid
-            self._log.grid(row=3, column=0, sticky="nsew", padx=12, pady=4)
-            self._preview_frame = PreviewTable(self)
-            self._preview_frame.grid(row=6, column=0, sticky="nsew", padx=12, pady=4)
-            self.grid_rowconfigure(6, weight=1)
             self._preview_frame.load(self._state.all_statements)
             self._preview_visible = True
             self._preview_btn.configure(text="▼  Ocultar vista previa de movimientos")
-            self.geometry("860x1100")
 
     # ------------------------------------------------------------------
     # helpers
