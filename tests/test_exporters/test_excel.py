@@ -155,15 +155,15 @@ def test_amounts_stored_as_numbers(tmp_path: Path, sample_statement: Statement) 
     cargo_col = list(COLUMNAS).index("cargo") + 1
     saldo_col = list(COLUMNAS).index("saldo") + 1
     for row in range(2, ws.max_row):  # excluye fila TOTAL que puede ser fórmula/número
-        assert isinstance(
-            ws.cell(row, abono_col).value, int | float
-        ), f"abono fila {row} no es número"
-        assert isinstance(
-            ws.cell(row, cargo_col).value, int | float
-        ), f"cargo fila {row} no es número"
-        assert isinstance(
-            ws.cell(row, saldo_col).value, int | float
-        ), f"saldo fila {row} no es número"
+        assert isinstance(ws.cell(row, abono_col).value, int | float), (
+            f"abono fila {row} no es número"
+        )
+        assert isinstance(ws.cell(row, cargo_col).value, int | float), (
+            f"cargo fila {row} no es número"
+        )
+        assert isinstance(ws.cell(row, saldo_col).value, int | float), (
+            f"saldo fila {row} no es número"
+        )
 
 
 def test_fecha_stored_as_date_or_string(tmp_path: Path, sample_statement: Statement) -> None:
