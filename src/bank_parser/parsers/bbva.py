@@ -45,7 +45,8 @@ _PERIODO_RE = re.compile(
 )
 
 _SALDO_INI_RE = re.compile(
-    r"Saldo\s+de\s+Liquidaci[oó]n\s+Inicial\s+([\d,]+\.\d{2})", re.IGNORECASE
+    r"(?:Saldo\s+de\s+Liquidaci[oó]n\s+Inicial|Saldo\s+Anterior)\s+([\d,]+\.\d{2})",
+    re.IGNORECASE,
 )
 _SALDO_FIN_RE = re.compile(r"Saldo\s+Final\s+\(\+\)\s+([\d,]+\.\d{2})", re.IGNORECASE)
 _TOTAL_ABONOS_RE = re.compile(
@@ -88,7 +89,6 @@ class BBVAParser(BankParser):
 
     expected_markers: tuple[str, ...] = (
         "BBVA MEXICO",
-        "CASH MANAGEMENT",
         "CARGOS",
         "ABONOS",
     )
@@ -173,12 +173,19 @@ class BBVAParser(BankParser):
 
 
 def _extract_titular(text: str) -> str:
+    # Más específico primero: anclado a "No. de Cliente" (Maestra PYME y otros formatos)
+    m3 = re.search(r"No\.\s+de\s+Cliente\s+\d+\s*\n([^\n]{5,60})\s*\n", text)
+    if m3:
+        candidate = m3.group(1).strip()
+        if re.match(r"^[A-ZÁÉÍÓÚÑ][A-ZÁÉÍÓÚÑ\s\.]+$", candidate, re.IGNORECASE):
+            return candidate
+    # Nombre corporativo con sufijo legal (Cash Management)
     m = re.search(
         r"(?m)^([A-ZÁÉÍÓÚÑ][A-ZÁÉÍÓÚÑ\s\.]{5,60}(?:S\.A\. DE C\.V\.|SA DE CV|S\.C\.))\s*$", text
     )
     if m:
         return m.group(1).strip()
-    # Fallback: línea antes del RFC
+    # Fallback: línea antes de "R.F.C" en la siguiente línea (Cash Management)
     m2 = re.search(r"(?m)^([A-ZÁÉÍÓÚÑ][A-ZÁÉÍÓÚÑ\s\.]{5,60})\s*\nR\.F\.C\s+", text)
     if m2:
         return m2.group(1).strip()
@@ -265,13 +272,35 @@ def _extraer_movimientos(
                 if first_text in ("OPER", "LIQ") and any(
                     w["text"] in ("CARGOS", "ABONOS") for w in line_words
                 ):
+                    col: dict[str, dict] = {}
                     for w in line_words:
-                        if w["text"] == "CARGOS":
-                            bounds.cargos_max = w["x1"] + 5
-                        elif w["text"] == "ABONOS":
-                            bounds.abonos_max = w["x1"] + 5
-                        elif w["text"] in ("OPERACIÓN", "OPERACION"):
-                            bounds.oper_max = w["x1"] + 5
+                        if w["text"] in (
+                            "CARGOS",
+                            "ABONOS",
+                            "OPERACIÓN",
+                            "OPERACION",
+                            "LIQUIDACIÓN",
+                            "LIQUIDACION",
+                        ):
+                            col[w["text"]] = w
+                    abonos_w = col.get("ABONOS")
+                    cargos_w = col.get("CARGOS")
+                    oper_w = col.get("OPERACIÓN") or col.get("OPERACION")
+                    liq_w = col.get("LIQUIDACIÓN") or col.get("LIQUIDACION")
+                    # Usar punto medio entre columnas para evitar que valores
+                    # más anchos que el encabezado caigan en la columna incorrecta
+                    if cargos_w and abonos_w:
+                        bounds.cargos_max = (cargos_w["x1"] + abonos_w["x0"]) / 2
+                    elif cargos_w:
+                        bounds.cargos_max = cargos_w["x1"] + 5
+                    if abonos_w and oper_w:
+                        bounds.abonos_max = (abonos_w["x1"] + oper_w["x0"]) / 2
+                    elif abonos_w:
+                        bounds.abonos_max = abonos_w["x1"] + 5
+                    if oper_w and liq_w:
+                        bounds.oper_max = (oper_w["x1"] + liq_w["x0"]) / 2
+                    elif oper_w:
+                        bounds.oper_max = oper_w["x1"] + 5
                     break
 
             cur_row: _MovRow | None = None

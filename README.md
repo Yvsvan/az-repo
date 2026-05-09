@@ -6,7 +6,7 @@ tablas estandarizadas de movimientos (`.xlsx` y `.json`).
 | Banco | Producto soportado |
 |---|---|
 | **Banamex** (Citibanamex) | MiCuenta |
-| **BBVA México** | Cash Management M.N. |
+| **BBVA México** | Cash Management M.N., Maestra PYME |
 | **BanBajío** | Cuenta Conecta |
 | **Banregio** | Cuenta Naranja Negocios |
 | **Banorte** | Enlace Negocios |
