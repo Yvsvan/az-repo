@@ -25,6 +25,8 @@ GOLDEN = "banamex/banamex_micuenta_abr2026.json"
 @pytest.fixture(scope="module")
 def statement(samples_dir: Path) -> Statement:
     pdf_path = samples_dir / SAMPLE
+    if not pdf_path.exists():
+        pytest.skip(f"PDF de muestra no disponible: {pdf_path.name}")
     text = read_pdf_text(pdf_path.read_bytes())
     parser = BanamexParser()
     return parser.parse(text, archivo_origen=pdf_path.name)

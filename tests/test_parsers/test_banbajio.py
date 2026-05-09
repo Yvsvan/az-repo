@@ -24,6 +24,8 @@ GOLDEN = "banbajio_gaba_1154_feb2026.json"
 @pytest.fixture(scope="module")
 def statement(samples_dir: Path) -> Statement:
     pdf_path = samples_dir / SAMPLE
+    if not pdf_path.exists():
+        pytest.skip(f"PDF de muestra no disponible: {pdf_path.name}")
     text = read_pdf_text(pdf_path.read_bytes())
     parser = BanBajioParser()
     return parser.parse(text, pdf_bytes=pdf_path.read_bytes(), archivo_origen=pdf_path.name)

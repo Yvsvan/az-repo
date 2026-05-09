@@ -23,7 +23,10 @@ GOLDEN = "banorte_celomex_ene2026.json"
 
 @pytest.fixture(scope="module")
 def statement(samples_dir: Path) -> Statement:
-    pdfs = extract_pdfs_from_input(samples_dir / SAMPLE)
+    sample_path = samples_dir / SAMPLE
+    if not sample_path.exists():
+        pytest.skip(f"Muestra no disponible: {sample_path.name}")
+    pdfs = extract_pdfs_from_input(sample_path)
     text = read_pdf_text(pdfs[0].contenido)
     parser = BanorteParser()
     return parser.parse(text, pdf_bytes=pdfs[0].contenido, archivo_origen=pdfs[0].nombre)

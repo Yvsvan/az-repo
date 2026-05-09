@@ -2,6 +2,8 @@
 
 from pathlib import Path
 
+import pytest
+
 import bank_parser
 
 
@@ -27,6 +29,8 @@ def test_public_api_exports() -> None:
 def test_parse_pdf_convenience(samples_dir: Path) -> None:
     """parse_pdf es un atajo funcional sobre process_file."""
     pdf = samples_dir / "banamex" / "banamex_micuenta_abr2026.pdf"
+    if not pdf.exists():
+        pytest.skip("PDF de muestra no disponible")
     statements = bank_parser.parse_pdf(pdf)
     assert len(statements) == 1
     assert statements[0].summary.banco == bank_parser.BankId.BANAMEX

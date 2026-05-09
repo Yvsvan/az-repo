@@ -12,6 +12,8 @@ from bank_parser.core.io_layer import ExtractedPdf, extract_pdfs_from_input, rea
 
 def test_extract_pdf_directo(samples_dir: Path) -> None:
     pdf_path = samples_dir / "banamex" / "banamex_micuenta_abr2026.pdf"
+    if not pdf_path.exists():
+        pytest.skip("PDF de muestra no disponible")
     result = extract_pdfs_from_input(pdf_path)
     assert len(result) == 1
     assert isinstance(result[0], ExtractedPdf)
@@ -22,6 +24,8 @@ def test_extract_pdf_directo(samples_dir: Path) -> None:
 
 def test_extract_zip_banorte(samples_dir: Path) -> None:
     zip_path = samples_dir / "banorte" / "banorte_celomex_ene2026.zip"
+    if not zip_path.exists():
+        pytest.skip("Muestra no disponible")
     result = extract_pdfs_from_input(zip_path)
     assert len(result) >= 1
     assert all(isinstance(r, ExtractedPdf) for r in result)
@@ -31,6 +35,8 @@ def test_extract_zip_banorte(samples_dir: Path) -> None:
 
 def test_extract_zip_banbajio(samples_dir: Path) -> None:
     zip_path = samples_dir / "banbajio" / "banbajio_celomex_feb2026.zip"
+    if not zip_path.exists():
+        pytest.skip("Muestra no disponible")
     result = extract_pdfs_from_input(zip_path)
     assert len(result) >= 1
 
@@ -48,7 +54,10 @@ def test_archivo_no_existe(tmp_path: Path) -> None:
 
 
 def test_read_pdf_text_banamex(samples_dir: Path) -> None:
-    pdf_bytes = (samples_dir / "banamex" / "banamex_micuenta_abr2026.pdf").read_bytes()
+    pdf_path = samples_dir / "banamex" / "banamex_micuenta_abr2026.pdf"
+    if not pdf_path.exists():
+        pytest.skip("PDF de muestra no disponible")
+    pdf_bytes = pdf_path.read_bytes()
     text = read_pdf_text(pdf_bytes)
     assert "MiCuenta" in text
     assert "SALDO" in text

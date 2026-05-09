@@ -24,6 +24,8 @@ GOLDEN = "bbva_celomex_feb2026.json"
 @pytest.fixture(scope="module")
 def statement(samples_dir: Path) -> Statement:
     pdf_path = samples_dir / SAMPLE
+    if not pdf_path.exists():
+        pytest.skip(f"PDF de muestra no disponible: {pdf_path.name}")
     pdf_bytes = pdf_path.read_bytes()
     text = read_pdf_text(pdf_bytes)
     parser = BBVAParser()
