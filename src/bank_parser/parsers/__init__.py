@@ -15,6 +15,7 @@ from __future__ import annotations
 
 from bank_parser.core.schema import BankId
 from bank_parser.parsers.banamex import BanamexParser
+from bank_parser.parsers.banamex_priority import BanamexPriorityParser
 from bank_parser.parsers.banbajio import BanBajioParser
 from bank_parser.parsers.banorte import BanorteParser
 from bank_parser.parsers.banregio import BanregioParser
@@ -23,6 +24,7 @@ from bank_parser.parsers.bbva import BBVAParser
 
 BANK_REGISTRY: dict[BankId, type[BankParser]] = {
     BankId.BANAMEX: BanamexParser,
+    BankId.BANAMEX_PRIORITY: BanamexPriorityParser,
     BankId.BBVA: BBVAParser,
     BankId.BANBAJIO: BanBajioParser,
     BankId.BANREGIO: BanregioParser,

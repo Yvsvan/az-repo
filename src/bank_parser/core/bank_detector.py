@@ -33,6 +33,11 @@ FINGERPRINTS: tuple[BankFingerprint, ...] = (
         boosts=("Centro de Atencion Telefonica",),
     ),
     BankFingerprint(
+        bank=BankId.BANAMEX_PRIORITY,
+        must_have=("Cuenta Priority",),
+        boosts=("Centro de Atenci", "CLABE Interbancaria", "Número de cliente"),
+    ),
+    BankFingerprint(
         bank=BankId.BBVA,
         must_have=("BBVA MEXICO", "GRUPO FINANCIERO BBVA"),
         boosts=("Cash Management", "Paseo de la Reforma 510"),

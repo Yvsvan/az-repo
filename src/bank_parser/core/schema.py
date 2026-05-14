@@ -25,6 +25,7 @@ class BankId(str, Enum):
     """Identificador canónico de un banco soportado."""
 
     BANAMEX = "banamex"
+    BANAMEX_PRIORITY = "banamex_priority"
     BBVA = "bbva"
     BANBAJIO = "banbajio"
     BANREGIO = "banregio"
@@ -35,6 +36,7 @@ class BankId(str, Enum):
         """Nombre legible del banco para mostrar en UI / logs."""
         return {
             BankId.BANAMEX: "Banamex",
+            BankId.BANAMEX_PRIORITY: "Banamex Priority",
             BankId.BBVA: "BBVA",
             BankId.BANBAJIO: "BanBajío",
             BankId.BANREGIO: "Banregio",
