@@ -4,32 +4,55 @@ from __future__ import annotations
 
 import customtkinter as ctk
 
-# Paleta
-BLUE_DARK = "#1F4E79"
-BLUE_MID = "#2E75B6"
-BLUE_LIGHT = "#BDD7EE"
-GREEN = "#4CAF50"
-GREEN_DARK = "#2E7D32"
-YELLOW = "#FFC107"
-RED = "#F44336"
-RED_DARK = "#C62828"
-GRAY_TEXT = "#9E9E9E"
-WHITE = "#FFFFFF"
+# ── Superficies / fondos ─────────────────────────────────────────────────────
+BG_APP = "#0F172A"  # slate-900 - fondo global de la ventana
+BG_SURFACE = "#1E293B"  # slate-800 - paneles, action bars, headers
+BG_ELEVATED = "#263044"  # ligeramente elevado - cards, hover
+BG_INPUT = "#1A2535"  # inputs / textboxes
 
-# Tamaños de fuente
-FONT_TITLE = ("Segoe UI", 18, "bold")
-FONT_SUBTITLE = ("Segoe UI", 13, "bold")
-FONT_BODY = ("Segoe UI", 12)
-FONT_SMALL = ("Segoe UI", 10)
+# ── Bordes ───────────────────────────────────────────────────────────────────
+BORDER_DEFAULT = "#334155"  # slate-700
+BORDER_ACCENT = "#0D9488"  # teal
+
+# ── Texto ────────────────────────────────────────────────────────────────────
+TEXT_PRIMARY = "#F1F5F9"  # slate-100
+TEXT_SECONDARY = "#94A3B8"  # slate-400
+TEXT_MUTED = "#64748B"  # slate-500
+
+# ── Acentos / estado ─────────────────────────────────────────────────────────
+TEAL = "#0D9488"  # primary accent - acciones principales
+TEAL_LT = "#14B8A6"  # teal claro - hover / active
+EMERALD = "#10B981"  # success
+AMBER = "#F59E0B"  # warning
+CRIMSON = "#EF4444"  # error
+SKY = "#38BDF8"  # procesando / info
+
+# ── Alias de retrocompatibilidad ─────────────────────────────────────────────
+BLUE_DARK = BG_SURFACE
+BLUE_MID = TEAL
+BLUE_LIGHT = BG_ELEVATED
+GREEN = EMERALD
+GREEN_DARK = "#059669"
+YELLOW = AMBER
+RED = CRIMSON
+RED_DARK = "#DC2626"
+GRAY_TEXT = TEXT_SECONDARY
+WHITE = TEXT_PRIMARY
+
+# ── Fuentes ──────────────────────────────────────────────────────────────────
+FONT_TITLE = ("Segoe UI", 20, "bold")
+FONT_SUBTITLE = ("Segoe UI", 14, "bold")
+FONT_BODY = ("Segoe UI", 13)
+FONT_SMALL = ("Segoe UI", 11)
 FONT_MONO = ("Consolas", 11)
 
-# Colores de estado
+# ── Colores de estado ────────────────────────────────────────────────────────
 STATUS_COLORS: dict[str, str] = {
-    "pending": GRAY_TEXT,
-    "processing": BLUE_MID,
-    "ok": GREEN,
-    "warning": YELLOW,
-    "error": RED,
+    "pending": TEXT_MUTED,
+    "processing": SKY,
+    "ok": EMERALD,
+    "warning": AMBER,
+    "error": CRIMSON,
 }
 
 

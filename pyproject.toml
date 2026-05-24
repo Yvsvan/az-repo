@@ -31,6 +31,10 @@ dependencies = [
     "tkinterdnd2>=0.4",
     "requests>=2.31",
     "packaging>=23.2",
+    # SAT Descarga Masiva
+    "cryptography>=42",
+    "lxml>=5",
+    "keyring>=24",
 ]
 
 [project.optional-dependencies]

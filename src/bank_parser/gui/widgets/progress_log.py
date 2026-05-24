@@ -6,7 +6,18 @@ from datetime import datetime
 
 import customtkinter as ctk
 
-from bank_parser.gui.theme import FONT_MONO, FONT_SUBTITLE, GRAY_TEXT, GREEN, RED, YELLOW
+from bank_parser.gui.theme import (
+    AMBER,
+    BG_ELEVATED,
+    BG_INPUT,
+    BORDER_DEFAULT,
+    CRIMSON,
+    EMERALD,
+    FONT_MONO,
+    FONT_SMALL,
+    FONT_SUBTITLE,
+    TEXT_SECONDARY,
+)
 
 
 class ProgressLog(ctk.CTkFrame):
@@ -23,47 +34,45 @@ class ProgressLog(ctk.CTkFrame):
 
     def _build(self) -> None:
         header = ctk.CTkFrame(self, fg_color="transparent")
-        header.pack(fill="x", padx=4, pady=(4, 2))
-        ctk.CTkLabel(header, text="Log de progreso", font=FONT_SUBTITLE).pack(side="left")
+        header.pack(fill="x", padx=4, pady=(8, 4))
+        ctk.CTkLabel(header, text="Log de actividad", font=FONT_SUBTITLE).pack(side="left")
         ctk.CTkButton(
             header,
             text="Limpiar",
-            font=("Segoe UI", 10),
+            font=FONT_SMALL,
             width=70,
-            height=24,
+            height=26,
             fg_color="transparent",
             border_width=1,
+            border_color=BORDER_DEFAULT,
+            hover_color=BG_ELEVATED,
             command=self.clear,
         ).pack(side="right")
 
-        # CTkTextbox es scrollable por sí mismo
         self._text = ctk.CTkTextbox(
             self,
             font=FONT_MONO,
             height=160,
             state="disabled",
             wrap="word",
+            fg_color=BG_INPUT,
+            border_width=1,
+            border_color=BORDER_DEFAULT,
+            corner_radius=8,
         )
         self._text.pack(fill="both", expand=True, padx=4, pady=(0, 4))
 
-        # Configurar tags de color en el widget subyacente de tk
         tk_widget = self._text._textbox
-        tk_widget.tag_config(self._TAG_OK, foreground=GREEN)
-        tk_widget.tag_config(self._TAG_WARN, foreground=YELLOW)
-        tk_widget.tag_config(self._TAG_ERROR, foreground=RED)
-        tk_widget.tag_config(self._TAG_INFO, foreground=GRAY_TEXT)
+        tk_widget.tag_config(self._TAG_OK, foreground=EMERALD)
+        tk_widget.tag_config(self._TAG_WARN, foreground=AMBER)
+        tk_widget.tag_config(self._TAG_ERROR, foreground=CRIMSON)
+        tk_widget.tag_config(self._TAG_INFO, foreground=TEXT_SECONDARY)
 
     # ------------------------------------------------------------------
     # API pública
     # ------------------------------------------------------------------
 
     def log(self, message: str, level: str = "info") -> None:
-        """Agrega una línea al log con timestamp.
-
-        Args:
-            message: Texto a mostrar.
-            level: ``"info"``, ``"ok"``, ``"warn"`` o ``"error"``.
-        """
         ts = datetime.now().strftime("%H:%M:%S")
         line = f"[{ts}] {message}\n"
         tag = level if level in (self._TAG_OK, self._TAG_WARN, self._TAG_ERROR) else self._TAG_INFO
@@ -78,12 +87,11 @@ class ProgressLog(ctk.CTkFrame):
         self._text.delete("1.0", "end")
         self._text.configure(state="disabled")
 
-    # Atajos semánticos
     def ok(self, msg: str) -> None:
         self.log(f"✓ {msg}", "ok")
 
     def warn(self, msg: str) -> None:
-        self.log(f"⚠ {msg}", "warn")
+        self.log(f"! {msg}", "warn")
 
     def error(self, msg: str) -> None:
         self.log(f"✗ {msg}", "error")

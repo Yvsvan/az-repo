@@ -13,6 +13,8 @@ malformado, etc. se capturan y producen ``None`` / retornos seguros.
 from __future__ import annotations
 
 import hashlib
+import subprocess
+import sys
 import tempfile
 import webbrowser
 from dataclasses import dataclass
@@ -189,6 +191,72 @@ def download_release(
             return None
 
     return zip_path
+
+
+def apply_update(zip_path: Path) -> bool:
+    """Write a detached helper that replaces the install dir and restarts.
+
+    Only works when running as a frozen PyInstaller bundle (sys.frozen == True).
+    The caller should call ``sys.exit(0)`` immediately after this returns True
+    so the file lock on the exe is released before the helper runs.
+
+    Returns True if the helper was launched, False otherwise (caller should
+    fall back to opening the release page in the browser).
+    """
+    if not getattr(sys, "frozen", False):
+        return False
+
+    install_dir = Path(sys.executable).parent
+    exe_name = Path(sys.executable).name
+    work_dir = zip_path.parent
+    extract_dir = work_dir / "_upd_extract"
+    ps1_path = work_dir / "_upd_helper.ps1"
+    bat_path = work_dir / "_upd_helper.bat"
+
+    # PowerShell script: extract ZIP, find the bundle subdir (or use root),
+    # copy everything to the install dir, clean up, then restart.
+    ps1_lines = [
+        f"$zip  = '{zip_path}'",
+        f"$ext  = '{extract_dir}'",
+        f"$inst = '{install_dir}'",
+        f"$exe  = '{exe_name}'",
+        "",
+        "Expand-Archive -LiteralPath $zip -DestinationPath $ext -Force",
+        "",
+        "# Use a subfolder if it contains .exe files; otherwise copy from root",
+        "$src = (Get-ChildItem $ext -Directory |",
+        "        Where-Object { (Get-ChildItem $_.FullName -Filter '*.exe').Count -gt 0 } |",
+        "        Select-Object -First 1 -ExpandProperty FullName)",
+        "if (-not $src) { $src = $ext }",
+        "",
+        "Get-ChildItem $src | ForEach-Object {",
+        '    Copy-Item $_.FullName "$inst\\$($_.Name)" -Recurse -Force',
+        "}",
+        "",
+        "Remove-Item $ext -Recurse -Force -ErrorAction SilentlyContinue",
+        "Remove-Item $zip -Force -ErrorAction SilentlyContinue",
+        "",
+        'Start-Process "$inst\\$exe"',
+    ]
+
+    bat_lines = [
+        "@echo off",
+        "timeout /t 3 /nobreak >nul",
+        f'powershell -NoProfile -ExecutionPolicy Bypass -File "{ps1_path}"',
+        'del "%~f0"',
+    ]
+
+    try:
+        ps1_path.write_text("\n".join(ps1_lines), encoding="utf-8")
+        bat_path.write_text("\r\n".join(bat_lines), encoding="utf-8")
+        subprocess.Popen(
+            ["cmd", "/c", str(bat_path)],
+            creationflags=subprocess.DETACHED_PROCESS | subprocess.CREATE_NO_WINDOW,
+            close_fds=True,
+        )
+        return True
+    except Exception:
+        return False
 
 
 def _verify_sha256(zip_path: Path, sha256_url: str) -> bool:
