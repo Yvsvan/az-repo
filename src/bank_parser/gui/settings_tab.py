@@ -77,6 +77,12 @@ class SettingsTab(ctk.CTkScrollableFrame):
         self._poll_var = ctk.StringVar(value=str(self._s.sat.poll_interval))
         row = self._spinbox_row("Intervalo de verificación (segundos)", self._poll_var, row)
 
+        self._url_var = ctk.StringVar(value=self._s.sat.sat_api_url)
+        row = self._url_row("URL solicitud SAT", self._url_var, row)
+
+        self._desc_url_var = ctk.StringVar(value=self._s.sat.sat_descarga_url)
+        row = self._url_row("URL descarga SAT", self._desc_url_var, row)
+
         # Botón guardar
         ctk.CTkButton(
             self,
@@ -237,7 +243,45 @@ class SettingsTab(ctk.CTkScrollableFrame):
     def _on_tipo(self) -> None:
         self._s.sat.tipo = self._tipo_var.get()
 
+    def _url_row(self, label: str, var: ctk.StringVar, row: int) -> int:
+        frame = ctk.CTkFrame(self, fg_color="transparent")
+        frame.grid(row=row, column=0, sticky="ew", padx=16, pady=4)
+        frame.grid_columnconfigure(1, weight=1)
+        ctk.CTkLabel(frame, text=label, font=FONT_SMALL).grid(
+            row=0, column=0, padx=(0, 10), sticky="w"
+        )
+        ctk.CTkEntry(frame, textvariable=var, font=FONT_SMALL).grid(row=0, column=1, sticky="ew")
+        ctk.CTkButton(
+            frame,
+            text="Probar",
+            font=FONT_SMALL,
+            width=72,
+            height=28,
+            fg_color="transparent",
+            border_width=1,
+            border_color=BORDER_DEFAULT,
+            hover_color=BG_ELEVATED,
+            command=lambda: self._test_url(var.get()),
+        ).grid(row=0, column=2, padx=(8, 0))
+        return row + 1
+
+    def _test_url(self, url: str) -> None:
+        import threading
+
+        from bank_parser.sat_downloader.client import SatApiClient
+
+        def _run():
+            ok, msg = SatApiClient.test_connectivity(url)
+            if ok:
+                messagebox.showinfo("Conexión OK", msg)
+            else:
+                messagebox.showerror("Sin conexión", msg)
+
+        threading.Thread(target=_run, daemon=True).start()
+
     def _save(self) -> None:
+        self._s.sat.sat_api_url = self._url_var.get().rstrip("/")
+        self._s.sat.sat_descarga_url = self._desc_url_var.get().rstrip("/")
         try:
             self._s.sat.poll_interval = int(self._poll_var.get())
         except ValueError:

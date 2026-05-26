@@ -23,12 +23,7 @@ def load_credential(
     rfc = _extract_rfc(cert)
 
     key_bytes = key_path.read_bytes()
-    # El SAT exporta llaves en formato DER PKCS#8 cifrado
-    try:
-        private_key = serialization.load_der_private_key(key_bytes, password=password.encode())
-    except Exception:
-        # Fallback: algunos exportadores usan PEM
-        private_key = serialization.load_pem_private_key(key_bytes, password=password.encode())
+    private_key = _load_private_key(key_bytes, password)
 
     return SatCredential(
         rfc=rfc,
@@ -38,6 +33,52 @@ def load_credential(
         private_key=private_key,
         cert_der=cert_der,
     )
+
+
+def _load_private_key(key_bytes: bytes, password: str):
+    """Intenta cargar una llave privada SAT probando varias estrategias.
+
+    Las llaves e.firma del SAT son PKCS#8 DER cifradas (3DES/SHA-1).
+    Se intenta UTF-8 primero, luego Latin-1 (por contraseñas con ñ/acentos).
+    """
+    errors: list[str] = []
+
+    # Estrategia 1 — DER PKCS#8, contraseña UTF-8 (formato estándar SAT)
+    try:
+        return serialization.load_der_private_key(key_bytes, password=password.encode("utf-8"))
+    except Exception as exc:
+        errors.append(f"DER/UTF-8: {exc}")
+
+    # Estrategia 2 — DER PKCS#8, contraseña Latin-1 (contraseñas con ñ/acentos)
+    try:
+        return serialization.load_der_private_key(key_bytes, password=password.encode("latin-1"))
+    except Exception as exc:
+        errors.append(f"DER/Latin-1: {exc}")
+
+    # Estrategia 3 — PEM PKCS#8 (exportación alternativa, poco común)
+    try:
+        return serialization.load_pem_private_key(key_bytes, password=password.encode("utf-8"))
+    except Exception as exc:
+        errors.append(f"PEM/UTF-8: {exc}")
+
+    # Nada funcionó — armar mensaje claro para el usuario
+    first_err = errors[0] if errors else "desconocido"
+    _wrong_pwd_signals = (
+        "BadDecryptionError",
+        "InvalidTag",
+        "Mac verify",
+        "Incorrect password",
+        "could not decrypt",
+        "bad decrypt",
+    )
+    if any(s.lower() in first_err.lower() for s in _wrong_pwd_signals):
+        hint = "La contraseña es incorrecta."
+    elif "unsupported" in first_err.lower():
+        hint = "Algoritmo de cifrado no soportado. Verifica que el archivo .key sea de e.firma SAT."
+    else:
+        hint = "Verifica que el archivo .key sea de e.firma SAT y que la contraseña sea correcta."
+
+    raise ValueError(f"{hint}\n\nDetalle técnico: {first_err}")
 
 
 def _extract_rfc(cert: x509.Certificate) -> str:

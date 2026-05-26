@@ -27,11 +27,18 @@ class BankParserSettings:
     auto_update: bool = True
 
 
+# URLs del servicio SAT Descarga Masiva v1.5 (activos desde Mayo 2025)
+_SAT_API_DEFAULT = "https://cfdidescargamasivasolicitud.clouda.sat.gob.mx"
+_SAT_DESCARGA_DEFAULT = "https://cfdidescargamasiva.clouda.sat.gob.mx"
+
+
 @dataclass
 class SatSettings:
     output_dir: str = field(default_factory=lambda: str(Path.home() / "Desktop" / "CFDI"))
     tipo: str = "T"
     poll_interval: int = 20
+    sat_api_url: str = _SAT_API_DEFAULT
+    sat_descarga_url: str = _SAT_DESCARGA_DEFAULT
     credentials: list[CredentialRef] = field(default_factory=list)
 
 
@@ -54,6 +61,10 @@ class AppSettings:
             )
             sat_raw = raw.get("sat", {})
             creds = [CredentialRef(**c) for c in sat_raw.pop("credentials", [])]
+            # Migrar URL obsoleta a la nueva (v1.5 — Mayo 2025)
+            _old_url = "https://cfdidescarga.sat.gob.mx/api/offline"
+            if sat_raw.get("sat_api_url") == _old_url:
+                sat_raw["sat_api_url"] = _SAT_API_DEFAULT
             sat = SatSettings(
                 **{k: v for k, v in sat_raw.items() if k in SatSettings.__dataclass_fields__},
                 credentials=creds,

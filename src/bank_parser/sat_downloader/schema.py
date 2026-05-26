@@ -22,6 +22,8 @@ class EstadoSolicitud(int, Enum):
     EN_PROCESO = 2
     TERMINADA = 3
     ERROR = 4
+    RECHAZADA = 5  # v1.5
+    VENCIDA = 6  # v1.5
 
 
 @dataclass

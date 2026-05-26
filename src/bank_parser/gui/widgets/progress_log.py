@@ -2,6 +2,7 @@
 
 from __future__ import annotations
 
+import re
 from datetime import datetime
 
 import customtkinter as ctk
@@ -19,6 +20,9 @@ from bank_parser.gui.theme import (
     TEXT_SECONDARY,
 )
 
+# Messages like "[AUAI000504PN6/Emitidos] ..." are updated in-place per key.
+_RFC_LABEL_RE = re.compile(r"^\[([A-Z0-9]+/\w+)\]")
+
 
 class ProgressLog(ctk.CTkFrame):
     """Área de texto scrollable que registra el progreso del pipeline."""
@@ -30,6 +34,8 @@ class ProgressLog(ctk.CTkFrame):
 
     def __init__(self, master, **kwargs) -> None:
         super().__init__(master, **kwargs)
+        self._live_marks: dict[str, str] = {}  # "[RFC/label]" → tk mark name
+        self._mark_seq = 0
         self._build()
 
     def _build(self) -> None:
@@ -76,13 +82,48 @@ class ProgressLog(ctk.CTkFrame):
         ts = datetime.now().strftime("%H:%M:%S")
         line = f"[{ts}] {message}\n"
         tag = level if level in (self._TAG_OK, self._TAG_WARN, self._TAG_ERROR) else self._TAG_INFO
+        tw = self._text._textbox
+
+        # Info messages with an [RFC/label] prefix update their row in-place
+        # so polling "Procesando…" lines don't flood the log.
+        if level == "info":
+            m = _RFC_LABEL_RE.match(message)
+            if m:
+                key = m.group(1)
+                self._text.configure(state="normal")
+                if key in self._live_marks:
+                    mark = self._live_marks[key]
+                    try:
+                        # Get the row number BEFORE any modification
+                        row = tw.index(mark).split(".")[0]
+                        tw.delete(f"{row}.0", f"{row}.0 lineend +1c")
+                        tw.insert(f"{row}.0", line, tag)
+                        # Reset mark explicitly — left-gravity drift after delete
+                        tw.mark_set(mark, f"{row}.0")
+                        self._text.configure(state="disabled")
+                        tw.see("end")
+                        return
+                    except Exception:
+                        del self._live_marks[key]
+                # First occurrence: record row, insert, plant mark at row start
+                self._mark_seq += 1
+                mark = f"_live{self._mark_seq}"
+                row = tw.index("end").split(".")[0]
+                tw.insert("end", line, tag)
+                tw.mark_set(mark, f"{row}.0")
+                tw.mark_gravity(mark, "left")
+                self._live_marks[key] = mark
+                self._text.configure(state="disabled")
+                tw.see("end")
+                return
 
         self._text.configure(state="normal")
-        self._text._textbox.insert("end", line, tag)
+        tw.insert("end", line, tag)
         self._text.configure(state="disabled")
-        self._text._textbox.see("end")
+        tw.see("end")
 
     def clear(self) -> None:
+        self._live_marks.clear()
         self._text.configure(state="normal")
         self._text.delete("1.0", "end")
         self._text.configure(state="disabled")
