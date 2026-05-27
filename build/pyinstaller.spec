@@ -73,6 +73,19 @@ hiddenimports += [
     # tkinterdnd2
     "tkinterdnd2",
     "tkinterdnd2.TkinterDnD",
+    # lxml — used by cfdi_converter and sat_downloader
+    "lxml",
+    "lxml.etree",
+    "lxml._elementpath",
+    # cryptography — used by sat_downloader XML signing
+    "cryptography",
+    "cryptography.hazmat.primitives.asymmetric.rsa",
+    "cryptography.hazmat.primitives.asymmetric.padding",
+    "cryptography.hazmat.backends.openssl",
+    # keyring — credential storage for SAT e.firma passwords
+    "keyring",
+    "keyring.backends",
+    "keyring.backends.Windows",
 ]
 
 # ---------------------------------------------------------------------------

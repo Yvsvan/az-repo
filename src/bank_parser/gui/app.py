@@ -124,6 +124,9 @@ class BankParserApp(ctk.CTk):
         sat_frame = self._tabs.add("  Descarga SAT  ")
         self._build_sat_tab(sat_frame)
 
+        xml_frame = self._tabs.add("  Convertidor XML  ")
+        self._build_xml_tab(xml_frame)
+
         settings_frame = self._tabs.add("  Configuracion  ")
         self._build_settings_tab(settings_frame)
 
@@ -310,7 +313,18 @@ class BankParserApp(ctk.CTk):
         SatTab(parent, settings=self._settings).grid(row=0, column=0, sticky="nsew")
 
     # ------------------------------------------------------------------
-    # Tab 3: Configuracion
+    # Tab 3: Convertidor XML
+    # ------------------------------------------------------------------
+
+    def _build_xml_tab(self, parent: ctk.CTkFrame) -> None:
+        parent.grid_rowconfigure(0, weight=1)
+        parent.grid_columnconfigure(0, weight=1)
+        from bank_parser.gui.xml_tab import XmlConverterTab
+
+        XmlConverterTab(parent).grid(row=0, column=0, sticky="nsew")
+
+    # ------------------------------------------------------------------
+    # Tab 4: Configuracion
     # ------------------------------------------------------------------
 
     def _build_settings_tab(self, parent: ctk.CTkFrame) -> None:
