@@ -77,6 +77,7 @@ _CARGO_PREFIXES: tuple[str, ...] = (
     "CHEQUE",
     "DISPOSICION",
     "ORDEN DE PAGO",
+    "PAGO A TERCEROS",
     "PAGO EFECTUADO",
     "PAGO REALIZADO",
     "TRANSFERENCIA ENVIADA",
