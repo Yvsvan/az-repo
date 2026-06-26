@@ -67,6 +67,29 @@ _MOV_DATE_RE = re.compile(r"^(\d{2})\s+([A-Z]{3})\s+", re.MULTILINE)
 # Moneda en formato mexicano
 _CURRENCY_RE = re.compile(r"\b\d{1,3}(?:,\d{3})*\.\d{2}\b")
 
+# Prefijos de descripción que identifican un cargo (para bloques sin saldo explícito)
+_CARGO_PREFIXES: tuple[str, ...] = (
+    "COMISION",
+    "IVA",
+    "CARGO",
+    "RETIRO",
+    "COBRO",
+    "CHEQUE",
+    "DISPOSICION",
+    "ORDEN DE PAGO",
+    "PAGO EFECTUADO",
+    "PAGO REALIZADO",
+    "TRANSFERENCIA ENVIADA",
+    "TRANSFERENCIA REALIZADA",
+    "TRANSFERENCIA INTERNACIONAL ENVIADA",
+)
+
+# Marcadores en el cuerpo del bloque (cualquier línea) que indican cargo
+_CARGO_BODY_MARKERS: tuple[str, ...] = (
+    "TRASPASO ENTRE CUENTAS",
+    "INCASA FACTURAS",
+)
+
 # Líneas de ruido a filtrar entre saltos de página
 _NOISE_PATTERNS = [
     re.compile(r"^\d{6}\.\w+\.\w{2}\.\d{4}\.\d{2}$"),  # serial de página "000180.B61CHDA..."
@@ -177,6 +200,24 @@ def _extract_titular(text: str) -> str:
     return ""
 
 
+def _is_cargo(bloque: str) -> bool:
+    """Determina si el movimiento es un cargo por las palabras clave de su descripción.
+
+    Se usa sólo cuando el bloque tiene un único número (sin saldo explícito),
+    es decir, el caso típico de comisiones e IVA en cuentas Dólares.
+    """
+    lines = bloque.splitlines()
+    if not lines:
+        return False
+    first = re.sub(r"^\d{2}\s+[A-Z]{3}\s+", "", lines[0]).strip().upper()
+    if any(first.startswith(prefix) for prefix in _CARGO_PREFIXES):
+        return True
+    # Revisar el cuerpo completo del bloque (e.g. TRASPASO tras salto de página).
+    # Unimos líneas con espacio para capturar frases partidas por salto de línea.
+    full = " ".join(bloque.upper().split())
+    return any(marker in full for marker in _CARGO_BODY_MARKERS)
+
+
 def _strip_noise(text: str) -> str:
     out: list[str] = []
     for line in text.splitlines():
@@ -254,6 +295,9 @@ def _build_descripcion(block: str, monto_lit: str | None, saldo_lit: str) -> str
         last = last[: -len(saldo_lit)].rstrip()
         if monto_lit and last.endswith(monto_lit):
             last = last[: -len(monto_lit)].rstrip()
+    elif monto_lit and last.endswith(monto_lit):
+        # Bloque sin saldo explícito: el único número es el monto de la operación
+        last = last[: -len(monto_lit)].rstrip()
     lines[-1] = last
     return " ".join(line.strip() for line in lines if line.strip())
 
@@ -303,26 +347,31 @@ def _extraer_movimientos(
             continue
 
         try:
-            monto_explicito, saldo = _last_amounts_in_block(bloque)
+            monto_explicito, saldo_candidate = _last_amounts_in_block(bloque)
         except ParseError:
             continue
 
-        # Validar que el saldo sea coherente (evitar bloques cortados por salto de página)
-        delta = saldo - saldo_prev
-        if abs(delta) > saldo_prev * Decimal("10") and saldo_prev > Decimal("1000"):
-            continue
-
-        if delta > 0:
-            abono, cargo = delta, Decimal("0")
-        elif delta < 0:
-            abono, cargo = Decimal("0"), -delta
+        if monto_explicito is not None:
+            # Dos números: el último es el saldo confirmado; usamos delta para abono/cargo.
+            saldo = saldo_candidate
+            delta = saldo - saldo_prev
+            abono = max(Decimal("0"), delta)
+            cargo = max(Decimal("0"), -delta)
+            monto_para_desc = monto_explicito
         else:
-            abono, cargo = Decimal("0"), Decimal("0")
+            # Un solo número: es el monto de la operación (sin saldo en el bloque).
+            # Ocurre en cuentas Dólares y en comisiones/IVA de MN.
+            monto = saldo_candidate
+            if _is_cargo(bloque):
+                abono, cargo = Decimal("0"), monto
+                saldo = saldo_prev - monto
+            else:
+                abono, cargo = monto, Decimal("0")
+                saldo = saldo_prev + monto
+            monto_para_desc = monto
 
         saldo_lit = _find_literal_for(bloque, saldo)
-        monto_lit = (
-            _find_literal_for(bloque, monto_explicito) if monto_explicito is not None else None
-        )
+        monto_lit = _find_literal_for(bloque, monto_para_desc)
         descripcion = _build_descripcion(bloque, monto_lit, saldo_lit)
 
         movimientos.append(
