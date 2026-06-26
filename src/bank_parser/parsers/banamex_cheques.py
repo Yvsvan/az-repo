@@ -263,15 +263,29 @@ def _split_by_date(text: str) -> list[str]:
 
 
 def _last_amounts_in_block(block: str) -> tuple[Decimal | None, Decimal]:
+    saldo_val: Decimal | None = None
     for line in reversed(block.splitlines()):
         nums = _CURRENCY_RE.findall(line)
         if not nums:
             continue
         if not line.rstrip().endswith(nums[-1]):
             continue
-        if len(nums) >= 2:
-            return limpiar_numero(nums[-2]), limpiar_numero(nums[-1])
-        return None, limpiar_numero(nums[-1])
+        if saldo_val is None:
+            if len(nums) >= 2:
+                # Dos números en la misma línea: (monto, saldo) confirmados.
+                return limpiar_numero(nums[-2]), limpiar_numero(nums[-1])
+            # Un solo número: puede ser el saldo; seguir buscando el monto.
+            saldo_val = limpiar_numero(nums[-1])
+        else:
+            monto = limpiar_numero(nums[-1])
+            if monto == saldo_val:
+                # Línea informativa que repite el importe (e.g. "IMPORTE: $X");
+                # no es un monto independiente — seguir buscando hacia arriba.
+                continue
+            return monto, saldo_val
+    if saldo_val is not None:
+        # Solo un número en todo el bloque: es el monto de la operación.
+        return None, saldo_val
     raise ParseError(f"Bloque sin números: {block[:60]!r}")
 
 
