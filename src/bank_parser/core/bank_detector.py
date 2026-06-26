@@ -38,6 +38,11 @@ FINGERPRINTS: tuple[BankFingerprint, ...] = (
         boosts=("Centro de Atenci", "CLABE Interbancaria", "Número de cliente"),
     ),
     BankFingerprint(
+        bank=BankId.BANAMEX_CHEQUES,
+        must_have=("CUENTA DE CHEQUES", "RESUMEN DEL:"),
+        boosts=("DETALLE DE OPERACIONES", "GAT Nominal antes de impuestos"),
+    ),
+    BankFingerprint(
         bank=BankId.BBVA,
         must_have=("BBVA MEXICO", "GRUPO FINANCIERO BBVA"),
         boosts=("Cash Management", "Paseo de la Reforma 510"),
@@ -56,6 +61,16 @@ FINGERPRINTS: tuple[BankFingerprint, ...] = (
         bank=BankId.BANORTE,
         must_have=("ENLACE NEGOCIOS",),
         boosts=("BANORTE",),
+    ),
+    BankFingerprint(
+        bank=BankId.SANTANDER,
+        must_have=("BANCO SANTANDER MEXICO", "ESTADODECUENTAINTEGRAL"),
+        boosts=("DETALLEDEMOVIMIENTOSCUENTADECHEQUES", "GRUPO FINANCIERO SANTANDER"),
+    ),
+    BankFingerprint(
+        bank=BankId.INTERCAM,
+        must_have=("INTERCUENTA ENLACE INTERCAM",),
+        boosts=("ESTADO DE CUENTA", "Intercam Banco"),
     ),
 )
 

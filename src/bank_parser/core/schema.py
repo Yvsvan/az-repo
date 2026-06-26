@@ -26,10 +26,13 @@ class BankId(str, Enum):
 
     BANAMEX = "banamex"
     BANAMEX_PRIORITY = "banamex_priority"
+    BANAMEX_CHEQUES = "banamex_cheques"
     BBVA = "bbva"
     BANBAJIO = "banbajio"
     BANREGIO = "banregio"
     BANORTE = "banorte"
+    SANTANDER = "santander"
+    INTERCAM = "intercam"
 
     @property
     def display_name(self) -> str:
@@ -37,10 +40,13 @@ class BankId(str, Enum):
         return {
             BankId.BANAMEX: "Banamex",
             BankId.BANAMEX_PRIORITY: "Banamex Priority",
+            BankId.BANAMEX_CHEQUES: "Banamex Cuenta Cheques",
             BankId.BBVA: "BBVA",
             BankId.BANBAJIO: "BanBajío",
             BankId.BANREGIO: "Banregio",
             BankId.BANORTE: "Banorte",
+            BankId.SANTANDER: "Santander",
+            BankId.INTERCAM: "Intercam",
         }[self]
 
 
