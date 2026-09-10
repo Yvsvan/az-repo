@@ -147,7 +147,12 @@ def _build_filtered_workbook(wb, rows: list[AnyRow], target_rfc: str) -> None:
         for r in rows
         if isinstance(r, NominaRow) and (r.rfc_emisor == target_rfc or r.rfc_empleado == target_rfc)
     ]
-    pagos = [r for r in rows if isinstance(r, PagoDocRow) and r.rfc_emisor == target_rfc]
+    pagos = [
+        r
+        for r in rows
+        if isinstance(r, PagoDocRow)
+        and (r.rfc_emisor == target_rfc or r.rfc_receptor == target_rfc)
+    ]
 
     if emitidos:
         _write_data_sheet(wb.create_sheet("Emitidos"), emitidos, _FACTURA_COLS)

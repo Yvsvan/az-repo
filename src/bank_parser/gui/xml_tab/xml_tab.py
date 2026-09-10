@@ -545,7 +545,10 @@ class XmlConverterTab(ctk.CTkFrame):
                         isinstance(r, NominaRow)
                         and (r.rfc_emisor == target_rfc or r.rfc_empleado == target_rfc)
                     )
-                    or (isinstance(r, PagoDocRow) and r.rfc_emisor == target_rfc)
+                    or (
+                        isinstance(r, PagoDocRow)
+                        and (r.rfc_emisor == target_rfc or r.rfc_receptor == target_rfc)
+                    )
                 )
             else:
                 exported_count = len(rows)
